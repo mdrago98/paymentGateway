@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" tests="57" skipped="0" failures="0" errors="0" timestamp="2018-12-20T18:48:17" hostname="pop-os" time="2.822">
+  <properties/>
+  <testcase name="checkProcessPaymentWithValidTransactionAndCaptureFailureTransactionExistsButSevenDayPeriodExpired()" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.654"/>
+  <testcase name="checkProcessPaymentWithValidTransactionAndCaptureFailureTransactionDoesNotExist()" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.004"/>
+  <testcase name="testCreditCardDetailsWithInvalidDates(String)[1]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.016"/>
+  <testcase name="testCreditCardDetailsWithInvalidDates(String)[2]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.001"/>
+  <testcase name="testCreditCardDetailsWithInvalidDates(String)[3]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.001"/>
+  <testcase name="testCreditCardDetailsWithInvalidDates(String)[4]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.001"/>
+  <testcase name="assertUpdateTransactionsWithAlreadyCapturedTransactions()" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.005"/>
+  <testcase name="testOfflineVerificationWithInvvalidPrefixes(String)[1]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.001"/>
+  <testcase name="testOfflineVerificationWithInvvalidPrefixes(String)[2]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.001"/>
+  <testcase name="checkProcessPaymentReturnsStatusCodeTwoWhenCaptureIsDelayedPastTimeOut()" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="1.005"/>
+  <testcase name="checkProcessPaymentWithValidTransactionAndCaptureFailureTransactionExistsButUnknownCaptureError()" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.005"/>
+  <testcase name="checkProcessPaymentWithValidTransactionAndCaptureFailureTransactionExistsButAlreadyCaptured()" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.004"/>
+  <testcase name="checkOfflineVerificationWithInvalidCardBrands()" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.001"/>
+  <testcase name="checkProcessPaymentWhenAuthFailsBecauseOfRandomError()" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.006"/>
+  <testcase name="checkOfflineValidationWhenObjectHasEmptyFields(CcInfo)[1]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.001"/>
+  <testcase name="checkOfflineValidationWhenObjectHasEmptyFields(CcInfo)[2]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.001"/>
+  <testcase name="checkOfflineValidationWhenObjectHasEmptyFields(CcInfo)[3]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.001"/>
+  <testcase name="checkOfflineValidationWhenObjectHasEmptyFields(CcInfo)[4]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.0"/>
+  <testcase name="checkOfflineValidationWhenObjectHasEmptyFields(CcInfo)[5]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.0"/>
+  <testcase name="checkOfflineValidationWhenObjectHasEmptyFields(CcInfo)[6]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.001"/>
+  <testcase name="checkOfflineValidationWhenObjectHasEmptyFields(CcInfo)[7]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.001"/>
+  <testcase name="checkOfflineValidationWhenObjectHasEmptyFields(CcInfo)[8]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.0"/>
+  <testcase name="checkOfflineValidationWhenObjectHasEmptyFields(CcInfo)[9]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.0"/>
+  <testcase name="checkOfflineValidationWhenObjectHasEmptyFields(CcInfo)[10]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.0"/>
+  <testcase name="checkOfflineValidationWhenObjectHasEmptyFields(CcInfo)[11]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.0"/>
+  <testcase name="checkOfflineValidationWhenObjectHasEmptyFields(CcInfo)[12]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.0"/>
+  <testcase name="checkOfflineVerificationWithInvalidCardNumbers(String)[1]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.0"/>
+  <testcase name="checkOfflineVerificationWithInvalidCardNumbers(String)[2]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.001"/>
+  <testcase name="checkOfflineVerificationWithInvalidCardNumbers(String)[3]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.0"/>
+  <testcase name="checkProcessPaymentReturnsOkWhenPaymentCleared()" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.002"/>
+  <testcase name="assertUpdateTransactionsVoidsAuthorizedTransactions()" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.002"/>
+  <testcase name="checkOfflineValidationWhenCardIsExpired()" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.001"/>
+  <testcase name="checkProcessPaymentWhenAuthFailsBecauseOfSomeBankError()" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.003"/>
+  <testcase name="checkIfBankProxyAuthIsBeingCalledFromProcessPayment()" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.006"/>
+  <testcase name="checkProcessPaymentFailsWhenAuthorisationFailsBecauseBankDetailsInvalid()" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.003"/>
+  <testcase name="checkProcessPaymentVerifiesCreditCardDetails(CcInfo)[1]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.002"/>
+  <testcase name="checkProcessPaymentVerifiesCreditCardDetails(CcInfo)[2]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.001"/>
+  <testcase name="checkProcessPaymentVerifiesCreditCardDetails(CcInfo)[3]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.001"/>
+  <testcase name="checkProcessPaymentVerifiesCreditCardDetails(CcInfo)[4]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.0"/>
+  <testcase name="checkOfflineValidationWithValidCreditCardDetails(CcInfo)[1]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.0"/>
+  <testcase name="checkOfflineValidationWithValidCreditCardDetails(CcInfo)[2]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.0"/>
+  <testcase name="checkOfflineValidationWithValidCreditCardDetails(CcInfo)[3]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.001"/>
+  <testcase name="checkLuhnFailsWhenCardIsNull()" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.001"/>
+  <testcase name="assertUpdateTransactionsCapturesAuthorizedTransactions()" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.002"/>
+  <testcase name="checkProcessPaymentWhenAuthFailsBecauseUserDoesNotHaveFunds()" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.003"/>
+  <testcase name="checkAuthorizedValuesStayAuthorizedOnUnknownCaptureError()" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.003"/>
+  <testcase name="assertGetConnectionReturnsADatabaseConnection()" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.001"/>
+  <testcase name="checkLuhnWorksCorrectlyWithValidCards(String)[1]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.001"/>
+  <testcase name="checkLuhnWorksCorrectlyWithValidCards(String)[2]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.0"/>
+  <testcase name="checkLuhnWorksCorrectlyWithValidCards(String)[3]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.0"/>
+  <testcase name="checkLuhnWorksCorrectlyWithValidCards(String)[4]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.0"/>
+  <testcase name="checkLuhnWorksCorrectlyWithValidCards(String)[5]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.001"/>
+  <testcase name="checkLuhnValidationFailsWithInvalidCards(String)[1]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.0"/>
+  <testcase name="checkLuhnValidationFailsWithInvalidCards(String)[2]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.0"/>
+  <testcase name="checkLuhnValidationFailsWithInvalidCards(String)[3]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.001"/>
+  <testcase name="checkLuhnValidationFailsWithInvalidCards(String)[4]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.0"/>
+  <testcase name="checkProcessPaymentReturnsStatusCodeTwoWhenAuthorizeIsDelayedPastTimeOut()" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="1.002"/>
+  <system-out><![CDATA[[ERROR] 2018-12-20 19:48:18.158 [Test worker]  - Capture request failed
+[ERROR] 2018-12-20 19:48:18.168 [Test worker]  - Capture request failed
+[INFO ] 2018-12-20 19:48:19.228 [Test worker]  - Bank error Requests timed out
+[ERROR] 2018-12-20 19:48:19.235 [Test worker]  - Capture request failed
+[ERROR] 2018-12-20 19:48:19.239 [Test worker]  - Capture request failed
+[INFO ] 2018-12-20 19:48:19.247 [pool-8-thread-2]  - Bank error - bank returned status code -4 - payment rejected
+[ERROR] 2018-12-20 19:48:19.247 [Test worker]  - Auth request failed with status -4
+[INFO ] 2018-12-20 19:48:19.283 [pool-11-thread-2]  - Bank error - bank returned status code -3 - payment rejected
+[ERROR] 2018-12-20 19:48:19.283 [Test worker]  - Auth request failed with status -3
+[ERROR] 2018-12-20 19:48:19.286 [Test worker]  - Auth request failed with status 0
+[INFO ] 2018-12-20 19:48:19.292 [pool-13-thread-2]  - Bank error - bank returned status code -1 - payment rejected
+[ERROR] 2018-12-20 19:48:19.293 [Test worker]  - Auth request failed with status -1
+[INFO ] 2018-12-20 19:48:19.296 [Test worker]  - The card details are invalid with status code 6 - payment rejected
+[INFO ] 2018-12-20 19:48:19.298 [Test worker]  - The card details are invalid with status code 2 - payment rejected
+[INFO ] 2018-12-20 19:48:19.300 [Test worker]  - The card details are invalid with status code 3 - payment rejected
+[INFO ] 2018-12-20 19:48:19.302 [Test worker]  - The card details are invalid with status code 3 - payment rejected
+[INFO ] 2018-12-20 19:48:19.313 [pool-19-thread-2]  - Bank error - bank returned status code -2 - payment rejected
+[ERROR] 2018-12-20 19:48:19.314 [Test worker]  - Auth request failed with status -2
+[ERROR] 2018-12-20 19:48:19.316 [pool-20-thread-1]  - An unknown message was received from the bank proxy
+[INFO ] 2018-12-20 19:48:20.332 [Test worker]  - Bank error Requests timed out
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

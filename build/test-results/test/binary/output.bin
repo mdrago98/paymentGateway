@@ -1,0 +1,20 @@
+H[ERROR] 2018-12-20 19:48:18.158 [Test worker]  - Capture request failed
+H[ERROR] 2018-12-20 19:48:18.168 [Test worker]  - Capture request failed
+O[INFO ] 2018-12-20 19:48:19.228 [Test worker]  - Bank error Requests timed out
+H[ERROR] 2018-12-20 19:48:19.235 [Test worker]  - Capture request failed
+H[ERROR] 2018-12-20 19:48:19.239 [Test worker]  - Capture request failed
+r[INFO ] 2018-12-20 19:48:19.247 [pool-8-thread-2]  - Bank error - bank returned status code -4 - payment rejected
+T[ERROR] 2018-12-20 19:48:19.247 [Test worker]  - Auth request failed with status -4
+"s[INFO ] 2018-12-20 19:48:19.283 [pool-11-thread-2]  - Bank error - bank returned status code -3 - payment rejected
+"T[ERROR] 2018-12-20 19:48:19.283 [Test worker]  - Auth request failed with status -3
+#S[ERROR] 2018-12-20 19:48:19.286 [Test worker]  - Auth request failed with status 0
+$s[INFO ] 2018-12-20 19:48:19.292 [pool-13-thread-2]  - Bank error - bank returned status code -1 - payment rejected
+$T[ERROR] 2018-12-20 19:48:19.293 [Test worker]  - Auth request failed with status -1
+%t[INFO ] 2018-12-20 19:48:19.296 [Test worker]  - The card details are invalid with status code 6 - payment rejected
+&t[INFO ] 2018-12-20 19:48:19.298 [Test worker]  - The card details are invalid with status code 2 - payment rejected
+'t[INFO ] 2018-12-20 19:48:19.300 [Test worker]  - The card details are invalid with status code 3 - payment rejected
+(t[INFO ] 2018-12-20 19:48:19.302 [Test worker]  - The card details are invalid with status code 3 - payment rejected
+.s[INFO ] 2018-12-20 19:48:19.313 [pool-19-thread-2]  - Bank error - bank returned status code -2 - payment rejected
+.T[ERROR] 2018-12-20 19:48:19.314 [Test worker]  - Auth request failed with status -2
+/j[ERROR] 2018-12-20 19:48:19.316 [pool-20-thread-1]  - An unknown message was received from the bank proxy
+:O[INFO ] 2018-12-20 19:48:20.332 [Test worker]  - Bank error Requests timed out
