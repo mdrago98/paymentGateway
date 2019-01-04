@@ -1,20 +1,145 @@
-H[ERROR] 2018-12-20 19:48:18.158 [Test worker]  - Capture request failed
-H[ERROR] 2018-12-20 19:48:18.168 [Test worker]  - Capture request failed
-O[INFO ] 2018-12-20 19:48:19.228 [Test worker]  - Bank error Requests timed out
-H[ERROR] 2018-12-20 19:48:19.235 [Test worker]  - Capture request failed
-H[ERROR] 2018-12-20 19:48:19.239 [Test worker]  - Capture request failed
-r[INFO ] 2018-12-20 19:48:19.247 [pool-8-thread-2]  - Bank error - bank returned status code -4 - payment rejected
-T[ERROR] 2018-12-20 19:48:19.247 [Test worker]  - Auth request failed with status -4
-"s[INFO ] 2018-12-20 19:48:19.283 [pool-11-thread-2]  - Bank error - bank returned status code -3 - payment rejected
-"T[ERROR] 2018-12-20 19:48:19.283 [Test worker]  - Auth request failed with status -3
-#S[ERROR] 2018-12-20 19:48:19.286 [Test worker]  - Auth request failed with status 0
-$s[INFO ] 2018-12-20 19:48:19.292 [pool-13-thread-2]  - Bank error - bank returned status code -1 - payment rejected
-$T[ERROR] 2018-12-20 19:48:19.293 [Test worker]  - Auth request failed with status -1
-%t[INFO ] 2018-12-20 19:48:19.296 [Test worker]  - The card details are invalid with status code 6 - payment rejected
-&t[INFO ] 2018-12-20 19:48:19.298 [Test worker]  - The card details are invalid with status code 2 - payment rejected
-'t[INFO ] 2018-12-20 19:48:19.300 [Test worker]  - The card details are invalid with status code 3 - payment rejected
-(t[INFO ] 2018-12-20 19:48:19.302 [Test worker]  - The card details are invalid with status code 3 - payment rejected
-.s[INFO ] 2018-12-20 19:48:19.313 [pool-19-thread-2]  - Bank error - bank returned status code -2 - payment rejected
-.T[ERROR] 2018-12-20 19:48:19.314 [Test worker]  - Auth request failed with status -2
-/j[ERROR] 2018-12-20 19:48:19.316 [pool-20-thread-1]  - An unknown message was received from the bank proxy
-:O[INFO ] 2018-12-20 19:48:20.332 [Test worker]  - Bank error Requests timed out
+I11:39:22.424 [Test worker] INFO  - Could not captureCallable transaction
+I11:39:22.433 [Test worker] INFO  - Could not captureCallable transaction
+A11:39:23.470 [Test worker] INFO  - Bank error Requests timed out
+I11:39:23.478 [Test worker] INFO  - Could not captureCallable transaction
+e11:39:23.496 [pool-10-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e11:39:23.501 [pool-11-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e11:39:23.504 [pool-12-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e11:39:23.507 [pool-13-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e11:39:23.515 [pool-19-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+%done (AUTHORISE, authorize, CAPTURE)
+,done (CAPTURE, sevenDayPeriodExpired, VOID)
+done Forced reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+e11:39:23.522 [pool-22-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+:done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
+done Forced reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+e11:39:23.524 [pool-23-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
+done Forced reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+e11:39:23.525 [pool-24-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
+done Forced reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+e11:39:23.528 [pool-25-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+:done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
+done Forced reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+%done (AUTHORISE, authorize, CAPTURE)
+6done (CAPTURE, transactionIdDoesNotExist, BANK_ERROR)
+done Forced reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+%done (AUTHORISE, authorize, CAPTURE)
+8done (CAPTURE, tryToRecaptureBecauseBankError, CAPTURE)
+"done (CAPTURE, capture, CAPTURED)
+ done (CAPTURED, refund, REFUND)
+done Forced reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+e11:39:23.535 [pool-31-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+:done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
+done Forced reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+e11:39:23.537 [pool-32-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+:done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
+done Forced reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+e11:39:23.538 [pool-33-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
+done Forced reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+e11:39:23.540 [pool-34-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+:done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
+done Random reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+e11:39:23.544 [pool-35-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
+done Forced reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+e11:39:23.550 [pool-36-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+:done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
+done Forced reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+e11:39:23.552 [pool-37-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
+done Forced reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done Random reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+e11:39:23.557 [pool-38-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
+done Forced reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+%done (AUTHORISE, authorize, CAPTURE)
+,done (CAPTURE, sevenDayPeriodExpired, VOID)
+done Forced reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+e11:39:23.561 [pool-41-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
+done Forced reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+e11:39:23.565 [pool-42-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
+done Forced reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+e11:39:23.566 [pool-43-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+:done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
+done Forced reset(true)
+done Random reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done Random reset(true)
+done Random reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+%done (AUTHORISE, authorize, CAPTURE)
+6done (CAPTURE, transactionIdDoesNotExist, BANK_ERROR)
+done Forced reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+e11:39:23.574 [pool-46-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+:done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
+done Forced reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+e11:39:23.575 [pool-47-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+:done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
+action coverage: 10/10
+state coverage: 7/7
+transition coverage: 10/10
+Y11:39:23.578 [Test worker] INFO  - Tried to refund an un captured transaction with ID 11
+e11:39:23.581 [pool-48-thread-2] INFO  - Bank error - bank returned status code -4 - payment rejected
+811:39:23.581 [Test worker] ERROR  - Auth request failed
+$e11:39:23.611 [pool-51-thread-2] INFO  - Bank error - bank returned status code -3 - payment rejected
+$811:39:23.611 [Test worker] ERROR  - Auth request failed
+%d11:39:23.614 [pool-52-thread-2] INFO  - Bank error - bank returned status code 0 - payment rejected
+%811:39:23.614 [Test worker] ERROR  - Auth request failed
+&e11:39:23.619 [pool-53-thread-2] INFO  - Bank error - bank returned status code -1 - payment rejected
+&811:39:23.619 [Test worker] ERROR  - Auth request failed
+(f11:39:23.622 [Test worker] INFO  - The card details are invalid with status code 6 - payment rejected
+)f11:39:23.625 [Test worker] INFO  - The card details are invalid with status code 2 - payment rejected
+*f11:39:23.627 [Test worker] INFO  - The card details are invalid with status code 3 - payment rejected
++f11:39:23.628 [Test worker] INFO  - The card details are invalid with status code 3 - payment rejected
+1e11:39:23.639 [pool-59-thread-2] INFO  - Bank error - bank returned status code -2 - payment rejected
+1811:39:23.639 [Test worker] ERROR  - Auth request failed
+=A11:39:24.652 [Test worker] INFO  - Bank error Requests timed out

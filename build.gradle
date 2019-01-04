@@ -1,10 +1,18 @@
 plugins {
     id 'java'
+    id 'pmd'
+    id 'maven'
+    id 'checkstyle'
+    id 'org.springframework.boot' version '2.1.1.RELEASE'
 }
 
-apply plugin: 'checkstyle'
-apply plugin: 'pmd'
-apply plugin: 'maven'
+apply plugin: 'io.spring.dependency-management'
+
+configurations {
+    cucumberRuntime {
+        extendsFrom testRuntime
+    }
+}
 
 group 'com.cps3230.edu.mt'
 version '1.0-SNAPSHOT'
@@ -20,7 +28,6 @@ checkstyle {
     toolVersion = "8.14"
 }
 
-
 dependencies {
     def junit4Version        = '4.12'
     def junitVintageVersion  = '5.3.1'
@@ -30,6 +37,19 @@ dependencies {
     compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.11.1'
     compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.11.1'
     compile 'nz.ac.waikato.modeljunit:modeljunit:2.5'
+    //    Spring boot deps
+    compile("org.springframework.boot:spring-boot-starter-web")
+    compile("org.springframework.boot:spring-boot-starter-thymeleaf")
+    compile("org.springframework.boot:spring-boot-devtools")
+
+
+    testCompile("org.springframework.boot:spring-boot-starter-test")
+    // Selenium
+    testCompile 'org.seleniumhq.selenium:selenium-java:3.141.59'
+    // Cucumber deps
+    testCompile 'io.cucumber:cucumber-java8:4.2.0'
+    testCompile 'io.cucumber:cucumber-junit:4.2.0'
+    testCompile 'info.cukes:cucumber-spring:1.2.5'
     
     // JUnit Jupiter API and TestEngine implementation
     testCompile("org.junit.jupiter:junit-jupiter-params:5.2.0")
@@ -51,6 +71,17 @@ test {
     useJUnitPlatform()
     testLogging {
         events "passed", "skipped", "failed"
+    }
+}
+
+task cucumber() {
+    dependsOn assemble, compileTestJava, bootJar
+    doLast {
+        javaexec {
+            main = "cucumber.api.cli.Main"
+            classpath = configurations.cucumberRuntime + sourceSets.main.output + sourceSets.test.output
+            args = ['--plugin', 'pretty', '--glue', 'com.cps3230.assignment.webapp.stepdefs', 'src/test/resources']
+        }
     }
 }
 

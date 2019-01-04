@@ -1,17 +1,18 @@
-package com.cps3230.assignment.payment.gateway;
+package com.cps3230.assignment.payment.webapp;
 
+import com.cps3230.assignment.payment.gateway.CcInfo;
+import com.cps3230.assignment.payment.gateway.PaymentProcessor;
 import com.cps3230.assignment.payment.gateway.enums.CardBrands;
 import com.cps3230.assignment.payment.gateway.enums.CardValidationStatuses;
-import java.lang.reflect.Field;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.ui.Model;
 
@@ -19,8 +20,8 @@ import org.springframework.ui.Model;
 public class PaymentProcessorController {
 
   private static Logger LOGGER = LogManager.getRootLogger();
-
-  PaymentProcessor processor = new PaymentProcessor();
+    @Autowired
+    PaymentProcessor processor;
   List<String> cardBrands = Stream.of(CardBrands.values())
       .map(CardBrands::name)
         .filter(brand -> !brand.equals(String.valueOf(CardBrands.INVALID)))

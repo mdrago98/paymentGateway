@@ -80,7 +80,7 @@ class PaymentProcessorTests {
   }
 
   @ParameterizedTest
-  @ValueSource(strings = {"79927398710", "79927398712", "79927398719"})
+  @ValueSource(strings = {"7992739I871o", "79927398712", "79927398719"})
   void checkOfflineVerificationWithInvalidCardNumbers(String cardNumber) {
     DateIn2018Stub date = new DateIn2018Stub();
     CcInfo testCreditCardDetails =
@@ -457,7 +457,7 @@ class PaymentProcessorTests {
     BankProxy proxy = mock(BankProxy.class);
     when(proxy.refund((long)11, 10)).thenReturn(0);
     processor.setBankProxy(proxy);
-    Assertions.assertEquals("CAPTURED", processor.refund(transaction));
+    Assertions.assertEquals("AUTHORIZED", processor.refund(transaction).getState());
   }
 
   @Test void assertRefundWorksWithCapturedTransaction() {
@@ -474,8 +474,6 @@ class PaymentProcessorTests {
   @Test
   void runModelTests() {
     TransactionModel model = new TransactionModel();
-//    RandomTester tester = new RandomTester(model);
-//    Tester tester = new AllRoundTester(model);
     Tester tester = new GreedyTester(model);
     tester.buildGraph();
     tester.addListener(new VerboseListener());

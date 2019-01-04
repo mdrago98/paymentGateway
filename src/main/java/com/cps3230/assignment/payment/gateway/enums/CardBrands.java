@@ -4,5 +4,5 @@ public enum CardBrands {
   AMERICAN_EXPRESS,
   MASTER_CARD,
   VISA,
-  INVALID
+  INVALID;
 }

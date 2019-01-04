@@ -213,6 +213,11 @@ public class PaymentProcessor {
     latch.await();
   }
 
+  public int processPayment(CcInfo cardInfo, long amount)
+      throws ExecutionException, InterruptedException {
+    return processPayment(cardInfo, amount, new Date());
+  }
+
   public int processPayment(CcInfo cardInfo, long amount, Date date)
       throws ExecutionException, InterruptedException {
     return processPayment(cardInfo, amount, date, Executors.newFixedThreadPool(2), 7200);
@@ -279,15 +284,19 @@ public class PaymentProcessor {
     return transaction;
   }
 
+  public int verifyOffline(CcInfo cardInfo, Date date) {
+    return verifyOfflineEnum(cardInfo, date).ordinal();
+  }
+
   /**
    * A method that verifies the credit card details offline.
    *
    * @param cardInfo an object representation of the card details
-   * @return an integer representation of the verification status code; -1: failed luhn; -2 invalid
+   * @return An enum representation of the verification status code; -1: failed luhn; -2 invalid
    *         prefix; -3
    */
-  public int verifyOffline(CcInfo cardInfo) {
-    return verifyOffline(cardInfo, new Date());
+  public CardValidationStatuses verifyOfflineEnum(CcInfo cardInfo) {
+    return verifyOfflineEnum(cardInfo, new Date());
   }
 
   /**
@@ -295,20 +304,20 @@ public class PaymentProcessor {
    *
    * @param cardInfo an object representation of the card details
    * @param date an object representation of the date
-   * @return an integer representation of the verification status code
+   * @return an enum representation of the verification status code
    */
-  public int verifyOffline(CcInfo cardInfo, Date date) {
-    int cardValidityStatus = CardValidationStatuses.VALID.ordinal();
+  public CardValidationStatuses verifyOfflineEnum(CcInfo cardInfo, Date date) {
+    CardValidationStatuses cardValidityStatus = CardValidationStatuses.VALID;
     if (!cardInfo.verifyAllDetailsAreEntered()) {
-      cardValidityStatus = CardValidationStatuses.EMPTY_FIELDS.ordinal();
+      cardValidityStatus = CardValidationStatuses.EMPTY_FIELDS;
     } else if (!verifyLuhn(cardInfo.getCardNumber())) {
-      cardValidityStatus = CardValidationStatuses.LUHN_FAILURE.ordinal();
+      cardValidityStatus = CardValidationStatuses.LUHN_FAILURE;
     } else if (cardInfo.getCardTypeEnum() == CardBrands.INVALID) {
-      cardValidityStatus = CardValidationStatuses.CARD_BRAND_NOT_VALID.ordinal();
+      cardValidityStatus = CardValidationStatuses.CARD_BRAND_NOT_VALID;
     } else if (!cardInfo.validatePrefix()) {
-      cardValidityStatus = CardValidationStatuses.PREFIX_NOT_VALID.ordinal();
+      cardValidityStatus = CardValidationStatuses.PREFIX_NOT_VALID;
     } else if (cardInfo.validateCardIsNotExpired(date) == CardValidationStatuses.CARD_EXPIRED) {
-      cardValidityStatus = CardValidationStatuses.CARD_EXPIRED.ordinal();
+      cardValidityStatus = CardValidationStatuses.CARD_EXPIRED;
     }
     return cardValidityStatus;
   }
