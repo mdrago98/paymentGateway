@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.cps3230.assignment.payment.gateway.CcInfoTests" tests="29" skipped="0" failures="0" errors="0" timestamp="2019-01-04T10:39:24" hostname="pop-os" time="0.029">
+<testsuite name="com.cps3230.assignment.payment.gateway.CcInfoTests" tests="29" skipped="0" failures="0" errors="0" timestamp="2019-01-05T16:26:40" hostname="pop-os" time="0.022">
   <properties/>
-  <testcase name="verifyPrefixForCardNumberWhenCardIsMastercard()" classname="com.cps3230.assignment.payment.gateway.CcInfoTests" time="0.0"/>
+  <testcase name="verifyPrefixForCardNumberWhenCardIsMastercard()" classname="com.cps3230.assignment.payment.gateway.CcInfoTests" time="0.001"/>
   <testcase name="checkDateSetterCardExpiredWithValidDateInTheFuture()" classname="com.cps3230.assignment.payment.gateway.CcInfoTests" time="0.001"/>
-  <testcase name="verifyPrefixForCardNumberWhenVisaCardHasInvalidPrefix()" classname="com.cps3230.assignment.payment.gateway.CcInfoTests" time="0.001"/>
+  <testcase name="verifyPrefixForCardNumberWhenVisaCardHasInvalidPrefix()" classname="com.cps3230.assignment.payment.gateway.CcInfoTests" time="0.0"/>
   <testcase name="verifyCardNumberIsNotStoredWithWhiteSpace()" classname="com.cps3230.assignment.payment.gateway.CcInfoTests" time="0.0"/>
-  <testcase name="verifyCardCvvLongerThanThreeDigitsAreNotStored()" classname="com.cps3230.assignment.payment.gateway.CcInfoTests" time="0.0"/>
+  <testcase name="verifyCardCvvLongerThanThreeDigitsAreNotStored()" classname="com.cps3230.assignment.payment.gateway.CcInfoTests" time="0.001"/>
   <testcase name="verifyCardTypeIsNotStoredWithWhiteSpace()" classname="com.cps3230.assignment.payment.gateway.CcInfoTests" time="0.0"/>
-  <testcase name="checkDateSetterCardExpiredWithValidDateInThePast()" classname="com.cps3230.assignment.payment.gateway.CcInfoTests" time="0.0"/>
-  <testcase name="confirmTheDateSetterDoesNtAllowInvalidDates(String)[1]" classname="com.cps3230.assignment.payment.gateway.CcInfoTests" time="0.001"/>
+  <testcase name="checkDateSetterCardExpiredWithValidDateInThePast()" classname="com.cps3230.assignment.payment.gateway.CcInfoTests" time="0.001"/>
+  <testcase name="confirmTheDateSetterDoesNtAllowInvalidDates(String)[1]" classname="com.cps3230.assignment.payment.gateway.CcInfoTests" time="0.0"/>
   <testcase name="confirmTheDateSetterDoesNtAllowInvalidDates(String)[2]" classname="com.cps3230.assignment.payment.gateway.CcInfoTests" time="0.0"/>
-  <testcase name="confirmTheDateSetterDoesNtAllowInvalidDates(String)[3]" classname="com.cps3230.assignment.payment.gateway.CcInfoTests" time="0.001"/>
+  <testcase name="confirmTheDateSetterDoesNtAllowInvalidDates(String)[3]" classname="com.cps3230.assignment.payment.gateway.CcInfoTests" time="0.0"/>
   <testcase name="verifyCardCVVIsNotStoredWithWhitSpace()" classname="com.cps3230.assignment.payment.gateway.CcInfoTests" time="0.0"/>
-  <testcase name="checkOfflineValidationWhenObjectHasEmptyFields(CcInfo)[1]" classname="com.cps3230.assignment.payment.gateway.CcInfoTests" time="0.001"/>
-  <testcase name="checkOfflineValidationWhenObjectHasEmptyFields(CcInfo)[2]" classname="com.cps3230.assignment.payment.gateway.CcInfoTests" time="0.001"/>
+  <testcase name="checkOfflineValidationWhenObjectHasEmptyFields(CcInfo)[1]" classname="com.cps3230.assignment.payment.gateway.CcInfoTests" time="0.0"/>
+  <testcase name="checkOfflineValidationWhenObjectHasEmptyFields(CcInfo)[2]" classname="com.cps3230.assignment.payment.gateway.CcInfoTests" time="0.0"/>
   <testcase name="checkOfflineValidationWhenObjectHasEmptyFields(CcInfo)[3]" classname="com.cps3230.assignment.payment.gateway.CcInfoTests" time="0.0"/>
-  <testcase name="checkOfflineValidationWhenObjectHasEmptyFields(CcInfo)[4]" classname="com.cps3230.assignment.payment.gateway.CcInfoTests" time="0.001"/>
-  <testcase name="checkOfflineValidationWhenObjectHasEmptyFields(CcInfo)[5]" classname="com.cps3230.assignment.payment.gateway.CcInfoTests" time="0.001"/>
+  <testcase name="checkOfflineValidationWhenObjectHasEmptyFields(CcInfo)[4]" classname="com.cps3230.assignment.payment.gateway.CcInfoTests" time="0.0"/>
+  <testcase name="checkOfflineValidationWhenObjectHasEmptyFields(CcInfo)[5]" classname="com.cps3230.assignment.payment.gateway.CcInfoTests" time="0.0"/>
   <testcase name="checkOfflineValidationWhenObjectHasEmptyFields(CcInfo)[6]" classname="com.cps3230.assignment.payment.gateway.CcInfoTests" time="0.0"/>
-  <testcase name="checkOfflineValidationWhenObjectHasEmptyFields(CcInfo)[7]" classname="com.cps3230.assignment.payment.gateway.CcInfoTests" time="0.001"/>
-  <testcase name="checkOfflineValidationWhenObjectHasEmptyFields(CcInfo)[8]" classname="com.cps3230.assignment.payment.gateway.CcInfoTests" time="0.0"/>
+  <testcase name="checkOfflineValidationWhenObjectHasEmptyFields(CcInfo)[7]" classname="com.cps3230.assignment.payment.gateway.CcInfoTests" time="0.0"/>
+  <testcase name="checkOfflineValidationWhenObjectHasEmptyFields(CcInfo)[8]" classname="com.cps3230.assignment.payment.gateway.CcInfoTests" time="0.001"/>
   <testcase name="checkOfflineValidationWhenObjectHasEmptyFields(CcInfo)[9]" classname="com.cps3230.assignment.payment.gateway.CcInfoTests" time="0.0"/>
   <testcase name="checkOfflineValidationWhenObjectHasEmptyFields(CcInfo)[10]" classname="com.cps3230.assignment.payment.gateway.CcInfoTests" time="0.0"/>
   <testcase name="checkOfflineValidationWhenObjectHasEmptyFields(CcInfo)[11]" classname="com.cps3230.assignment.payment.gateway.CcInfoTests" time="0.0"/>
-  <testcase name="verifyPrefixLengthForVisaShouldBeTwo()" classname="com.cps3230.assignment.payment.gateway.CcInfoTests" time="0.0"/>
+  <testcase name="verifyPrefixLengthForVisaShouldBeTwo()" classname="com.cps3230.assignment.payment.gateway.CcInfoTests" time="0.001"/>
   <testcase name="verifyPrefixLengthForMasterCardExpressShouldBeThree()" classname="com.cps3230.assignment.payment.gateway.CcInfoTests" time="0.0"/>
-  <testcase name="verifyPrefixForCardNumberWhenCardIsAmericanExpress()" classname="com.cps3230.assignment.payment.gateway.CcInfoTests" time="0.0"/>
+  <testcase name="verifyPrefixForCardNumberWhenCardIsAmericanExpress()" classname="com.cps3230.assignment.payment.gateway.CcInfoTests" time="0.001"/>
   <testcase name="verifyPrefixForCardNumberWhenCardIsVisa()" classname="com.cps3230.assignment.payment.gateway.CcInfoTests" time="0.0"/>
-  <testcase name="verifyCardTypeIsSavedInUpperCase()" classname="com.cps3230.assignment.payment.gateway.CcInfoTests" time="0.0"/>
+  <testcase name="verifyCardTypeIsSavedInUpperCase()" classname="com.cps3230.assignment.payment.gateway.CcInfoTests" time="0.001"/>
   <testcase name="verifyPrefixLengthForAmericanExpressShouldBeThree()" classname="com.cps3230.assignment.payment.gateway.CcInfoTests" time="0.0"/>
-  <testcase name="verifyPrefixForCardNumberWhenCardNumberIsEmpty()" classname="com.cps3230.assignment.payment.gateway.CcInfoTests" time="0.001"/>
+  <testcase name="verifyPrefixForCardNumberWhenCardNumberIsEmpty()" classname="com.cps3230.assignment.payment.gateway.CcInfoTests" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

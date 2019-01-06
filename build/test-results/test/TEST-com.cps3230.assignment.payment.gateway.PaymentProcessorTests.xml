@@ -1,75 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" tests="60" skipped="0" failures="0" errors="0" timestamp="2019-01-04T10:39:22" hostname="pop-os" time="2.523">
+<testsuite name="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" tests="60" skipped="0" failures="0" errors="0" timestamp="2019-01-05T16:26:37" hostname="pop-os" time="2.583">
   <properties/>
-  <testcase name="checkProcessPaymentWithValidTransactionAndCaptureFailureTransactionExistsButSevenDayPeriodExpired()" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.301"/>
-  <testcase name="checkProcessPaymentWithValidTransactionAndCaptureFailureTransactionDoesNotExist()" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.002"/>
-  <testcase name="testCreditCardDetailsWithInvalidDates(String)[1]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.01"/>
+  <testcase name="checkProcessPaymentWithValidTransactionAndCaptureFailureTransactionExistsButSevenDayPeriodExpired()" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.345"/>
+  <testcase name="checkProcessPaymentWithValidTransactionAndCaptureFailureTransactionDoesNotExist()" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.003"/>
+  <testcase name="testCreditCardDetailsWithInvalidDates(String)[1]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.009"/>
   <testcase name="testCreditCardDetailsWithInvalidDates(String)[2]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.001"/>
   <testcase name="testCreditCardDetailsWithInvalidDates(String)[3]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.0"/>
-  <testcase name="testCreditCardDetailsWithInvalidDates(String)[4]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.001"/>
+  <testcase name="testCreditCardDetailsWithInvalidDates(String)[4]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.0"/>
   <testcase name="assertUpdateTransactionsWithAlreadyCapturedTransactions()" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.003"/>
   <testcase name="testOfflineVerificationWithInvvalidPrefixes(String)[1]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.001"/>
-  <testcase name="testOfflineVerificationWithInvvalidPrefixes(String)[2]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.001"/>
-  <testcase name="checkProcessPaymentReturnsStatusCodeTwoWhenCaptureIsDelayedPastTimeOut()" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="1.004"/>
+  <testcase name="testOfflineVerificationWithInvvalidPrefixes(String)[2]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.0"/>
+  <testcase name="checkProcessPaymentReturnsStatusCodeTwoWhenCaptureIsDelayedPastTimeOut()" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="1.005"/>
   <testcase name="checkProcessPaymentWithValidTransactionAndCaptureFailureTransactionExistsButUnknownCaptureError()" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.005"/>
   <testcase name="checkProcessPaymentWithValidTransactionAndCaptureFailureTransactionExistsButAlreadyCaptured()" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.002"/>
-  <testcase name="runModelTests()" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.095"/>
-  <testcase name="checkOfflineVerificationWithInvalidCardBrands()" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.0"/>
+  <testcase name="runModelTests()" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.1"/>
+  <testcase name="checkOfflineVerificationWithInvalidCardBrands()" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.001"/>
   <testcase name="checkRefundFailsIfTransactionNotCaptured()" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.001"/>
   <testcase name="checkProcessPaymentWhenAuthFailsBecauseOfRandomError()" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.003"/>
-  <testcase name="checkOfflineValidationWhenObjectHasEmptyFields(CcInfo)[1]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.001"/>
-  <testcase name="checkOfflineValidationWhenObjectHasEmptyFields(CcInfo)[2]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.001"/>
-  <testcase name="checkOfflineValidationWhenObjectHasEmptyFields(CcInfo)[3]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.001"/>
+  <testcase name="checkOfflineValidationWhenObjectHasEmptyFields(CcInfo)[1]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.0"/>
+  <testcase name="checkOfflineValidationWhenObjectHasEmptyFields(CcInfo)[2]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.0"/>
+  <testcase name="checkOfflineValidationWhenObjectHasEmptyFields(CcInfo)[3]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.0"/>
   <testcase name="checkOfflineValidationWhenObjectHasEmptyFields(CcInfo)[4]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.0"/>
-  <testcase name="checkOfflineValidationWhenObjectHasEmptyFields(CcInfo)[5]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.0"/>
-  <testcase name="checkOfflineValidationWhenObjectHasEmptyFields(CcInfo)[6]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.0"/>
-  <testcase name="checkOfflineValidationWhenObjectHasEmptyFields(CcInfo)[7]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.001"/>
+  <testcase name="checkOfflineValidationWhenObjectHasEmptyFields(CcInfo)[5]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.001"/>
+  <testcase name="checkOfflineValidationWhenObjectHasEmptyFields(CcInfo)[6]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.001"/>
+  <testcase name="checkOfflineValidationWhenObjectHasEmptyFields(CcInfo)[7]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.0"/>
   <testcase name="checkOfflineValidationWhenObjectHasEmptyFields(CcInfo)[8]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.0"/>
-  <testcase name="checkOfflineValidationWhenObjectHasEmptyFields(CcInfo)[9]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.0"/>
+  <testcase name="checkOfflineValidationWhenObjectHasEmptyFields(CcInfo)[9]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.001"/>
   <testcase name="checkOfflineValidationWhenObjectHasEmptyFields(CcInfo)[10]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.0"/>
   <testcase name="checkOfflineValidationWhenObjectHasEmptyFields(CcInfo)[11]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.0"/>
   <testcase name="checkOfflineValidationWhenObjectHasEmptyFields(CcInfo)[12]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.0"/>
   <testcase name="checkOfflineVerificationWithInvalidCardNumbers(String)[1]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.001"/>
-  <testcase name="checkOfflineVerificationWithInvalidCardNumbers(String)[2]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.0"/>
-  <testcase name="checkOfflineVerificationWithInvalidCardNumbers(String)[3]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.001"/>
-  <testcase name="checkProcessPaymentReturnsOkWhenPaymentCleared()" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.003"/>
+  <testcase name="checkOfflineVerificationWithInvalidCardNumbers(String)[2]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.001"/>
+  <testcase name="checkOfflineVerificationWithInvalidCardNumbers(String)[3]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.0"/>
+  <testcase name="checkProcessPaymentReturnsOkWhenPaymentCleared()" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.002"/>
   <testcase name="assertUpdateTransactionsVoidsAuthorizedTransactions()" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.002"/>
   <testcase name="checkOfflineValidationWhenCardIsExpired()" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.001"/>
-  <testcase name="checkProcessPaymentWhenAuthFailsBecauseOfSomeBankError()" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.002"/>
-  <testcase name="checkIfBankProxyAuthIsBeingCalledFromProcessPayment()" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.006"/>
-  <testcase name="checkProcessPaymentFailsWhenAuthorisationFailsBecauseBankDetailsInvalid()" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.001"/>
+  <testcase name="checkProcessPaymentWhenAuthFailsBecauseOfSomeBankError()" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.001"/>
+  <testcase name="checkIfBankProxyAuthIsBeingCalledFromProcessPayment()" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.007"/>
+  <testcase name="checkProcessPaymentFailsWhenAuthorisationFailsBecauseBankDetailsInvalid()" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.002"/>
   <testcase name="assertRefundWorksWithCapturedTransaction()" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.0"/>
   <testcase name="checkProcessPaymentVerifiesCreditCardDetails(CcInfo)[1]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.001"/>
-  <testcase name="checkProcessPaymentVerifiesCreditCardDetails(CcInfo)[2]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.003"/>
+  <testcase name="checkProcessPaymentVerifiesCreditCardDetails(CcInfo)[2]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.001"/>
   <testcase name="checkProcessPaymentVerifiesCreditCardDetails(CcInfo)[3]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.001"/>
-  <testcase name="checkProcessPaymentVerifiesCreditCardDetails(CcInfo)[4]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.001"/>
-  <testcase name="checkOfflineValidationWithValidCreditCardDetails(CcInfo)[1]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.001"/>
-  <testcase name="checkOfflineValidationWithValidCreditCardDetails(CcInfo)[2]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.001"/>
-  <testcase name="checkOfflineValidationWithValidCreditCardDetails(CcInfo)[3]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.001"/>
+  <testcase name="checkProcessPaymentVerifiesCreditCardDetails(CcInfo)[4]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.002"/>
+  <testcase name="checkOfflineValidationWithValidCreditCardDetails(CcInfo)[1]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.0"/>
+  <testcase name="checkOfflineValidationWithValidCreditCardDetails(CcInfo)[2]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.0"/>
+  <testcase name="checkOfflineValidationWithValidCreditCardDetails(CcInfo)[3]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.0"/>
   <testcase name="checkLuhnFailsWhenCardIsNull()" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.0"/>
   <testcase name="assertUpdateTransactionsCapturesAuthorizedTransactions()" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.004"/>
   <testcase name="checkProcessPaymentWhenAuthFailsBecauseUserDoesNotHaveFunds()" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.002"/>
-  <testcase name="checkAuthorizedValuesStayAuthorizedOnUnknownCaptureError()" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.001"/>
+  <testcase name="checkAuthorizedValuesStayAuthorizedOnUnknownCaptureError()" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.002"/>
   <testcase name="assertGetConnectionReturnsADatabaseConnection()" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.0"/>
   <testcase name="checkLuhnWorksCorrectlyWithValidCards(String)[1]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.0"/>
   <testcase name="checkLuhnWorksCorrectlyWithValidCards(String)[2]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.0"/>
-  <testcase name="checkLuhnWorksCorrectlyWithValidCards(String)[3]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.0"/>
+  <testcase name="checkLuhnWorksCorrectlyWithValidCards(String)[3]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.001"/>
   <testcase name="checkLuhnWorksCorrectlyWithValidCards(String)[4]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.001"/>
   <testcase name="checkLuhnWorksCorrectlyWithValidCards(String)[5]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.001"/>
-  <testcase name="checkLuhnValidationFailsWithInvalidCards(String)[1]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.0"/>
-  <testcase name="checkLuhnValidationFailsWithInvalidCards(String)[2]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.0"/>
+  <testcase name="checkLuhnValidationFailsWithInvalidCards(String)[1]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.001"/>
+  <testcase name="checkLuhnValidationFailsWithInvalidCards(String)[2]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.001"/>
   <testcase name="checkLuhnValidationFailsWithInvalidCards(String)[3]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.001"/>
   <testcase name="checkLuhnValidationFailsWithInvalidCards(String)[4]" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="0.001"/>
-  <testcase name="checkProcessPaymentReturnsStatusCodeTwoWhenAuthorizeIsDelayedPastTimeOut()" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="1.002"/>
-  <system-out><![CDATA[11:39:22.424 [Test worker] INFO  - Could not captureCallable transaction
-11:39:22.433 [Test worker] INFO  - Could not captureCallable transaction
-11:39:23.470 [Test worker] INFO  - Bank error Requests timed out
-11:39:23.478 [Test worker] INFO  - Could not captureCallable transaction
-11:39:23.496 [pool-10-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-11:39:23.501 [pool-11-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-11:39:23.504 [pool-12-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-11:39:23.507 [pool-13-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-11:39:23.515 [pool-19-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+  <testcase name="checkProcessPaymentReturnsStatusCodeTwoWhenAuthorizeIsDelayedPastTimeOut()" classname="com.cps3230.assignment.payment.gateway.PaymentProcessorTests" time="1.003"/>
+  <system-out><![CDATA[17:26:37.941 [Test worker] INFO  - Could not captureCallable transaction
+17:26:37.950 [Test worker] INFO  - Could not captureCallable transaction
+17:26:38.995 [Test worker] INFO  - Bank error Requests timed out
+17:26:39.002 [Test worker] INFO  - Could not captureCallable transaction
+17:26:39.025 [pool-10-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+17:26:39.029 [pool-11-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+17:26:39.032 [pool-12-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+17:26:39.035 [pool-13-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+17:26:39.044 [pool-19-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
 done (OFFLINE_VERIFICATION, validate, AUTHORISE)
 done (AUTHORISE, authorize, CAPTURE)
@@ -77,23 +77,23 @@ done (CAPTURE, sevenDayPeriodExpired, VOID)
 done Forced reset(true)
 done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
 done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-11:39:23.522 [pool-22-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+17:26:39.053 [pool-22-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
 done Forced reset(true)
 done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
 done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
 done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-11:39:23.524 [pool-23-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+17:26:39.056 [pool-23-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
 done Forced reset(true)
 done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-11:39:23.525 [pool-24-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+17:26:39.057 [pool-24-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
 done Forced reset(true)
 done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
 done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
 done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-11:39:23.528 [pool-25-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+17:26:39.060 [pool-25-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
 done Forced reset(true)
 done (OFFLINE_VERIFICATION, validate, AUTHORISE)
@@ -108,7 +108,7 @@ done (CAPTURE, capture, CAPTURED)
 done (CAPTURED, refund, REFUND)
 done Forced reset(true)
 done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-11:39:23.535 [pool-31-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+17:26:39.072 [pool-31-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
 done Forced reset(true)
 done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
@@ -116,34 +116,34 @@ done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
 done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
 done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
 done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-11:39:23.537 [pool-32-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+17:26:39.074 [pool-32-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
 done Forced reset(true)
 done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-11:39:23.538 [pool-33-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+17:26:39.075 [pool-33-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
 done Forced reset(true)
 done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
 done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-11:39:23.540 [pool-34-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+17:26:39.078 [pool-34-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
 done Random reset(true)
 done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
 done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
 done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-11:39:23.544 [pool-35-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+17:26:39.080 [pool-35-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
 done Forced reset(true)
 done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
 done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
 done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
 done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-11:39:23.550 [pool-36-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+17:26:39.083 [pool-36-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
 done Forced reset(true)
 done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
 done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-11:39:23.552 [pool-37-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+17:26:39.085 [pool-37-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
 done Forced reset(true)
 done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
@@ -151,7 +151,7 @@ done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
 done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
 done Random reset(true)
 done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-11:39:23.557 [pool-38-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+17:26:39.087 [pool-38-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
 done Forced reset(true)
 done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
@@ -160,16 +160,16 @@ done (AUTHORISE, authorize, CAPTURE)
 done (CAPTURE, sevenDayPeriodExpired, VOID)
 done Forced reset(true)
 done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-11:39:23.561 [pool-41-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+17:26:39.092 [pool-41-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
 done Forced reset(true)
 done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
 done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-11:39:23.565 [pool-42-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+17:26:39.094 [pool-42-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
 done Forced reset(true)
 done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-11:39:23.566 [pool-43-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+17:26:39.095 [pool-43-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
 done Forced reset(true)
 done Random reset(true)
@@ -181,31 +181,31 @@ done (AUTHORISE, authorize, CAPTURE)
 done (CAPTURE, transactionIdDoesNotExist, BANK_ERROR)
 done Forced reset(true)
 done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-11:39:23.574 [pool-46-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+17:26:39.102 [pool-46-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
 done Forced reset(true)
 done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-11:39:23.575 [pool-47-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+17:26:39.104 [pool-47-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
 action coverage: 10/10
 state coverage: 7/7
 transition coverage: 10/10
-11:39:23.578 [Test worker] INFO  - Tried to refund an un captured transaction with ID 11
-11:39:23.581 [pool-48-thread-2] INFO  - Bank error - bank returned status code -4 - payment rejected
-11:39:23.581 [Test worker] ERROR  - Auth request failed
-11:39:23.611 [pool-51-thread-2] INFO  - Bank error - bank returned status code -3 - payment rejected
-11:39:23.611 [Test worker] ERROR  - Auth request failed
-11:39:23.614 [pool-52-thread-2] INFO  - Bank error - bank returned status code 0 - payment rejected
-11:39:23.614 [Test worker] ERROR  - Auth request failed
-11:39:23.619 [pool-53-thread-2] INFO  - Bank error - bank returned status code -1 - payment rejected
-11:39:23.619 [Test worker] ERROR  - Auth request failed
-11:39:23.622 [Test worker] INFO  - The card details are invalid with status code 6 - payment rejected
-11:39:23.625 [Test worker] INFO  - The card details are invalid with status code 2 - payment rejected
-11:39:23.627 [Test worker] INFO  - The card details are invalid with status code 3 - payment rejected
-11:39:23.628 [Test worker] INFO  - The card details are invalid with status code 3 - payment rejected
-11:39:23.639 [pool-59-thread-2] INFO  - Bank error - bank returned status code -2 - payment rejected
-11:39:23.639 [Test worker] ERROR  - Auth request failed
-11:39:24.652 [Test worker] INFO  - Bank error Requests timed out
+17:26:39.107 [Test worker] INFO  - Tried to refund an un captured transaction with ID 11
+17:26:39.110 [pool-48-thread-2] INFO  - Bank error - bank returned status code -4 - payment rejected
+17:26:39.110 [Test worker] ERROR  - Auth request failed
+17:26:39.138 [pool-51-thread-2] INFO  - Bank error - bank returned status code -3 - payment rejected
+17:26:39.138 [Test worker] ERROR  - Auth request failed
+17:26:39.143 [pool-52-thread-2] INFO  - Bank error - bank returned status code 0 - payment rejected
+17:26:39.143 [Test worker] ERROR  - Auth request failed
+17:26:39.148 [pool-53-thread-2] INFO  - Bank error - bank returned status code -1 - payment rejected
+17:26:39.148 [Test worker] ERROR  - Auth request failed
+17:26:39.152 [Test worker] INFO  - The card details are invalid with status code 6 - payment rejected
+17:26:39.154 [Test worker] INFO  - The card details are invalid with status code 2 - payment rejected
+17:26:39.155 [Test worker] INFO  - The card details are invalid with status code 3 - payment rejected
+17:26:39.158 [Test worker] INFO  - The card details are invalid with status code 3 - payment rejected
+17:26:39.169 [pool-59-thread-2] INFO  - Bank error - bank returned status code -2 - payment rejected
+17:26:39.169 [Test worker] ERROR  - Auth request failed
+17:26:40.184 [Test worker] INFO  - Bank error Requests timed out
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

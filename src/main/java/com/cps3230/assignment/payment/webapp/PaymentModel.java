@@ -5,6 +5,7 @@ import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.format.annotation.DateTimeFormat;
 
 public class PaymentModel {
@@ -14,7 +15,8 @@ public class PaymentModel {
   private String cardNumber;
   private String cardExpiryDate;
   private String cardCvv;
-  private long amount;
+  @Value("0")
+  private String amount;
   private String errorMsg;
 
   public String getErrorMsg() {
@@ -73,12 +75,16 @@ public class PaymentModel {
     this.cardCvv = cardCvv;
   }
 
-  public long getAmount() {
+  public String getAmount() {
     return amount;
   }
 
-  public void setAmount(long amount) {
-    this.amount = amount;
+  public void setAmount(String amount) {
+    if (!amount.trim().isEmpty()) {
+      this.amount = amount;
+    } else {
+      this.amount = "";
+    }
   }
 
   public List<String> getEmptyFields() throws IllegalAccessException {

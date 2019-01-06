@@ -24,6 +24,10 @@ public class TransactionDatabase implements DatabaseConnection {
     return true;
   }
 
+  /**
+   * A method that returns a map instance of the database.
+   * @return a map representation of the items in the database.
+   */
   @Override
   public Map<Long, Transaction> getDatabase() {
     return database;

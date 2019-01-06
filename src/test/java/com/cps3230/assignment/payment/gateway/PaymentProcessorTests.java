@@ -8,6 +8,7 @@ import static org.mockito.Mockito.when;
 import com.cps3230.assignment.payment.gateway.interfaces.BankProxy;
 import com.cps3230.assignment.payment.gateway.interfaces.DatabaseConnection;
 import com.cps3230.assignment.payment.gateway.models.TransactionModel;
+import com.cps3230.assignment.payment.gateway.spies.DatabaseSpy;
 import com.cps3230.assignment.payment.gateway.stubs.DateIn2018Stub;
 import java.text.SimpleDateFormat;
 import java.util.HashMap;
@@ -16,9 +17,7 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Stream;
-import nz.ac.waikato.modeljunit.AllRoundTester;
 import nz.ac.waikato.modeljunit.GreedyTester;
-import nz.ac.waikato.modeljunit.RandomTester;
 import nz.ac.waikato.modeljunit.StopOnFailureListener;
 import nz.ac.waikato.modeljunit.Tester;
 import nz.ac.waikato.modeljunit.VerboseListener;
@@ -181,14 +180,14 @@ class PaymentProcessorTests {
   }
 
   @ParameterizedTest
-  @MethodSource("generateInvaidCreditCardDetails")
-  void checkProcessPaymentVerifiesCreditCardDetails(CcInfo card)
+  @MethodSource("generateCreditCardDetailsWithInvalidCardTypesAndPrefixes")
+  void checkProcessPaymentVerifiesCreditCardDetailsWithInvalidCardTypeAndCardNumber(CcInfo card)
       throws ExecutionException, InterruptedException {
     DateIn2018Stub date = new DateIn2018Stub();
     Assertions.assertEquals(1, processor.processPayment(card, 10, date.getTime()));
   }
 
-  private static Stream<Arguments> generateInvaidCreditCardDetails() {
+  private static Stream<Arguments> generateCreditCardDetailsWithInvalidCardTypesAndPrefixes() {
     return Stream.of(
         Arguments.of(new CcInfo("Test User", "", "AMERICAN_EXPRESS", "371449635398431",
             "10/20", "111")),
@@ -264,7 +263,7 @@ class PaymentProcessorTests {
   }
 
   @Test
-  // Already captred transactions should not fail the process payment
+  // Already captured transactions should not fail the process payment
   void checkProcessPaymentWithValidTransactionAndCaptureFailureTransactionExistsButAlreadyCaptured()
       throws ExecutionException, InterruptedException {
     DateIn2018Stub date = new DateIn2018Stub();
@@ -364,6 +363,39 @@ class PaymentProcessorTests {
     processor.setBankProxy(proxy);
     Assertions.assertEquals(0, processor.processPayment(testCard, 10, date.getTime()));
   }
+
+  @Test
+  void verifyTheTransactionDatabaseIsAccessedWhenPaymentAuthorized()
+      throws ExecutionException, InterruptedException {
+    DateIn2018Stub date = new DateIn2018Stub();
+    DatabaseSpy databaseSpy = new DatabaseSpy();
+    BankProxy proxy = spy(BankProxy.class);
+    CcInfo testCard = new CcInfo("Test User", "test address", "AMERICAN_EXPRESS", "371449635398431",
+        "10/20", "111");
+    when(proxy.auth(testCard, 10)).thenReturn((long)111);
+    processor.setBankProxy(proxy);
+    processor.setConnection(databaseSpy);
+    processor.processPayment(testCard, 10, date.getTime());
+    Assertions.assertTrue(databaseSpy.isAccessed(), "Transaction should be accessed");
+  }
+
+  @Test
+  void verifyTheTransactionDatabaseIsAccessedWhenPaymentCleared()
+      throws ExecutionException, InterruptedException {
+    DateIn2018Stub date = new DateIn2018Stub();
+    DatabaseSpy databaseSpy = new DatabaseSpy();
+    BankProxy proxy = spy(BankProxy.class);
+    CcInfo testCard = new CcInfo("Test User", "test address", "AMERICAN_EXPRESS", "371449635398431",
+        "10/20", "111");
+    when(proxy.auth(testCard, 10)).thenReturn((long)111);
+    when(proxy.capture(111)).thenReturn(0);
+    processor.setBankProxy(proxy);
+    processor.setConnection(databaseSpy);
+    processor.processPayment(testCard, 10, date.getTime());
+    Assertions.assertTrue(databaseSpy.isAccessed(), "Transaction should be accessed");
+  }
+
+
 
   @Test
   void assertGetConnectionReturnsADatabaseConnection() {
@@ -469,20 +501,6 @@ class PaymentProcessorTests {
     when(proxy.refund((long)11, 10)).thenReturn(0);
     processor.setBankProxy(proxy);
     Assertions.assertEquals("REFUNDED", processor.refund(transaction).getState());
-  }
-
-  @Test
-  void runModelTests() {
-    TransactionModel model = new TransactionModel();
-    Tester tester = new GreedyTester(model);
-    tester.buildGraph();
-    tester.addListener(new VerboseListener());
-    tester.addListener(new StopOnFailureListener());
-    tester.addCoverageMetric(new TransitionCoverage());
-    tester.addCoverageMetric(new StateCoverage());
-    tester.addCoverageMetric(new ActionCoverage());
-    tester.generate(100);
-    tester.printCoverage();
   }
 
 }

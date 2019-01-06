@@ -4,6 +4,7 @@ import com.cps3230.assignment.payment.gateway.CcInfo;
 import com.cps3230.assignment.payment.gateway.PaymentProcessor;
 import com.cps3230.assignment.payment.gateway.enums.CardBrands;
 import com.cps3230.assignment.payment.gateway.enums.CardValidationStatuses;
+import java.text.ParseException;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
 import java.util.stream.Collectors;
@@ -38,7 +39,8 @@ public class PaymentProcessorController {
   public String paymentSubmit(PaymentModel payment, Model model) {
     CcInfo info = new CcInfo(payment.getCustomerName(), payment.getCustomerAddress(), payment.getCardType(), payment.getCardNumber(), String.valueOf(payment.getCardExpiryDate()), payment.getCardCvv());
     try {
-      int paymentResult = processor.processPayment(info, payment.getAmount());
+      long amount;
+      int paymentResult = processor.processPayment(info, Long.parseLong(payment.getAmount()));
       if (paymentResult == 0) {
         payment = new PaymentModel();
         payment.setErrorMsg("Payment successful");
@@ -50,7 +52,7 @@ public class PaymentProcessorController {
             break;
           }
           case CARD_EXPIRED: {
-            payment.setErrorMsg("Card is Expired");
+            payment.setErrorMsg("Date is invalid");
             break;
           }
           case LUHN_FAILURE: {
@@ -58,11 +60,11 @@ public class PaymentProcessorController {
             break;
           }
           case PREFIX_NOT_VALID: {
-            payment.setErrorMsg("The prefix does not match the card type");
+            payment.setErrorMsg("The card number's prefix does not match the card type");
             break;
           }
           case DATE_PARSE_FAILURE: {
-            payment.setErrorMsg("The date is in an invalid format. Should be mm/YY");
+            payment.setErrorMsg("Date is invalid");
             break;
           }
           default: {
@@ -74,6 +76,9 @@ public class PaymentProcessorController {
       }
     } catch (ExecutionException | InterruptedException | IllegalAccessException e) {
       LOGGER.error(e.getLocalizedMessage());
+      payment.setErrorMsg("Error");
+    } catch (NumberFormatException e) {
+      payment.setErrorMsg("Empty fields amount");
     }
     model.addAttribute("paymentModel", payment);
     model.addAttribute("cardBrands", cardBrands);
