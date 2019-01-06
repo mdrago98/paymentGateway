@@ -3,8 +3,10 @@ package com.cps3230.assignment.webapp.pageobjects;
 import com.cps3230.assignment.webapp.EntryObject;
 import com.cps3230.assignment.webapp.utils.BrowserDriver;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class PaymentWebappPageObject {
   private WebDriver driver;
@@ -30,13 +32,12 @@ public class PaymentWebappPageObject {
 
   public void submitDetails() throws InterruptedException {
     driver.findElement(By.name("submit")).submit();
-//    WebDriverWait wait = new WebDriverWait(driver, 60);
-//    wait.until((input) -> ((JavascriptExecutor) input).executeScript("return document.readyState").equals("complete"));
+    WebDriverWait wait = new WebDriverWait(driver, 60);
+    wait.until((input) -> ((JavascriptExecutor) input).executeScript("return document.readyState").equals("complete"));
   }
 
   public void enterDetailsWithEmptyFields(EntryObject entry, String fieldNameToIgnore) {
     enterDetails(entry);
-    // clear field
     driver.findElement(By.name(fieldNameToIgnore)).clear();
   }
 

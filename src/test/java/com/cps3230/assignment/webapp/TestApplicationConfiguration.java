@@ -15,7 +15,6 @@ import org.springframework.context.annotation.Primary;
 @Configuration
 public class TestApplicationConfiguration {
 
-  // "Test User", "Test Address", "AMERICAN_EXPRESS", "371449635398431", "10/20", "111", "10"
   @Bean
   @Primary
   public PaymentProcessor getPaymentProcessor() {

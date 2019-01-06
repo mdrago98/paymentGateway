@@ -49,15 +49,6 @@ public class PaymentProcessorAdaptor {
     return processor.authorize(testCreditCardDetails, 10);
   }
 
-  public Transaction bankDetailsInvalid() throws ExecutionException, InterruptedException {
-    CcInfo testCreditCardDetails = new CcInfo("Test User", "Test address", "AMERICAN_EXPRESS", "371449635398431", "10/20",
-        "111");
-    BankProxy mockProxy = mock(BankProxy.class);
-    when(mockProxy.auth(testCreditCardDetails, 10)).thenReturn((long) -1);
-    processor.setBankProxy(mockProxy);
-    return processor.authorize(testCreditCardDetails, 10);
-  }
-
   public Transaction tryToRecaptureBecauseBankError()
       throws ExecutionException, InterruptedException {
     CcInfo testCreditCardDetails = new CcInfo("Test User", "Test address", "AMERICAN_EXPRESS", "371449635398431", "10/20",

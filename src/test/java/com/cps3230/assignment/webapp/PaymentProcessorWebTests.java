@@ -16,7 +16,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = {Application.class}, webEnvironment = WebEnvironment.DEFINED_PORT)
 @ContextConfiguration(classes = {TestApplicationConfiguration.class})
-public class SpringBootBaseIntegrationTest {
+public class PaymentProcessorWebTests {
 
   @LocalServerPort
   protected int port;
