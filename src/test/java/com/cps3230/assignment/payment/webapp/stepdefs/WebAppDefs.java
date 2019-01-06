@@ -1,7 +1,7 @@
-package com.cps3230.assignment.webapp.stepdefs;
+package com.cps3230.assignment.payment.webapp.stepdefs;
 
-import com.cps3230.assignment.webapp.EntryObject;
-import com.cps3230.assignment.webapp.pageobjects.PaymentWebappPageObject;
+import com.cps3230.assignment.payment.webapp.EntryObject;
+import com.cps3230.assignment.payment.webapp.pageobjects.PaymentWebappPageObject;
 import cucumber.api.CucumberOptions;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -12,44 +12,44 @@ import org.junit.jupiter.api.Assertions;
 
 
 @Ignore
-@CucumberOptions(features = {"src/test/resources/features/webapp_features.feature"}, glue = "com.cps3230.assignment.webapp.stepdefs", plugin ={"pretty"})
+@CucumberOptions(features = {"src/test/resources/features/webapp_features.feature"}, glue = "com.cps3230.assignment.payment.webapp.stepdefs", plugin ={"pretty"})
 public class WebAppDefs {
 
   private PaymentWebappPageObject webappPageObject = new PaymentWebappPageObject();
 
   @Given("I am a user trying to process a payment")
-  public void iAmAUserTryingToProcessAPayment() {
+  public void userTryingToProcessAPayment() {
     webappPageObject.enterPage();
   }
 
   @When("I submit correct details")
-  public void iSubmitCorrectDetails() throws InterruptedException {
+  public void submitCorrectDetails() throws InterruptedException {
     EntryObject entry = new EntryObject("Test User", "Test Address", "AMERICAN_EXPRESS", "371449635398431", "10/20", "111", "10");
     webappPageObject.enterDetails(entry);
     webappPageObject.submitDetails();
   }
 
   @Then("I should be told that the payment was successful")
-  public void iShouldBeToldThatThePaymentWasSuccessful() {
+  public void shouldBeToldThatThePaymentWasSuccessful() {
     String message = webappPageObject.getMessages();
     Assertions.assertEquals("Payment successful", message, "Success message should appear on valid payment");
   }
 
   @When("I submit a form with all data except {string}")
-  public void iSubmitFormWithAllDataExcept(String fieldName) throws InterruptedException {
+  public void submitFormWithAllDataExcept(String fieldName) throws InterruptedException {
     EntryObject entry = new EntryObject("Test User", "Test Address", "AMERICAN_EXPRESS", "371449635398431", "10/20", "111", "10");
     webappPageObject.enterDetailsWithEmptyFields(entry, fieldName);
     webappPageObject.submitDetails();
   }
 
   @Then("I should be told that {string} is required")
-  public void iShouldBeToldStringIsRequired(String fieldName) {
+  public void shouldBeToldStringIsRequired(String fieldName) {
     String message = webappPageObject.getMessages();
     Assertions.assertEquals("Empty fields " + fieldName, message);
   }
 
   @When("I submit a form with all data but with an {string}")
-  public void iSubmitFormWithAllDataButWithAnInvalidCard(String invalidCard)
+  public void submitFormWithAllDataButWithAnInvalidCard(String invalidCard)
       throws InterruptedException {
     EntryObject entry = new EntryObject("Test User", "Test Address", "AMERICAN_EXPRESS", invalidCard, "10/20", "111", "10");
     webappPageObject.enterDetails(entry);
@@ -57,29 +57,29 @@ public class WebAppDefs {
   }
 
   @Then("I should be told that the card is invalid")
-  public void iShouldBeToldThatTheCardIsInvalid() {
+  public void shouldBeToldThatTheCardIsInvalid() {
     Assertions.assertEquals("Card is invalid", webappPageObject.getMessages(), "gateway should indicate if the card is invalid");
   }
 
   @Then("I should be told that the card prefix does not match")
-  public void iShouldBeToldThatTheCardPrefixDoesNotMatch() {
+  public void shouldBeToldThatTheCardPrefixDoesNotMatch() {
     Assertions.assertEquals("The card number's prefix does not match the card type", webappPageObject.getMessages(), "gateway should indicate if the card is invalid");
   }
 
   @When("I submit a form with all data but {string} is invalid")
-  public void iSubmitAFormWithAllDataButIsInvalid(String date) throws InterruptedException {
+  public void submitAFormWithAllDataButIsInvalid(String date) throws InterruptedException {
     EntryObject entry = new EntryObject("Test User", "Test Address", "AMERICAN_EXPRESS", "371449635398431", date, "111", "10");
     webappPageObject.enterDetails(entry);
     webappPageObject.submitDetails();
   }
 
   @Then("I should be told date is invalid")
-  public void iShouldBeToldDateIsInvalid() {
+  public void shouldBeToldDateIsInvalid() {
     Assertions.assertEquals("Date is invalid", webappPageObject.getMessages(), "Gateway should indicate the date is invalid");
   }
 
   @When("I submit a form with all data with {string} and {string}")
-  public void iSubmitAFormWithAllDataWithAnd(String cardNumber, String cardType) throws InterruptedException {
+  public void submitAFormWithAllDataWithAnd(String cardNumber, String cardType) throws InterruptedException {
     EntryObject entry = new EntryObject("Test User", "Test Address", cardType, cardNumber, "10/20", "111", "10");
     webappPageObject.enterDetails(entry);
     webappPageObject.submitDetails();

@@ -1,4 +1,4 @@
-package com.cps3230.assignment.webapp.utils;
+package com.cps3230.assignment.payment.webapp.utils;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

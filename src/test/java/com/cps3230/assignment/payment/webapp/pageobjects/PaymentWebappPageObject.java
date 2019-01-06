@@ -1,7 +1,8 @@
-package com.cps3230.assignment.webapp.pageobjects;
+package com.cps3230.assignment.payment.webapp.pageobjects;
 
-import com.cps3230.assignment.webapp.EntryObject;
-import com.cps3230.assignment.webapp.utils.BrowserDriver;
+
+import com.cps3230.assignment.payment.webapp.EntryObject;
+import com.cps3230.assignment.payment.webapp.utils.BrowserDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;

@@ -1,13 +1,13 @@
-d21:01:36.671 [pool-4-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-d21:01:36.681 [pool-5-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-d21:01:36.686 [pool-6-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-d21:01:36.692 [pool-7-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-e21:01:36.699 [pool-10-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-e21:01:36.706 [pool-13-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-e21:01:36.709 [pool-14-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-e21:01:36.716 [pool-17-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-e21:01:36.718 [pool-18-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-e21:01:36.726 [pool-19-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+d22:15:54.324 [pool-4-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+d22:15:54.331 [pool-5-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+d22:15:54.335 [pool-6-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+d22:15:54.340 [pool-7-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e22:15:54.346 [pool-10-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e22:15:54.351 [pool-13-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e22:15:54.354 [pool-14-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e22:15:54.360 [pool-17-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e22:15:54.361 [pool-18-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e22:15:54.369 [pool-19-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
 %done (AUTHORISE, authorize, CAPTURE)
 ,done (CAPTURE, sevenDayPeriodExpired, VOID)
@@ -21,7 +21,7 @@
 Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
 Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-e21:01:36.740 [pool-25-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e22:15:54.380 [pool-25-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 :done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
 done Random reset(true)
 Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
@@ -34,7 +34,7 @@
 >done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
 Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-e21:01:36.745 [pool-26-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e22:15:54.384 [pool-26-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 ;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
 done Forced reset(true)
 Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
@@ -42,7 +42,7 @@
 >done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
 Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-e21:01:36.748 [pool-27-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e22:15:54.387 [pool-27-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 :done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
 done Forced reset(true)
 >done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
@@ -55,7 +55,7 @@
 >done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
 done Random reset(true)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-e21:01:36.754 [pool-28-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e22:15:54.391 [pool-28-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 ;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
 done Forced reset(true)
 Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
@@ -69,7 +69,7 @@
 done Forced reset(true)
 Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-e21:01:36.763 [pool-31-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e22:15:54.397 [pool-31-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 ;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
 done Forced reset(true)
 Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
@@ -82,7 +82,7 @@
 done Forced reset(true)
 Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-e21:01:36.768 [pool-34-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e22:15:54.404 [pool-34-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 :done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
 done Forced reset(true)
 >done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
@@ -90,7 +90,7 @@
 >done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
 Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-e21:01:36.771 [pool-35-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e22:15:54.406 [pool-35-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 :done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
 done Forced reset(true)
 >done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
@@ -108,11 +108,11 @@
 >done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
 done Random reset(true)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-e21:01:36.779 [pool-38-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e22:15:54.413 [pool-38-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 ;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
 done Forced reset(true)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-e21:01:36.781 [pool-39-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e22:15:54.415 [pool-39-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 :done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
 done Forced reset(true)
 Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
@@ -144,7 +144,7 @@
 Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
 Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-e21:01:36.790 [pool-40-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e22:15:54.424 [pool-40-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 :done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
 done Forced reset(true)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
@@ -171,30 +171,30 @@
 action coverage: 15/15
 state coverage: 7/7
 transition coverage: 15/15
-e21:01:36.810 [pool-47-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-e21:01:36.812 [pool-48-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-e21:01:36.815 [pool-49-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-e21:01:36.819 [pool-52-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-e21:01:36.823 [pool-55-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-e21:01:36.824 [pool-56-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-e21:01:36.831 [pool-59-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-e21:01:36.832 [pool-60-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-e21:01:36.837 [pool-61-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-e21:01:36.845 [pool-67-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-e21:01:36.848 [pool-68-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-e21:01:36.850 [pool-69-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-e21:01:36.851 [pool-70-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-e21:01:36.859 [pool-71-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-e21:01:36.861 [pool-72-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-e21:01:36.867 [pool-75-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-e21:01:36.870 [pool-78-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-e21:01:36.872 [pool-79-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-e21:01:36.874 [pool-80-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-e21:01:36.875 [pool-81-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-e21:01:36.879 [pool-84-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-e21:01:36.882 [pool-85-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-e21:01:36.888 [pool-89-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-e21:01:36.889 [pool-90-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e22:15:54.440 [pool-47-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e22:15:54.442 [pool-48-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e22:15:54.445 [pool-49-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e22:15:54.449 [pool-52-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e22:15:54.453 [pool-55-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e22:15:54.455 [pool-56-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e22:15:54.461 [pool-59-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e22:15:54.463 [pool-60-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e22:15:54.466 [pool-61-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e22:15:54.473 [pool-67-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e22:15:54.476 [pool-68-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e22:15:54.477 [pool-69-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e22:15:54.479 [pool-70-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e22:15:54.481 [pool-71-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e22:15:54.483 [pool-72-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e22:15:54.490 [pool-75-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e22:15:54.494 [pool-78-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e22:15:54.496 [pool-79-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e22:15:54.498 [pool-80-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e22:15:54.500 [pool-81-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e22:15:54.505 [pool-84-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e22:15:54.510 [pool-85-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e22:15:54.515 [pool-89-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e22:15:54.518 [pool-90-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
 >done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
 Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
@@ -205,7 +205,7 @@
 Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
 >done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-e21:01:36.895 [pool-93-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e22:15:54.523 [pool-93-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 :done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
 done Forced reset(true)
 Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
@@ -213,7 +213,7 @@
 >done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
 Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-e21:01:36.897 [pool-94-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e22:15:54.525 [pool-94-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 :done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
 done Forced reset(true)
 >done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
@@ -226,7 +226,7 @@
 >done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
 done Random reset(true)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-e21:01:36.901 [pool-95-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e22:15:54.527 [pool-95-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 ;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
 done Forced reset(true)
 Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
@@ -240,7 +240,7 @@
 done Forced reset(true)
 Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-e21:01:36.906 [pool-98-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e22:15:54.530 [pool-98-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 ;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
 done Forced reset(true)
 Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
@@ -252,7 +252,7 @@
 done Forced reset(true)
 Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:36.910 [pool-101-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.532 [pool-101-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 :done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
 done Forced reset(true)
 >done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
@@ -260,7 +260,7 @@
 >done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
 Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:36.912 [pool-102-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.535 [pool-102-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 :done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
 done Forced reset(true)
 >done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
@@ -278,11 +278,11 @@
 >done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
 done Random reset(true)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:36.915 [pool-105-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.538 [pool-105-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 ;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
 done Forced reset(true)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:36.916 [pool-106-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.539 [pool-106-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 :done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
 done Forced reset(true)
 Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
@@ -314,7 +314,7 @@
 Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
 Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:36.920 [pool-107-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.543 [pool-107-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 :done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
 done Forced reset(true)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
@@ -337,7 +337,7 @@
 Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
 Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:36.926 [pool-113-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.550 [pool-113-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 ;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
 done Forced reset(true)
 Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
@@ -352,7 +352,7 @@
 Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
 done Random reset(true)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:36.928 [pool-114-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.553 [pool-114-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 ;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
 done Forced reset(true)
 Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
@@ -360,13 +360,13 @@
 Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
 Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:36.930 [pool-115-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.555 [pool-115-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 :done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
 done Forced reset(true)
 Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
 Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:36.932 [pool-116-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.556 [pool-116-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 :done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
 done Forced reset(true)
 Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
@@ -382,7 +382,7 @@
 >done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
 done Random reset(true)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:36.935 [pool-117-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.559 [pool-117-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 ;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
 done Forced reset(true)
 Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
@@ -405,7 +405,7 @@
 Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
 Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:36.939 [pool-118-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.563 [pool-118-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 ;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
 done Forced reset(true)
 Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
@@ -439,7 +439,7 @@
 >done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
 >done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:36.945 [pool-121-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.574 [pool-121-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 ;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
 done Random reset(true)
 >done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
@@ -451,7 +451,7 @@
  done (CAPTURED, refund, REFUND)
 done Forced reset(true)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:36.948 [pool-124-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.580 [pool-124-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 ;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
 done Forced reset(true)
 Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
@@ -459,7 +459,7 @@
 Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
 Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:36.950 [pool-125-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.582 [pool-125-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 ;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
 done Forced reset(true)
 Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
@@ -473,7 +473,7 @@
 Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
 Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:36.952 [pool-126-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.585 [pool-126-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 ;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
 done Forced reset(true)
 Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
@@ -481,7 +481,7 @@
 >done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
 Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:36.955 [pool-127-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.587 [pool-127-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 ;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
 done Forced reset(true)
 >done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
@@ -496,13 +496,13 @@
 Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
 Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:36.960 [pool-130-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.596 [pool-130-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 ;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
 done Random reset(true)
 Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
 >done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:36.962 [pool-131-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.598 [pool-131-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 :done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
 done Forced reset(true)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
@@ -517,7 +517,7 @@
 >done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
 Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:36.967 [pool-135-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.603 [pool-135-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 :done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
 done Forced reset(true)
 Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
@@ -528,7 +528,7 @@
 Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
 Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:36.969 [pool-136-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.606 [pool-136-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 ;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
 done Forced reset(true)
 >done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
@@ -541,7 +541,7 @@
 Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
 Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:36.973 [pool-139-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.612 [pool-139-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 ;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
 done Forced reset(true)
 Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
@@ -554,7 +554,7 @@
 done Random reset(true)
 done Random reset(true)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:36.974 [pool-140-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.616 [pool-140-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 :done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
 done Forced reset(true)
 >done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
@@ -565,7 +565,7 @@
 Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
 done Random reset(true)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:36.977 [pool-143-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.620 [pool-143-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 :done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
 done Forced reset(true)
 Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
@@ -583,13 +583,13 @@
 done Forced reset(true)
 Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:36.981 [pool-146-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.623 [pool-146-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 ;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
 done Forced reset(true)
 Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
 >done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:36.982 [pool-147-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.624 [pool-147-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 :done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
 done Forced reset(true)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
@@ -611,13 +611,13 @@
 Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
 Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:36.988 [pool-152-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.632 [pool-152-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 ;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
 done Forced reset(true)
 >done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
 Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:36.989 [pool-153-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.633 [pool-153-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 ;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
 done Forced reset(true)
 >done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
@@ -625,19 +625,19 @@
 Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
 Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:36.990 [pool-154-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.636 [pool-154-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 :done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
 action coverage: 15/15
 state coverage: 7/7
 transition coverage: 15/15
-f21:01:36.995 [pool-157-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-f21:01:36.996 [pool-158-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-f21:01:36.998 [pool-159-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-f21:01:36.999 [pool-160-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-f21:01:37.001 [pool-161-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-f21:01:37.009 [pool-168-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-f21:01:37.010 [pool-169-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-f21:01:37.011 [pool-170-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.640 [pool-157-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.642 [pool-158-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.644 [pool-159-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.648 [pool-160-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.650 [pool-161-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.661 [pool-168-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.663 [pool-169-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.668 [pool-170-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 done Random reset(true)
@@ -666,12 +666,12 @@
 Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:37.018 [pool-175-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.679 [pool-175-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 ;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 done Random reset(true)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:37.020 [pool-176-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.681 [pool-176-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 :done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
@@ -679,7 +679,7 @@
 Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:37.022 [pool-177-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.683 [pool-177-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 :done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
@@ -752,7 +752,7 @@
 Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:37.027 [pool-178-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.688 [pool-178-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 :done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
@@ -811,7 +811,7 @@
 Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:37.039 [pool-183-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.695 [pool-183-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 ;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
@@ -821,7 +821,7 @@
 Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:37.041 [pool-184-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.696 [pool-184-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 ;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
@@ -840,7 +840,7 @@
 done AllRoundTrips reset(true)
 done Random reset(true)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:37.042 [pool-185-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.700 [pool-185-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 ;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
@@ -848,7 +848,7 @@
 >done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:37.044 [pool-186-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.702 [pool-186-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 :done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
@@ -862,7 +862,7 @@
 Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:37.048 [pool-187-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.704 [pool-187-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 :done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
@@ -870,11 +870,11 @@
 Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:37.050 [pool-188-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.705 [pool-188-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 :done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:37.051 [pool-189-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.707 [pool-189-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 :done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
@@ -915,7 +915,7 @@
 done AllRoundTrips reset(true)
 done Random reset(true)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:37.056 [pool-192-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.715 [pool-192-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 ;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
@@ -931,7 +931,7 @@
 >done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:37.058 [pool-193-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.718 [pool-193-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 :done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
@@ -941,7 +941,7 @@
 Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:37.060 [pool-194-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.724 [pool-194-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 ;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
@@ -987,7 +987,7 @@
 Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:37.067 [pool-197-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.730 [pool-197-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 ;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 >done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
@@ -995,7 +995,7 @@
 Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:37.070 [pool-198-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.731 [pool-198-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 ;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
@@ -1015,7 +1015,7 @@
 Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:37.076 [pool-201-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.739 [pool-201-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 ;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
@@ -1035,7 +1035,7 @@
 >done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:37.078 [pool-202-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.740 [pool-202-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 ;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 done Random reset(true)
@@ -1051,15 +1051,15 @@
  done (CAPTURED, refund, REFUND)
 done Forced reset(true)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:37.082 [pool-205-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.746 [pool-205-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 ;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:37.083 [pool-206-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.747 [pool-206-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 ;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:37.086 [pool-207-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.747 [pool-207-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 ;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
@@ -1083,7 +1083,7 @@
 Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:37.090 [pool-210-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.752 [pool-210-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 ;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
@@ -1108,7 +1108,7 @@
 Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:37.094 [pool-213-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.756 [pool-213-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 ;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
@@ -1118,7 +1118,7 @@
 Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:37.097 [pool-216-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.758 [pool-216-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 :done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
@@ -1132,7 +1132,7 @@
 Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:37.102 [pool-219-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.766 [pool-219-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 ;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
@@ -1158,7 +1158,7 @@
 Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:37.107 [pool-224-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.772 [pool-224-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 ;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 done Random reset(true)
@@ -1167,7 +1167,7 @@
 >done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:37.108 [pool-225-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.772 [pool-225-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 :done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
@@ -1197,7 +1197,7 @@
 Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:37.116 [pool-228-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.775 [pool-228-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 :done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
@@ -1215,7 +1215,7 @@
 Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:37.117 [pool-229-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.776 [pool-229-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 ;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
@@ -1227,11 +1227,11 @@
 Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:37.118 [pool-230-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.777 [pool-230-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 :done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:37.120 [pool-231-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.777 [pool-231-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 ;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 >done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
@@ -1261,7 +1261,7 @@
 Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:37.122 [pool-232-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.779 [pool-232-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 ;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
@@ -1287,7 +1287,7 @@
 Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:37.125 [pool-235-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.784 [pool-235-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 ;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
@@ -1295,7 +1295,7 @@
 Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:37.126 [pool-236-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.787 [pool-236-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 ;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
@@ -1307,7 +1307,7 @@
 Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:37.128 [pool-237-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.788 [pool-237-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 :done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 >done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
@@ -1324,7 +1324,7 @@
 done Random reset(true)
 done Random reset(true)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:37.129 [pool-238-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.790 [pool-238-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 :done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
@@ -1334,14 +1334,14 @@
 Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:37.132 [pool-239-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.791 [pool-239-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 :done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 >done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 done Random reset(true)
 1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-f21:01:37.133 [pool-240-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f22:15:54.792 [pool-240-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
 :done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
 done AllRoundTrips reset(true)
 Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
@@ -1353,35 +1353,35 @@
 action coverage: 15/15
 state coverage: 0/7
 transition coverage: 15/15
-I21:01:37.144 [Test worker] INFO  - Could not captureCallable transaction
-I21:01:37.148 [Test worker] INFO  - Could not captureCallable transaction
-A21:01:38.194 [Test worker] INFO  - Bank error Requests timed out
-I21:01:38.201 [Test worker] INFO  - Could not captureCallable transaction
-Y21:01:38.212 [Test worker] INFO  - Tried to refund an un captured transaction with ID 11
-f21:01:38.217 [pool-250-thread-2] INFO  - Bank error - bank returned status code -4 - payment rejected
-821:01:38.217 [Test worker] ERROR  - Auth request failed
-)f21:01:38.250 [pool-254-thread-2] INFO  - Bank error - bank returned status code -3 - payment rejected
-)821:01:38.250 [Test worker] ERROR  - Auth request failed
-*e21:01:38.252 [pool-255-thread-2] INFO  - Bank error - bank returned status code 0 - payment rejected
-*821:01:38.252 [Test worker] ERROR  - Auth request failed
-+f21:01:38.258 [pool-256-thread-2] INFO  - Bank error - bank returned status code -1 - payment rejected
-+821:01:38.258 [Test worker] ERROR  - Auth request failed
-,f21:01:38.262 [Test worker] INFO  - The card details are invalid with status code 6 - payment rejected
--f21:01:38.264 [Test worker] INFO  - The card details are invalid with status code 2 - payment rejected
-.f21:01:38.267 [Test worker] INFO  - The card details are invalid with status code 3 - payment rejected
-/f21:01:38.269 [Test worker] INFO  - The card details are invalid with status code 3 - payment rejected
-6f21:01:38.286 [pool-262-thread-2] INFO  - Bank error - bank returned status code -2 - payment rejected
-6821:01:38.286 [Test worker] ERROR  - Auth request failed
-BA21:01:39.303 [Test worker] INFO  - Bank error Requests timed out
-b ÿ21:01:39.348 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.cps3230.assignment.webapp.SpringBootBaseIntegrationTest]
-b à21:01:39.348 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.cps3230.assignment.webapp.SpringBootBaseIntegrationTest]
-b ÿ21:01:39.349 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.cps3230.assignment.webapp.SpringBootBaseIntegrationTest]
-b à21:01:39.349 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.cps3230.assignment.webapp.SpringBootBaseIntegrationTest]
-b ¸21:01:39.352 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@410718f7 testClass = SpringBootBaseIntegrationTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@65871561 testClass = SpringBootBaseIntegrationTest, locations = '{}', classes = '{class com.cps3230.assignment.payment.webapp.Application, class com.cps3230.assignment.webapp.TestApplicationConfiguration}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@82f971, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@42ae7825, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@42a739b1, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@380b5432], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> false]], class annotated with @DirtiesContext [false] with mode [null].
-b ÿ21:01:39.352 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.cps3230.assignment.webapp.SpringBootBaseIntegrationTest]
-b à21:01:39.352 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.cps3230.assignment.webapp.SpringBootBaseIntegrationTest]
-b è21:01:39.354 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@410718f7 testClass = SpringBootBaseIntegrationTest, testInstance = com.cps3230.assignment.webapp.SpringBootBaseIntegrationTest@f859132, testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@65871561 testClass = SpringBootBaseIntegrationTest, locations = '{}', classes = '{class com.cps3230.assignment.payment.webapp.Application, class com.cps3230.assignment.webapp.TestApplicationConfiguration}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@82f971, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@42ae7825, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@42a739b1, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@380b5432], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> false]]].
-b ˜21:01:39.369 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}
+I22:15:54.800 [Test worker] INFO  - Could not captureCallable transaction
+I22:15:54.803 [Test worker] INFO  - Could not captureCallable transaction
+A22:15:55.843 [Test worker] INFO  - Bank error Requests timed out
+I22:15:55.845 [Test worker] INFO  - Could not captureCallable transaction
+Y22:15:55.849 [Test worker] INFO  - Tried to refund an un captured transaction with ID 11
+f22:15:55.851 [pool-250-thread-2] INFO  - Bank error - bank returned status code -4 - payment rejected
+822:15:55.851 [Test worker] ERROR  - Auth request failed
+)f22:15:55.871 [pool-254-thread-2] INFO  - Bank error - bank returned status code -3 - payment rejected
+)822:15:55.872 [Test worker] ERROR  - Auth request failed
+*e22:15:55.873 [pool-255-thread-2] INFO  - Bank error - bank returned status code 0 - payment rejected
+*822:15:55.873 [Test worker] ERROR  - Auth request failed
++f22:15:55.877 [pool-256-thread-2] INFO  - Bank error - bank returned status code -1 - payment rejected
++822:15:55.877 [Test worker] ERROR  - Auth request failed
+,f22:15:55.880 [Test worker] INFO  - The card details are invalid with status code 6 - payment rejected
+-f22:15:55.884 [Test worker] INFO  - The card details are invalid with status code 2 - payment rejected
+.f22:15:55.887 [Test worker] INFO  - The card details are invalid with status code 3 - payment rejected
+/f22:15:55.889 [Test worker] INFO  - The card details are invalid with status code 3 - payment rejected
+6f22:15:55.897 [pool-262-thread-2] INFO  - Bank error - bank returned status code -2 - payment rejected
+6822:15:55.897 [Test worker] ERROR  - Auth request failed
+BA22:15:56.906 [Test worker] INFO  - Bank error Requests timed out
+b €22:15:56.975 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.cps3230.assignment.payment.webapp.PaymentProcessorWebTests]
+b ã22:15:56.975 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.cps3230.assignment.payment.webapp.PaymentProcessorWebTests]
+b €22:15:56.976 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.cps3230.assignment.payment.webapp.PaymentProcessorWebTests]
+b ã22:15:56.976 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.cps3230.assignment.payment.webapp.PaymentProcessorWebTests]
+b Ù22:15:56.978 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@2ad56e4c testClass = PaymentProcessorWebTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@6cc0920f testClass = PaymentProcessorWebTests, locations = '{}', classes = '{class com.cps3230.assignment.payment.webapp.Application, class com.cps3230.assignment.webapp.TestApplicationConfiguration}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@2c49421f, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@52934fc4, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@497ec24f, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@2434320f], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> false]], class annotated with @DirtiesContext [false] with mode [null].
+b €22:15:56.979 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.cps3230.assignment.payment.webapp.PaymentProcessorWebTests]
+b ã22:15:56.979 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.cps3230.assignment.payment.webapp.PaymentProcessorWebTests]
+b ã22:15:56.982 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@2ad56e4c testClass = PaymentProcessorWebTests, testInstance = com.cps3230.assignment.payment.webapp.PaymentProcessorWebTests@2ef9c6a8, testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@6cc0920f testClass = PaymentProcessorWebTests, locations = '{}', classes = '{class com.cps3230.assignment.payment.webapp.Application, class com.cps3230.assignment.webapp.TestApplicationConfiguration}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@2c49421f, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@52934fc4, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@497ec24f, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@2434320f], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> false]]].
+b ˜22:15:57.000 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}
 b 
 b (  .   ____          _            __ _ _
 b ) /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -1391,43 +1391,43 @@
 b ) =========|_|==============|___/=/_/_/_/
 b + :: Spring Boot ::        (v2.1.1.RELEASE)
 b 
-b Ê2019-01-06 21:01:39.599  INFO 13934 --- [    Test worker] c.c.a.w.SpringBootBaseIntegrationTest    : Starting SpringBootBaseIntegrationTest on pop-os with PID 13934 (started by drago in /home/drago/IdeaProjects/TestingAssignment)
-b ¶2019-01-06 21:01:39.601  INFO 13934 --- [    Test worker] c.c.a.w.SpringBootBaseIntegrationTest    : No active profile set, falling back to default profiles: default
-b í2019-01-06 21:01:40.577  INFO 13934 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-b 2019-01-06 21:01:40.605  INFO 13934 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-b ì2019-01-06 21:01:40.606  INFO 13934 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
-b ˆ2019-01-06 21:01:40.616  INFO 13934 --- [    Test worker] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
-b ò2019-01-06 21:01:40.718  INFO 13934 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-b •2019-01-06 21:01:40.718  INFO 13934 --- [    Test worker] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1096 ms
-b ú2019-01-06 21:01:41.054  INFO 13934 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-b °2019-01-06 21:01:41.495  INFO 13934 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-b ¥2019-01-06 21:01:41.500  INFO 13934 --- [    Test worker] c.c.a.w.SpringBootBaseIntegrationTest    : Started SpringBootBaseIntegrationTest in 2.128 seconds (JVM running for 6.001)
- bc[Starting ChromeDriver 2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706) on port 19375
+b ·2019-01-06 22:15:57.182  INFO 10974 --- [    Test worker] c.c.a.p.webapp.PaymentProcessorWebTests  : Starting PaymentProcessorWebTests on pop-os with PID 10974 (started by drago in /home/drago/IdeaProjects/TestingAssignment)
+b ¶2019-01-06 22:15:57.184  INFO 10974 --- [    Test worker] c.c.a.p.webapp.PaymentProcessorWebTests  : No active profile set, falling back to default profiles: default
+b í2019-01-06 22:15:58.088  INFO 10974 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+b 2019-01-06 22:15:58.109  INFO 10974 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+b ì2019-01-06 22:15:58.110  INFO 10974 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+b ˆ2019-01-06 22:15:58.119  INFO 10974 --- [    Test worker] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+b ò2019-01-06 22:15:58.210  INFO 10974 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+b •2019-01-06 22:15:58.210  INFO 10974 --- [    Test worker] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1006 ms
+b ú2019-01-06 22:15:58.503  INFO 10974 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+b °2019-01-06 22:15:58.906  INFO 10974 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+b Ø2019-01-06 22:15:58.910  INFO 10974 --- [    Test worker] c.c.a.p.webapp.PaymentProcessorWebTests  : Started PaymentProcessorWebTests in 1.907 seconds (JVM running for 5.627)
+ bcZStarting ChromeDriver 2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706) on port 2597
  bc$Only local connections are allowed.
-bc{2019-01-06 21:01:42.570  INFO 13934 --- [ null to remote] o.o.selenium.remote.ProtocolHandshake    : Detected dialect: OSS
-bcü2019-01-06 21:01:42.659  INFO 13934 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-bcé2019-01-06 21:01:42.660  INFO 13934 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-bcá2019-01-06 21:01:42.681  INFO 13934 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 20 ms
-bcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbc®2019-01-06 21:01:44.839  INFO 13934 --- [nio-8080-exec-5]                                          : The card details are invalid with status code 6 - payment rejected
-bcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbc®2019-01-06 21:01:45.430  INFO 13934 --- [nio-8080-exec-7]                                          : The card details are invalid with status code 6 - payment rejected
-bcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbc®2019-01-06 21:01:46.017  INFO 13934 --- [nio-8080-exec-9]                                          : The card details are invalid with status code 6 - payment rejected
-bcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbc®2019-01-06 21:01:46.521  INFO 13934 --- [nio-8080-exec-1]                                          : The card details are invalid with status code 6 - payment rejected
-bcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbc®2019-01-06 21:01:47.002  INFO 13934 --- [nio-8080-exec-3]                                          : The card details are invalid with status code 6 - payment rejected
-bcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbc®2019-01-06 21:01:47.452  INFO 13934 --- [nio-8080-exec-5]                                          : The card details are invalid with status code 1 - payment rejected
-bcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbc®2019-01-06 21:01:47.932  INFO 13934 --- [nio-8080-exec-7]                                          : The card details are invalid with status code 1 - payment rejected
-bcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbc®2019-01-06 21:01:48.413  INFO 13934 --- [nio-8080-exec-9]                                          : The card details are invalid with status code 3 - payment rejected
-bcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbc®2019-01-06 21:01:48.864  INFO 13934 --- [nio-8080-exec-1]                                          : The card details are invalid with status code 3 - payment rejected
-bcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbc®2019-01-06 21:01:49.345  INFO 13934 --- [nio-8080-exec-3]                                          : The card details are invalid with status code 3 - payment rejected
-bcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbc®2019-01-06 21:01:49.864  INFO 13934 --- [nio-8080-exec-5]                                          : The card details are invalid with status code 3 - payment rejected
-bcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbc®2019-01-06 21:01:50.325  INFO 13934 --- [nio-8080-exec-7]                                          : The card details are invalid with status code 3 - payment rejected
-bcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbc®2019-01-06 21:01:50.771  INFO 13934 --- [nio-8080-exec-9]                                          : The card details are invalid with status code 5 - payment rejected
-bcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbc®2019-01-06 21:01:51.231  INFO 13934 --- [nio-8080-exec-1]                                          : The card details are invalid with status code 5 - payment rejected
+bc{2019-01-06 22:15:59.985  INFO 10974 --- [ null to remote] o.o.selenium.remote.ProtocolHandshake    : Detected dialect: OSS
+bcü2019-01-06 22:16:00.057  INFO 10974 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+bcé2019-01-06 22:16:00.058  INFO 10974 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+bcá2019-01-06 22:16:00.074  INFO 10974 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+bcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbc®2019-01-06 22:16:01.882  INFO 10974 --- [nio-8080-exec-5]                                          : The card details are invalid with status code 6 - payment rejected
+bcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbc®2019-01-06 22:16:02.410  INFO 10974 --- [nio-8080-exec-7]                                          : The card details are invalid with status code 6 - payment rejected
+bcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbc®2019-01-06 22:16:02.892  INFO 10974 --- [nio-8080-exec-9]                                          : The card details are invalid with status code 6 - payment rejected
+bcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbc®2019-01-06 22:16:03.308  INFO 10974 --- [nio-8080-exec-1]                                          : The card details are invalid with status code 6 - payment rejected
+bcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbc®2019-01-06 22:16:03.735  INFO 10974 --- [nio-8080-exec-3]                                          : The card details are invalid with status code 6 - payment rejected
+bcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbc®2019-01-06 22:16:04.116  INFO 10974 --- [nio-8080-exec-5]                                          : The card details are invalid with status code 1 - payment rejected
+bcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbc®2019-01-06 22:16:04.497  INFO 10974 --- [nio-8080-exec-7]                                          : The card details are invalid with status code 1 - payment rejected
+bcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbc®2019-01-06 22:16:04.888  INFO 10974 --- [nio-8080-exec-9]                                          : The card details are invalid with status code 3 - payment rejected
+bcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbc®2019-01-06 22:16:05.292  INFO 10974 --- [nio-8080-exec-1]                                          : The card details are invalid with status code 3 - payment rejected
+bcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbc®2019-01-06 22:16:05.701  INFO 10974 --- [nio-8080-exec-3]                                          : The card details are invalid with status code 3 - payment rejected
+bcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbc®2019-01-06 22:16:06.186  INFO 10974 --- [nio-8080-exec-5]                                          : The card details are invalid with status code 3 - payment rejected
+bcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbc®2019-01-06 22:16:06.618  INFO 10974 --- [nio-8080-exec-7]                                          : The card details are invalid with status code 3 - payment rejected
+bcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbc®2019-01-06 22:16:07.016  INFO 10974 --- [nio-8080-exec-9]                                          : The card details are invalid with status code 5 - payment rejected
+bcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbc®2019-01-06 22:16:07.409  INFO 10974 --- [nio-8080-exec-1]                                          : The card details are invalid with status code 5 - payment rejected
 bcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbc
 bc"19 Scenarios ([32m19 passed[0m)
 bc58 Steps ([32m58 passed[0m)
 bc
-0m11.973s
+0m10.347s
 bc
 bc
-bcù2019-01-06 21:01:53.574  INFO 13934 --- [       Thread-6] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-bcy2019-01-06 21:01:53.644  INFO 13934 --- [       Thread-8]                                          : Closing the browser
+bcù2019-01-06 22:16:09.339  INFO 10974 --- [       Thread-6] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+bcy2019-01-06 22:16:09.405  INFO 10974 --- [       Thread-8]                                          : Closing the browser

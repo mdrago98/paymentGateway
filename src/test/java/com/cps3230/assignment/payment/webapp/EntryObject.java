@@ -1,4 +1,4 @@
-package com.cps3230.assignment.webapp;
+package com.cps3230.assignment.payment.webapp;
 
 public class EntryObject {
   String customerName;

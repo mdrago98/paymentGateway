@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.cps3230.assignment.payment.webapp.PaymentProcessorWebTests" tests="1" skipped="1" failures="0" errors="0" timestamp="2019-01-06T21:15:58" hostname="pop-os" time="10.838">
+  <properties/>
+  <testcase name="runCucumberTests" classname="com.cps3230.assignment.payment.webapp.PaymentProcessorWebTests" time="10.838">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[22:15:56.975 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.cps3230.assignment.payment.webapp.PaymentProcessorWebTests]
+22:15:56.975 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.cps3230.assignment.payment.webapp.PaymentProcessorWebTests]
+22:15:56.976 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.cps3230.assignment.payment.webapp.PaymentProcessorWebTests]
+22:15:56.976 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.cps3230.assignment.payment.webapp.PaymentProcessorWebTests]
+22:15:56.978 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@2ad56e4c testClass = PaymentProcessorWebTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@6cc0920f testClass = PaymentProcessorWebTests, locations = '{}', classes = '{class com.cps3230.assignment.payment.webapp.Application, class com.cps3230.assignment.webapp.TestApplicationConfiguration}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@2c49421f, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@52934fc4, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@497ec24f, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@2434320f], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> false]], class annotated with @DirtiesContext [false] with mode [null].
+22:15:56.979 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.cps3230.assignment.payment.webapp.PaymentProcessorWebTests]
+22:15:56.979 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.cps3230.assignment.payment.webapp.PaymentProcessorWebTests]
+22:15:56.982 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@2ad56e4c testClass = PaymentProcessorWebTests, testInstance = com.cps3230.assignment.payment.webapp.PaymentProcessorWebTests@2ef9c6a8, testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@6cc0920f testClass = PaymentProcessorWebTests, locations = '{}', classes = '{class com.cps3230.assignment.payment.webapp.Application, class com.cps3230.assignment.webapp.TestApplicationConfiguration}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@2c49421f, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@52934fc4, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@497ec24f, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@2434320f], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> false]]].
+22:15:57.000 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.1.RELEASE)
+
+2019-01-06 22:15:57.182  INFO 10974 --- [    Test worker] c.c.a.p.webapp.PaymentProcessorWebTests  : Starting PaymentProcessorWebTests on pop-os with PID 10974 (started by drago in /home/drago/IdeaProjects/TestingAssignment)
+2019-01-06 22:15:57.184  INFO 10974 --- [    Test worker] c.c.a.p.webapp.PaymentProcessorWebTests  : No active profile set, falling back to default profiles: default
+2019-01-06 22:15:58.088  INFO 10974 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-01-06 22:15:58.109  INFO 10974 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-01-06 22:15:58.110  INFO 10974 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-01-06 22:15:58.119  INFO 10974 --- [    Test worker] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+2019-01-06 22:15:58.210  INFO 10974 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-01-06 22:15:58.210  INFO 10974 --- [    Test worker] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1006 ms
+2019-01-06 22:15:58.503  INFO 10974 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-06 22:15:58.906  INFO 10974 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-01-06 22:15:58.910  INFO 10974 --- [    Test worker] c.c.a.p.webapp.PaymentProcessorWebTests  : Started PaymentProcessorWebTests in 1.907 seconds (JVM running for 5.627)
+2019-01-06 22:15:59.985  INFO 10974 --- [ null to remote] o.o.selenium.remote.ProtocolHandshake    : Detected dialect: OSS
+2019-01-06 22:16:00.057  INFO 10974 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-01-06 22:16:00.058  INFO 10974 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-01-06 22:16:00.074  INFO 10974 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+?[32m.?[0m?[32m.?[0m?[32m.?[0m?[32m.?[0m2019-01-06 22:16:01.882  INFO 10974 --- [nio-8080-exec-5]                                          : The card details are invalid with status code 6 - payment rejected
+?[32m.?[0m?[32m.?[0m?[32m.?[0m2019-01-06 22:16:02.410  INFO 10974 --- [nio-8080-exec-7]                                          : The card details are invalid with status code 6 - payment rejected
+?[32m.?[0m?[32m.?[0m?[32m.?[0m2019-01-06 22:16:02.892  INFO 10974 --- [nio-8080-exec-9]                                          : The card details are invalid with status code 6 - payment rejected
+?[32m.?[0m?[32m.?[0m?[32m.?[0m2019-01-06 22:16:03.308  INFO 10974 --- [nio-8080-exec-1]                                          : The card details are invalid with status code 6 - payment rejected
+?[32m.?[0m?[32m.?[0m?[32m.?[0m2019-01-06 22:16:03.735  INFO 10974 --- [nio-8080-exec-3]                                          : The card details are invalid with status code 6 - payment rejected
+?[32m.?[0m?[32m.?[0m?[32m.?[0m2019-01-06 22:16:04.116  INFO 10974 --- [nio-8080-exec-5]                                          : The card details are invalid with status code 1 - payment rejected
+?[32m.?[0m?[32m.?[0m?[32m.?[0m2019-01-06 22:16:04.497  INFO 10974 --- [nio-8080-exec-7]                                          : The card details are invalid with status code 1 - payment rejected
+?[32m.?[0m?[32m.?[0m?[32m.?[0m2019-01-06 22:16:04.888  INFO 10974 --- [nio-8080-exec-9]                                          : The card details are invalid with status code 3 - payment rejected
+?[32m.?[0m?[32m.?[0m?[32m.?[0m2019-01-06 22:16:05.292  INFO 10974 --- [nio-8080-exec-1]                                          : The card details are invalid with status code 3 - payment rejected
+?[32m.?[0m?[32m.?[0m?[32m.?[0m2019-01-06 22:16:05.701  INFO 10974 --- [nio-8080-exec-3]                                          : The card details are invalid with status code 3 - payment rejected
+?[32m.?[0m?[32m.?[0m?[32m.?[0m2019-01-06 22:16:06.186  INFO 10974 --- [nio-8080-exec-5]                                          : The card details are invalid with status code 3 - payment rejected
+?[32m.?[0m?[32m.?[0m?[32m.?[0m2019-01-06 22:16:06.618  INFO 10974 --- [nio-8080-exec-7]                                          : The card details are invalid with status code 3 - payment rejected
+?[32m.?[0m?[32m.?[0m?[32m.?[0m2019-01-06 22:16:07.016  INFO 10974 --- [nio-8080-exec-9]                                          : The card details are invalid with status code 5 - payment rejected
+?[32m.?[0m?[32m.?[0m?[32m.?[0m2019-01-06 22:16:07.409  INFO 10974 --- [nio-8080-exec-1]                                          : The card details are invalid with status code 5 - payment rejected
+?[32m.?[0m?[32m.?[0m?[32m.?[0m?[32m.?[0m?[32m.?[0m?[32m.?[0m?[32m.?[0m?[32m.?[0m?[32m.?[0m?[32m.?[0m?[32m.?[0m?[32m.?[0m?[32m.?[0m?[32m.?[0m?[32m.?[0m
+19 Scenarios (?[32m19 passed?[0m)
+58 Steps (?[32m58 passed?[0m)
+0m10.347s
+
+
+2019-01-06 22:16:09.339  INFO 10974 --- [       Thread-6] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-01-06 22:16:09.405  INFO 10974 --- [       Thread-8]                                          : Closing the browser
+]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706) on port 2597
+Only local connections are allowed.
+]]></system-err>
+</testsuite>

@@ -1,8 +1,6 @@
-package com.cps3230.assignment.webapp;
+package com.cps3230.assignment.payment.webapp;
 
 import com.cps3230.assignment.payment.gateway.PaymentProcessor;
-import com.cps3230.assignment.payment.webapp.Application;
-import com.cps3230.assignment.payment.webapp.PaymentProcessorController;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -36,7 +34,7 @@ public class PaymentProcessorWebTests {
   public void runCucumberTests() {
     cucumber.api.cli.Main.main(new String[]{
         "--glue",
-        "com.cps3230.assignment.webapp.stepdefs",
+        "com.cps3230.assignment.payment.webapp.stepdefs",
         "src/test/resources/features/webapp_features.feature"
     });
   }
