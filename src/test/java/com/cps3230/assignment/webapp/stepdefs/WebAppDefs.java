@@ -2,13 +2,17 @@ package com.cps3230.assignment.webapp.stepdefs;
 
 import com.cps3230.assignment.webapp.EntryObject;
 import com.cps3230.assignment.webapp.pageobjects.PaymentWebappPageObject;
+import cucumber.api.CucumberOptions;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.junit.Ignore;
 import org.junit.jupiter.api.Assertions;
 
 
+@Ignore
+@CucumberOptions(features = {"src/test/resources/features/webapp_features.feature"}, glue = "com.cps3230.assignment.webapp.stepdefs", plugin ={"pretty"})
 public class WebAppDefs {
 
   private PaymentWebappPageObject webappPageObject = new PaymentWebappPageObject();

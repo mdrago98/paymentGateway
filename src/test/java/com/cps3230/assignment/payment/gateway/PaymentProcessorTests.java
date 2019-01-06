@@ -411,7 +411,7 @@ class PaymentProcessorTests {
     CcInfo testCreditCardDetails =
         new CcInfo("Test User", "Test address", "AMERICAN_EXPRESS", "371449635398431", "10/20",
             "111");
-    mockDb.put((long)11, new Transaction(11, testCreditCardDetails, 10, "CAPTURE"));
+    mockDb.put((long)11, new Transaction(11, testCreditCardDetails, 10, "AUTHORIZED"));
     TransactionDatabase testConnection = new TransactionDatabase();
     testConnection.database = mockDb;
     when(proxy.capture(11)).thenReturn(0);
@@ -430,7 +430,7 @@ class PaymentProcessorTests {
     CcInfo testCreditCardDetails =
         new CcInfo("Test User", "Test address", "AMERICAN_EXPRESS", "371449635398431", "10/20",
             "111");
-    fakeDatabase.put((long)11, new Transaction(11, testCreditCardDetails, 10, "CAPTURE"));
+    fakeDatabase.put((long)11, new Transaction(11, testCreditCardDetails, 10, "AUTHORIZED"));
     TransactionDatabase testConnection = new TransactionDatabase();
     testConnection.database = fakeDatabase;
     when(proxy.capture(11)).thenReturn(-3);
@@ -496,7 +496,7 @@ class PaymentProcessorTests {
     CcInfo testCreditCardDetails =
         new CcInfo("Test User", "Test address", "AMERICAN_EXPRESS", "371449635398431", "10/20",
             "111");
-    Transaction transaction = new Transaction(11, testCreditCardDetails, 10, "CAPTURE");
+    Transaction transaction = new Transaction(11, testCreditCardDetails, 10, "CAPTURED");
     BankProxy proxy = mock(BankProxy.class);
     when(proxy.refund((long)11, 10)).thenReturn(0);
     processor.setBankProxy(proxy);

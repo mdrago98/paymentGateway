@@ -3,10 +3,8 @@ package com.cps3230.assignment.payment.webapp;
 import com.cps3230.assignment.payment.gateway.utils.StringUtils;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.format.annotation.DateTimeFormat;
 
 public class PaymentModel {
   private String customerName;

@@ -3,6 +3,7 @@ package com.cps3230.assignment.payment.gateway;
 import com.cps3230.assignment.payment.gateway.helpers.StringUtils;
 import com.cps3230.assignment.payment.gateway.stubs.DateIn2018Stub;
 import com.cps3230.assignment.payment.gateway.stubs.DateIn2021Stub;
+import java.text.ParseException;
 import java.util.stream.Stream;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
@@ -111,13 +112,19 @@ public class CcInfoTests {
   }
 
   @Test
-  void checkDateSetterCardExpiredWithValidDateInTheFuture() {
+  void checkDateSetterCardExpiredWithValidDateInTheFuture() throws ParseException {
     DateIn2018Stub dateStub = new DateIn2018Stub();
     Assertions.assertEquals(0, testCreditCard.validateCardIsNotExpired(dateStub.getTime()).ordinal());
   }
 
   @Test
-  void checkDateSetterCardExpiredWithValidDateInThePast() {
+  void checkDateSetterWithInvalidDate() {
+    DateIn2018Stub dateStub = new DateIn2018Stub();
+    Assertions.assertFalse(testCreditCard.setCardExpiryDate("2019/12"));
+  }
+
+  @Test
+  void checkDateSetterCardExpiredWithValidDateInThePast() throws ParseException {
     DateIn2021Stub dateStub = new DateIn2021Stub();
     Assertions.assertEquals(5, testCreditCard.validateCardIsNotExpired(dateStub.getTime()).ordinal());
   }

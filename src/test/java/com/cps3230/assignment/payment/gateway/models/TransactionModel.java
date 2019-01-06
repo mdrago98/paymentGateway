@@ -13,7 +13,7 @@ public class TransactionModel implements FsmModel {
 
   private States state;
 
-  private boolean isValidated, isAuthorized, isSevenDayPeriodOver, isCaptured, isRefunded;
+  private boolean isValidated, isAuthorized, isCaptured;
 
   PaymentProcessorAdaptor adaptor = new PaymentProcessorAdaptor();
 
@@ -26,9 +26,7 @@ public class TransactionModel implements FsmModel {
   public void reset(boolean testing) {
     isValidated = false;
     isAuthorized = false;
-    isSevenDayPeriodOver = false;
     isCaptured = false;
-    isRefunded = false;
     state = States.OFFLINE_VERIFICATION;
 
     if (testing) {
@@ -61,6 +59,54 @@ public class TransactionModel implements FsmModel {
     Assertions.assertFalse(isValidated);
   }
 
+  public boolean invalidateLuhnGuard() {
+    return getState().equals(States.OFFLINE_VERIFICATION) && !isValidated;
+  }
+
+  @Action
+  public void invalidateLuhn() {
+    isValidated = adaptor.invalidateLuhn();
+    state = States.OFFLINE_VERIFICATION;
+
+    Assertions.assertFalse(isValidated);
+  }
+
+  public boolean invalidateDateGuard() {
+    return getState().equals(States.OFFLINE_VERIFICATION) && !isValidated;
+  }
+
+  @Action
+  public void invalidateDate() {
+    isValidated = adaptor.invalidateDate();
+    state = States.OFFLINE_VERIFICATION;
+
+    Assertions.assertFalse(isValidated);
+  }
+
+  public boolean invalidateCardBrandGuard() {
+    return getState().equals(States.OFFLINE_VERIFICATION) && !isValidated;
+  }
+
+  @Action
+  public void invalidateCardBrand() {
+    isValidated = adaptor.invalidateCardBrand();
+    state = States.OFFLINE_VERIFICATION;
+
+    Assertions.assertFalse(isValidated);
+  }
+
+  public boolean invalidatePrefixGuard() {
+    return getState().equals(States.OFFLINE_VERIFICATION) && !isValidated;
+  }
+
+  @Action
+  public void invalidatePrefix() {
+    isValidated = adaptor.invalidatePrefix();
+    state = States.OFFLINE_VERIFICATION;
+
+    Assertions.assertFalse(isValidated);
+  }
+
   public boolean authorizeGuard() {
     return getState().equals(States.AUTHORISE) && isValidated && !isAuthorized;
   }
@@ -72,7 +118,7 @@ public class TransactionModel implements FsmModel {
       isAuthorized = true;
       state = States.CAPTURE;
       Assertions.assertNotNull(transaction);
-      Assertions.assertEquals("CAPTURE", transaction.getState(), "State should be CAPTURE");
+      Assertions.assertEquals("AUTHORIZED", transaction.getState(), "State should be AUTHORIZED");
     } catch (ExecutionException | InterruptedException e) {
       e.printStackTrace();
     }
@@ -123,7 +169,7 @@ public class TransactionModel implements FsmModel {
     isAuthorized = true;
     isCaptured = false;
     state = States.CAPTURE;
-    Assertions.assertEquals("CAPTURE", transaction.getState());
+    Assertions.assertEquals("AUTHORIZED", transaction.getState());
   }
 
   public boolean transactionIdDoesNotExistGuard() {
@@ -150,9 +196,22 @@ public class TransactionModel implements FsmModel {
     isValidated = true;
     isAuthorized = true;
     isCaptured = false;
-    isSevenDayPeriodOver = true;
     state = States.VOID;
     Assertions.assertEquals("VOID", transaction.getState());
+  }
+
+  public boolean isAlreadyCapturedGuard() {
+    return getState().equals(States.CAPTURE) && isAuthorized && isValidated && !isCaptured;
+  }
+
+  @Action
+  public void isAlreadyCaptured() throws ExecutionException, InterruptedException {
+    Transaction transaction = adaptor.isAlreadyCaptured();
+    isValidated = true;
+    isAuthorized = true;
+    isCaptured = true;
+    state = States.CAPTURED;
+    Assertions.assertEquals("CAPTURED", transaction.getState());
   }
 
   public boolean captureGuard() {
@@ -165,7 +224,6 @@ public class TransactionModel implements FsmModel {
     isValidated = true;
     isAuthorized = true;
     isCaptured = true;
-    isSevenDayPeriodOver = false;
     state = States.CAPTURED;
     Assertions.assertEquals("CAPTURED", transaction.getState());
   }
@@ -180,8 +238,6 @@ public class TransactionModel implements FsmModel {
     isValidated = true;
     isAuthorized = true;
     isCaptured = true;
-    isSevenDayPeriodOver = false;
-    isRefunded = true;
     state = States.REFUND;
     Assertions.assertEquals("REFUNDED", transaction.getState());
   }

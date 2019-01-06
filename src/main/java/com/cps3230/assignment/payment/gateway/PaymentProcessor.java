@@ -7,6 +7,7 @@ import com.cps3230.assignment.payment.gateway.enums.TransactionStates;
 import com.cps3230.assignment.payment.gateway.interfaces.BankProxy;
 import com.cps3230.assignment.payment.gateway.interfaces.DatabaseConnection;
 
+import java.text.ParseException;
 import java.util.Date;
 import java.util.Map;
 import java.util.concurrent.Callable;
@@ -87,7 +88,7 @@ public class PaymentProcessor {
       Transaction transaction = null;
       long transactionId = getBankProxy().auth(cardInfo, amount);
       if (transactionId > 0) {
-        transaction = new Transaction(transactionId, cardInfo, amount, TransactionStates.CAPTURE);
+        transaction = new Transaction(transactionId, cardInfo, amount, TransactionStates.AUTHORIZED);
       } else {
         LOGGER.info("Bank error - bank returned status code {} - payment rejected", transactionId);
       }
@@ -152,7 +153,7 @@ public class PaymentProcessor {
           break;
         }
         default: {
-          transaction.setState(TransactionStates.CAPTURE.toString());
+          transaction.setState(TransactionStates.AUTHORIZED.toString());
         }
       }
       return transaction;
@@ -181,7 +182,7 @@ public class PaymentProcessor {
     return () -> {
       Map<Long, Transaction> authorizedTransactions = getConnection().getDatabase()
           .entrySet().stream()
-          .filter(x -> x.getValue().getState().equals(TransactionStates.CAPTURE.toString()))
+          .filter(x -> x.getValue().getState().equals(TransactionStates.AUTHORIZED.toString()))
           .collect(
               Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
       authorizedTransactions.forEach((transId, transaction) -> {
@@ -274,7 +275,7 @@ public class PaymentProcessor {
    * @return true IFF the refund is successful
    */
   public Transaction refund(Transaction transaction) {
-    if (transaction.getState().equals(TransactionStates.CAPTURE.toString())) {
+    if (transaction.getState().equals(TransactionStates.CAPTURED.toString())) {
       bankProxy.refund(transaction.getId(), transaction.getAmount());
       transaction.setState(TransactionStates.REFUNDED.toString());
       getConnection().saveTransaction(transaction);
@@ -282,6 +283,10 @@ public class PaymentProcessor {
       LOGGER.info("Tried to refund an un captured transaction with ID {}", transaction.getId());
     }
     return transaction;
+  }
+
+  public int verifyOffline(CcInfo cardInfo) {
+    return verifyOfflineEnum(cardInfo, new Date()).ordinal();
   }
 
   public int verifyOffline(CcInfo cardInfo, Date date) {
@@ -316,8 +321,14 @@ public class PaymentProcessor {
       cardValidityStatus = CardValidationStatuses.CARD_BRAND_NOT_VALID;
     } else if (!cardInfo.validatePrefix()) {
       cardValidityStatus = CardValidationStatuses.PREFIX_NOT_VALID;
-    } else if (cardInfo.validateCardIsNotExpired(date) == CardValidationStatuses.CARD_EXPIRED) {
-      cardValidityStatus = CardValidationStatuses.CARD_EXPIRED;
+    } else {
+      try {
+        if (cardInfo.validateCardIsNotExpired(date) == CardValidationStatuses.CARD_EXPIRED) {
+          cardValidityStatus = CardValidationStatuses.CARD_EXPIRED;
+        }
+      } catch (ParseException e) {
+        cardValidityStatus = CardValidationStatuses.DATE_PARSE_FAILURE;
+      }
     }
     return cardValidityStatus;
   }

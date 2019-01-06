@@ -1,767 +1,1433 @@
-I17:26:37.941 [Test worker] INFO  - Could not captureCallable transaction
-I17:26:37.950 [Test worker] INFO  - Could not captureCallable transaction
-A17:26:38.995 [Test worker] INFO  - Bank error Requests timed out
-I17:26:39.002 [Test worker] INFO  - Could not captureCallable transaction
-e17:26:39.025 [pool-10-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-e17:26:39.029 [pool-11-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-e17:26:39.032 [pool-12-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-e17:26:39.035 [pool-13-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-e17:26:39.044 [pool-19-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
->done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
-1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-%done (AUTHORISE, authorize, CAPTURE)
-,done (CAPTURE, sevenDayPeriodExpired, VOID)
-done Forced reset(true)
->done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
-1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-e17:26:39.053 [pool-22-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-:done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
-done Forced reset(true)
->done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
->done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
-1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-e17:26:39.056 [pool-23-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
-done Forced reset(true)
-1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-e17:26:39.057 [pool-24-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
-done Forced reset(true)
->done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
->done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
-1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-e17:26:39.060 [pool-25-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-:done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
-done Forced reset(true)
-1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-%done (AUTHORISE, authorize, CAPTURE)
-6done (CAPTURE, transactionIdDoesNotExist, BANK_ERROR)
-done Forced reset(true)
->done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
-1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-%done (AUTHORISE, authorize, CAPTURE)
-8done (CAPTURE, tryToRecaptureBecauseBankError, CAPTURE)
-"done (CAPTURE, capture, CAPTURED)
- done (CAPTURED, refund, REFUND)
-done Forced reset(true)
-1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-e17:26:39.072 [pool-31-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-:done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
-done Forced reset(true)
->done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
->done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
->done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
->done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
-1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-e17:26:39.074 [pool-32-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-:done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
-done Forced reset(true)
-1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-e17:26:39.075 [pool-33-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
-done Forced reset(true)
->done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
-1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-e17:26:39.078 [pool-34-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-:done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
-done Random reset(true)
->done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
->done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
-1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-e17:26:39.080 [pool-35-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
-done Forced reset(true)
->done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
->done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
->done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
-1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-e17:26:39.083 [pool-36-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-:done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
-done Forced reset(true)
->done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
-1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-e17:26:39.085 [pool-37-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
-done Forced reset(true)
->done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
->done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
->done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
-done Random reset(true)
-1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-e17:26:39.087 [pool-38-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
-done Forced reset(true)
->done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
-1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-%done (AUTHORISE, authorize, CAPTURE)
-,done (CAPTURE, sevenDayPeriodExpired, VOID)
-done Forced reset(true)
-1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-e17:26:39.092 [pool-41-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
-done Forced reset(true)
->done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
-1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-e17:26:39.094 [pool-42-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
-done Forced reset(true)
-1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-e17:26:39.095 [pool-43-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-:done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
-done Forced reset(true)
-done Random reset(true)
->done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
-done Random reset(true)
-done Random reset(true)
-1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-%done (AUTHORISE, authorize, CAPTURE)
-6done (CAPTURE, transactionIdDoesNotExist, BANK_ERROR)
-done Forced reset(true)
-1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-e17:26:39.102 [pool-46-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-:done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
-done Forced reset(true)
-1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
-e17:26:39.104 [pool-47-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
-:done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
-action coverage: 10/10
-state coverage: 7/7
-transition coverage: 10/10
-Y17:26:39.107 [Test worker] INFO  - Tried to refund an un captured transaction with ID 11
-e17:26:39.110 [pool-48-thread-2] INFO  - Bank error - bank returned status code -4 - payment rejected
-817:26:39.110 [Test worker] ERROR  - Auth request failed
-$e17:26:39.138 [pool-51-thread-2] INFO  - Bank error - bank returned status code -3 - payment rejected
-$817:26:39.138 [Test worker] ERROR  - Auth request failed
-%d17:26:39.143 [pool-52-thread-2] INFO  - Bank error - bank returned status code 0 - payment rejected
-%817:26:39.143 [Test worker] ERROR  - Auth request failed
-&e17:26:39.148 [pool-53-thread-2] INFO  - Bank error - bank returned status code -1 - payment rejected
-&817:26:39.148 [Test worker] ERROR  - Auth request failed
-(f17:26:39.152 [Test worker] INFO  - The card details are invalid with status code 6 - payment rejected
-)f17:26:39.154 [Test worker] INFO  - The card details are invalid with status code 2 - payment rejected
-*f17:26:39.155 [Test worker] INFO  - The card details are invalid with status code 3 - payment rejected
-+f17:26:39.158 [Test worker] INFO  - The card details are invalid with status code 3 - payment rejected
-1e17:26:39.169 [pool-59-thread-2] INFO  - Bank error - bank returned status code -2 - payment rejected
-1817:26:39.169 [Test worker] ERROR  - Auth request failed
-=A17:26:40.184 [Test worker] INFO  - Bank error Requests timed out
- ]\[Starting ChromeDriver 2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706) on port 18029
- ]\$Only local connections are allowed.
- ]\SJan 05, 2019 5:26:41 PM org.openqa.selenium.remote.ProtocolHandshake createSession
- ]\INFO: Detected dialect: OSS
-]\]\[]\32m]\.]\]\[]\0m]\]\[]\31m]\F]\]\[]\0m]\]\[]\36m]\-]\]\[]\0m]^]^[]^32m]^.]^]^[]^0m]^]^[]^31m]^F]^]^[]^0m]^]^[]^36m]^-]^]^[]^0m]_]_[]_32m]_.]_]_[]_0m]_]_[]_31m]_F]_]_[]_0m]_]_[]_36m]_-]_]_[]_0m]`]`[]`32m]`.]`]`[]`0m]`]`[]`31m]`F]`]`[]`0m]`]`[]`36m]`-]`]`[]`0m]a]a[]a32m]a.]a]a[]a0m]a]a[]a31m]aF]a]a[]a0m]a]a[]a36m]a-]a]a[]a0m]b]b[]b32m]b.]b]b[]b0m]b]b[]b31m]bF]b]b[]b0m]b]b[]b36m]b-]b]b[]b0m]c]c[]c32m]c.]c]c[]c0m]c]c[]c31m]cF]c]c[]c0m]c]c[]c36m]c-]c]c[]c0m]d]d[]d32m]d.]d]d[]d0m]d]d[]d31m]dF]d]d[]d0m]d]d[]d36m]d-]d]d[]d0m]e]e[]e32m]e.]e]e[]e0m]e]e[]e31m]eF]e]e[]e0m]e]e[]e36m]e-]e]e[]e0m]f]f[]f32m]f.]f]f[]f0m]f]f[]f31m]fF]f]f[]f0m]f]f[]f36m]f-]f]f[]f0m]g]g[]g32m]g.]g]g[]g0m]g]g[]g31m]gF]g]g[]g0m]g]g[]g36m]g-]g]g[]g0m]h]h[]h32m]h.]h]h[]h0m]h]h[]h31m]hF]h]h[]h0m]h]h[]h36m]h-]h]h[]h0m]i]i[]i32m]i.]i]i[]i0m]i]i[]i31m]iF]i]i[]i0m]i]i[]i36m]i-]i]i[]i0m]j]j[]j32m]j.]j]j[]j0m]j]j[]j31m]jF]j]j[]j0m]j]j[]j36m]j-]j]j[]j0m]k]k[]k32m]k.]k]k[]k0m]k]k[]k31m]kF]k]k[]k0m]k]k[]k36m]k-]k]k[]k0m]l]l[]l32m]l.]l]l[]l0m]l]l[]l31m]lF]l]l[]l0m]l]l[]l36m]l-]l]l[]l0m]m]m[]m32m]m.]m]m[]m0m]m]m[]m31m]mF]m]m[]m0m]m]m[]m36m]m-]m]m[]m0m]n]n[]n32m]n.]n]n[]n0m]n]n[]n31m]nF]n]n[]n0m]n]n[]n36m]n-]n]n[]n0m]o]o[]o32m]o.]o]o[]o0m]o]o[]o31m]oF]o]o[]o0m]o]o[]o36m]o-]o]o[]o0m]o]o[]o36m]o-]o]o[]o0m] 
-] [31mFailed scenarios:[0m
-] e[31msrc/test/resources/features/webapp_features.feature:4 [0m# User tries to process valid payment
-] a[31msrc/test/resources/features/webapp_features.feature:16 [0m# User leaves out required field
-] a[31msrc/test/resources/features/webapp_features.feature:17 [0m# User leaves out required field
-] a[31msrc/test/resources/features/webapp_features.feature:18 [0m# User leaves out required field
-] a[31msrc/test/resources/features/webapp_features.feature:19 [0m# User leaves out required field
-] a[31msrc/test/resources/features/webapp_features.feature:20 [0m# User leaves out required field
-] b[31msrc/test/resources/features/webapp_features.feature:28 [0m# User enters invalid card number
-] b[31msrc/test/resources/features/webapp_features.feature:29 [0m# User enters invalid card number
-] r[31msrc/test/resources/features/webapp_features.feature:37 [0m# User enters a card number with invalid prefixes
-] r[31msrc/test/resources/features/webapp_features.feature:38 [0m# User enters a card number with invalid prefixes
-] r[31msrc/test/resources/features/webapp_features.feature:39 [0m# User enters a card number with invalid prefixes
-] r[31msrc/test/resources/features/webapp_features.feature:40 [0m# User enters a card number with invalid prefixes
-] r[31msrc/test/resources/features/webapp_features.feature:41 [0m# User enters a card number with invalid prefixes
-] ^[31msrc/test/resources/features/webapp_features.feature:49 [0m# User enters an invalid date
-] ^[31msrc/test/resources/features/webapp_features.feature:50 [0m# User enters an invalid date
-] {[31msrc/test/resources/features/webapp_features.feature:58 [0m# User enters valid card details with different card types
-] {[31msrc/test/resources/features/webapp_features.feature:59 [0m# User enters valid card details with different card types
-] {[31msrc/test/resources/features/webapp_features.feature:60 [0m# User enters valid card details with different card types
-] a[31msrc/test/resources/features/webapp_features.feature:62 [0m# User enters data and resets it
-] 
-] "19 Scenarios ([31m19 failed[0m)
-] G58 Steps ([31m19 failed[0m, [36m20 skipped[0m, [32m19 passed[0m)
-] 	0m4.732s
-] 
-] Éorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"name","selector":"customerName"}
-] '  (Session info: chrome=70.0.3538.110)
-] æ  (Driver info: chromedriver=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706),platform=Linux 4.15.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-] ,Command duration or timeout: 0 milliseconds
-] eFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-] UBuild info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-] äSystem info: host: 'pop-os', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-42-generic', java.version: '10.0.2'
-] 5Driver info: org.openqa.selenium.chrome.ChromeDriver
-] §Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:35805}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true}
-] -Session ID: 38af3d172021c50928c171c1282f5258
-] 3*** Element info: {Using=name, value=customerName}
-] ]	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-] t	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-] |	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-] N	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
-] S	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-] Y	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-] j	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-] h	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-] h	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-] Y	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-] d	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-] Q	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-] U	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-] [	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
-] ;	at org.openqa.selenium.By$ByName.findElement(By.java:284)
-] U	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-] t	at com.cps3230.assignment.webapp.PageObjects.PaymentWebappPageObject.enterDetails(PaymentWebappPageObject.java:23)
-] `	at com.cps3230.assignment.webapp.stepdefs.WebAppDefs.iSubmitCorrectDetails(WebAppDefs.java:24)
-] X	at ‚úΩ.I submit correct details(src/test/resources/features/webapp_features.feature:6)
-] 
-] Éorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"name","selector":"customerName"}
-] '  (Session info: chrome=70.0.3538.110)
-] æ  (Driver info: chromedriver=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706),platform=Linux 4.15.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-] ,Command duration or timeout: 0 milliseconds
-] eFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-] UBuild info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-] äSystem info: host: 'pop-os', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-42-generic', java.version: '10.0.2'
-] 5Driver info: org.openqa.selenium.chrome.ChromeDriver
-] §Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:35805}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true}
-] -Session ID: 38af3d172021c50928c171c1282f5258
-] 3*** Element info: {Using=name, value=customerName}
-] ]	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-] t	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-] |	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-] N	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
-] S	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-] Y	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-] j	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-] h	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-] h	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-] Y	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-] d	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-] Q	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-] U	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-] [	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
-] ;	at org.openqa.selenium.By$ByName.findElement(By.java:284)
-] U	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-] t	at com.cps3230.assignment.webapp.PageObjects.PaymentWebappPageObject.enterDetails(PaymentWebappPageObject.java:23)
-] É	at com.cps3230.assignment.webapp.PageObjects.PaymentWebappPageObject.enterDetailsWithEmptyFields(PaymentWebappPageObject.java:40)
-] g	at com.cps3230.assignment.webapp.stepdefs.WebAppDefs.iSubmitFormWithAllDataExcept(WebAppDefs.java:37)
-] t	at ‚úΩ.I submit a form with all data except "customerName"(src/test/resources/features/webapp_features.feature:11)
-] 
-] Éorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"name","selector":"customerName"}
-] '  (Session info: chrome=70.0.3538.110)
-] æ  (Driver info: chromedriver=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706),platform=Linux 4.15.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-] ,Command duration or timeout: 0 milliseconds
-] eFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-] UBuild info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-] äSystem info: host: 'pop-os', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-42-generic', java.version: '10.0.2'
-] 5Driver info: org.openqa.selenium.chrome.ChromeDriver
-] §Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:35805}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true}
-] -Session ID: 38af3d172021c50928c171c1282f5258
-] 3*** Element info: {Using=name, value=customerName}
-] ]	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-] t	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-] |	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-] N	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
-] S	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-] Y	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-] j	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-] h	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-] h	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-] Y	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-] d	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-] Q	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-] U	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-] [	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
-] ;	at org.openqa.selenium.By$ByName.findElement(By.java:284)
-] U	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-] t	at com.cps3230.assignment.webapp.PageObjects.PaymentWebappPageObject.enterDetails(PaymentWebappPageObject.java:23)
-] É	at com.cps3230.assignment.webapp.PageObjects.PaymentWebappPageObject.enterDetailsWithEmptyFields(PaymentWebappPageObject.java:40)
-] g	at com.cps3230.assignment.webapp.stepdefs.WebAppDefs.iSubmitFormWithAllDataExcept(WebAppDefs.java:37)
-] w	at ‚úΩ.I submit a form with all data except "customerAddress"(src/test/resources/features/webapp_features.feature:11)
-] 
-] Éorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"name","selector":"customerName"}
-] '  (Session info: chrome=70.0.3538.110)
-] æ  (Driver info: chromedriver=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706),platform=Linux 4.15.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-] ,Command duration or timeout: 0 milliseconds
-] eFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-] UBuild info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-] äSystem info: host: 'pop-os', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-42-generic', java.version: '10.0.2'
-] 5Driver info: org.openqa.selenium.chrome.ChromeDriver
-] §Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:35805}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true}
-] -Session ID: 38af3d172021c50928c171c1282f5258
-] 3*** Element info: {Using=name, value=customerName}
-] ]	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-] t	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-] |	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-] N	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
-] S	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-] Y	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-] j	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-] h	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-] h	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-] Y	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-] d	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-] Q	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-] U	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-] [	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
-] ;	at org.openqa.selenium.By$ByName.findElement(By.java:284)
-] U	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-] t	at com.cps3230.assignment.webapp.PageObjects.PaymentWebappPageObject.enterDetails(PaymentWebappPageObject.java:23)
-] É	at com.cps3230.assignment.webapp.PageObjects.PaymentWebappPageObject.enterDetailsWithEmptyFields(PaymentWebappPageObject.java:40)
-] g	at com.cps3230.assignment.webapp.stepdefs.WebAppDefs.iSubmitFormWithAllDataExcept(WebAppDefs.java:37)
-] r	at ‚úΩ.I submit a form with all data except "cardNumber"(src/test/resources/features/webapp_features.feature:11)
-] 
-] Éorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"name","selector":"customerName"}
-] '  (Session info: chrome=70.0.3538.110)
-] æ  (Driver info: chromedriver=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706),platform=Linux 4.15.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-] ,Command duration or timeout: 0 milliseconds
-] eFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-] UBuild info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-] äSystem info: host: 'pop-os', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-42-generic', java.version: '10.0.2'
-] 5Driver info: org.openqa.selenium.chrome.ChromeDriver
-] §Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:35805}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true}
-] -Session ID: 38af3d172021c50928c171c1282f5258
-] 3*** Element info: {Using=name, value=customerName}
-] ]	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-] t	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-] |	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-] N	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
-] S	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-] Y	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-] j	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-] h	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-] h	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-] Y	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-] d	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-] Q	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-] U	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-] [	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
-] ;	at org.openqa.selenium.By$ByName.findElement(By.java:284)
-] U	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-] t	at com.cps3230.assignment.webapp.PageObjects.PaymentWebappPageObject.enterDetails(PaymentWebappPageObject.java:23)
-] É	at com.cps3230.assignment.webapp.PageObjects.PaymentWebappPageObject.enterDetailsWithEmptyFields(PaymentWebappPageObject.java:40)
-] g	at com.cps3230.assignment.webapp.stepdefs.WebAppDefs.iSubmitFormWithAllDataExcept(WebAppDefs.java:37)
-] v	at ‚úΩ.I submit a form with all data except "cardExpiryDate"(src/test/resources/features/webapp_features.feature:11)
-] 
-] Éorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"name","selector":"customerName"}
-] '  (Session info: chrome=70.0.3538.110)
-] æ  (Driver info: chromedriver=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706),platform=Linux 4.15.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-] ,Command duration or timeout: 0 milliseconds
-] eFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-] UBuild info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-] äSystem info: host: 'pop-os', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-42-generic', java.version: '10.0.2'
-] 5Driver info: org.openqa.selenium.chrome.ChromeDriver
-] §Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:35805}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true}
-] -Session ID: 38af3d172021c50928c171c1282f5258
-] 3*** Element info: {Using=name, value=customerName}
-] ]	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-] t	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-] |	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-] N	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
-] S	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-] Y	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-] j	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-] h	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-] h	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-] Y	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-] d	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-] Q	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-] U	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-] [	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
-] ;	at org.openqa.selenium.By$ByName.findElement(By.java:284)
-] U	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-] t	at com.cps3230.assignment.webapp.PageObjects.PaymentWebappPageObject.enterDetails(PaymentWebappPageObject.java:23)
-] É	at com.cps3230.assignment.webapp.PageObjects.PaymentWebappPageObject.enterDetailsWithEmptyFields(PaymentWebappPageObject.java:40)
-] g	at com.cps3230.assignment.webapp.stepdefs.WebAppDefs.iSubmitFormWithAllDataExcept(WebAppDefs.java:37)
-] o	at ‚úΩ.I submit a form with all data except "cardCvv"(src/test/resources/features/webapp_features.feature:11)
-] 
-] Éorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"name","selector":"customerName"}
-] '  (Session info: chrome=70.0.3538.110)
-] æ  (Driver info: chromedriver=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706),platform=Linux 4.15.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-] ,Command duration or timeout: 0 milliseconds
-] eFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-] UBuild info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-] äSystem info: host: 'pop-os', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-42-generic', java.version: '10.0.2'
-] 5Driver info: org.openqa.selenium.chrome.ChromeDriver
-] §Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:35805}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true}
-] -Session ID: 38af3d172021c50928c171c1282f5258
-] 3*** Element info: {Using=name, value=customerName}
-] ]	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-] t	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-] |	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-] N	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
-] S	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-] Y	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-] j	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-] h	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-] h	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-] Y	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-] d	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-] Q	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-] U	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-] [	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
-] ;	at org.openqa.selenium.By$ByName.findElement(By.java:284)
-] U	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-] t	at com.cps3230.assignment.webapp.PageObjects.PaymentWebappPageObject.enterDetails(PaymentWebappPageObject.java:23)
-] u	at com.cps3230.assignment.webapp.stepdefs.WebAppDefs.iSubmitFormWithAllDataButWithAnInvalidCard(WebAppDefs.java:51)
-] s	at ‚úΩ.I submit a form with all data but with an "567709"(src/test/resources/features/webapp_features.feature:24)
-] 
-] Éorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"name","selector":"customerName"}
-] '  (Session info: chrome=70.0.3538.110)
-] æ  (Driver info: chromedriver=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706),platform=Linux 4.15.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-] ,Command duration or timeout: 0 milliseconds
-] eFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-] UBuild info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-] äSystem info: host: 'pop-os', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-42-generic', java.version: '10.0.2'
-] 5Driver info: org.openqa.selenium.chrome.ChromeDriver
-] §Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:35805}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true}
-] -Session ID: 38af3d172021c50928c171c1282f5258
-] 3*** Element info: {Using=name, value=customerName}
-] ]	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-] t	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-] |	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-] N	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
-] S	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-] Y	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-] j	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-] h	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-] h	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-] Y	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-] d	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-] Q	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-] U	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-] [	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
-] ;	at org.openqa.selenium.By$ByName.findElement(By.java:284)
-] U	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-] t	at com.cps3230.assignment.webapp.PageObjects.PaymentWebappPageObject.enterDetails(PaymentWebappPageObject.java:23)
-] u	at com.cps3230.assignment.webapp.stepdefs.WebAppDefs.iSubmitFormWithAllDataButWithAnInvalidCard(WebAppDefs.java:51)
-] u	at ‚úΩ.I submit a form with all data but with an "6767o962"(src/test/resources/features/webapp_features.feature:24)
-] 
-] Éorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"name","selector":"customerName"}
-] '  (Session info: chrome=70.0.3538.110)
-] æ  (Driver info: chromedriver=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706),platform=Linux 4.15.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-] ,Command duration or timeout: 0 milliseconds
-] eFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-] UBuild info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-] äSystem info: host: 'pop-os', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-42-generic', java.version: '10.0.2'
-] 5Driver info: org.openqa.selenium.chrome.ChromeDriver
-] §Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:35805}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true}
-] -Session ID: 38af3d172021c50928c171c1282f5258
-] 3*** Element info: {Using=name, value=customerName}
-] ]	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-] t	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-] |	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-] N	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
-] S	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-] Y	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-] j	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-] h	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-] h	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-] Y	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-] d	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-] Q	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-] U	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-] [	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
-] ;	at org.openqa.selenium.By$ByName.findElement(By.java:284)
-] U	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-] t	at com.cps3230.assignment.webapp.PageObjects.PaymentWebappPageObject.enterDetails(PaymentWebappPageObject.java:23)
-] i	at com.cps3230.assignment.webapp.stepdefs.WebAppDefs.iSubmitAFormWithAllDataWithAnd(WebAppDefs.java:80)
-] ê	at ‚úΩ.I submit a form with all data with "4557 3727 3979 3901" and "AMERICAN_EXPRESS"(src/test/resources/features/webapp_features.feature:33)
-] 
-] Éorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"name","selector":"customerName"}
-] '  (Session info: chrome=70.0.3538.110)
-] æ  (Driver info: chromedriver=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706),platform=Linux 4.15.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-] ,Command duration or timeout: 0 milliseconds
-] eFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-] UBuild info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-] äSystem info: host: 'pop-os', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-42-generic', java.version: '10.0.2'
-] 5Driver info: org.openqa.selenium.chrome.ChromeDriver
-] §Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:35805}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true}
-] -Session ID: 38af3d172021c50928c171c1282f5258
-] 3*** Element info: {Using=name, value=customerName}
-] ]	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-] t	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-] |	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-] N	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
-] S	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-] Y	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-] j	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-] h	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-] h	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-] Y	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-] d	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-] Q	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-] U	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-] [	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
-] ;	at org.openqa.selenium.By$ByName.findElement(By.java:284)
-] U	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-] t	at com.cps3230.assignment.webapp.PageObjects.PaymentWebappPageObject.enterDetails(PaymentWebappPageObject.java:23)
-] i	at com.cps3230.assignment.webapp.stepdefs.WebAppDefs.iSubmitAFormWithAllDataWithAnd(WebAppDefs.java:80)
-] ê	at ‚úΩ.I submit a form with all data with "5124 0021 8814 1135" and "AMERICAN_EXPRESS"(src/test/resources/features/webapp_features.feature:33)
-] 
-] Éorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"name","selector":"customerName"}
-] '  (Session info: chrome=70.0.3538.110)
-] æ  (Driver info: chromedriver=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706),platform=Linux 4.15.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-] ,Command duration or timeout: 0 milliseconds
-] eFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-] UBuild info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-] äSystem info: host: 'pop-os', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-42-generic', java.version: '10.0.2'
-] 5Driver info: org.openqa.selenium.chrome.ChromeDriver
-] §Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:35805}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true}
-] -Session ID: 38af3d172021c50928c171c1282f5258
-] 3*** Element info: {Using=name, value=customerName}
-] ]	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-] t	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-] |	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-] N	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
-] S	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-] Y	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-] j	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-] h	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-] h	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-] Y	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-] d	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-] Q	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-] U	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-] [	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
-] ;	at org.openqa.selenium.By$ByName.findElement(By.java:284)
-] U	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-] t	at com.cps3230.assignment.webapp.PageObjects.PaymentWebappPageObject.enterDetails(PaymentWebappPageObject.java:23)
-] i	at com.cps3230.assignment.webapp.stepdefs.WebAppDefs.iSubmitAFormWithAllDataWithAnd(WebAppDefs.java:80)
-] Ä	at ‚úΩ.I submit a form with all data with "371449635398431" and "VISA"(src/test/resources/features/webapp_features.feature:33)
-] 
-] Éorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"name","selector":"customerName"}
-] '  (Session info: chrome=70.0.3538.110)
-] æ  (Driver info: chromedriver=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706),platform=Linux 4.15.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-] ,Command duration or timeout: 0 milliseconds
-] eFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-] UBuild info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-] äSystem info: host: 'pop-os', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-42-generic', java.version: '10.0.2'
-] 5Driver info: org.openqa.selenium.chrome.ChromeDriver
-] §Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:35805}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true}
-] -Session ID: 38af3d172021c50928c171c1282f5258
-] 3*** Element info: {Using=name, value=customerName}
-] ]	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-] t	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-] |	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-] N	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
-] S	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-] Y	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-] j	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-] h	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-] h	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-] Y	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-] d	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-] Q	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-] U	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-] [	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
-] ;	at org.openqa.selenium.By$ByName.findElement(By.java:284)
-] U	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-] t	at com.cps3230.assignment.webapp.PageObjects.PaymentWebappPageObject.enterDetails(PaymentWebappPageObject.java:23)
-] i	at com.cps3230.assignment.webapp.stepdefs.WebAppDefs.iSubmitAFormWithAllDataWithAnd(WebAppDefs.java:80)
-] Ñ	at ‚úΩ.I submit a form with all data with "5124 0021 8814 1135" and "VISA"(src/test/resources/features/webapp_features.feature:33)
-] 
-] Éorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"name","selector":"customerName"}
-] '  (Session info: chrome=70.0.3538.110)
-] æ  (Driver info: chromedriver=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706),platform=Linux 4.15.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-] ,Command duration or timeout: 0 milliseconds
-] eFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-] UBuild info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-] äSystem info: host: 'pop-os', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-42-generic', java.version: '10.0.2'
-] 5Driver info: org.openqa.selenium.chrome.ChromeDriver
-] §Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:35805}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true}
-] -Session ID: 38af3d172021c50928c171c1282f5258
-] 3*** Element info: {Using=name, value=customerName}
-] ]	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-] t	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-] |	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-] N	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
-] S	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-] Y	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-] j	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-] h	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-] h	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-] Y	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-] d	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-] Q	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-] U	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-] [	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
-] ;	at org.openqa.selenium.By$ByName.findElement(By.java:284)
-] U	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-] t	at com.cps3230.assignment.webapp.PageObjects.PaymentWebappPageObject.enterDetails(PaymentWebappPageObject.java:23)
-] i	at com.cps3230.assignment.webapp.stepdefs.WebAppDefs.iSubmitAFormWithAllDataWithAnd(WebAppDefs.java:80)
-] á	at ‚úΩ.I submit a form with all data with "371449635398431" and "MASTER_CARD"(src/test/resources/features/webapp_features.feature:33)
-] 
-] Éorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"name","selector":"customerName"}
-] '  (Session info: chrome=70.0.3538.110)
-] æ  (Driver info: chromedriver=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706),platform=Linux 4.15.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-] ,Command duration or timeout: 0 milliseconds
-] eFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-] UBuild info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-] äSystem info: host: 'pop-os', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-42-generic', java.version: '10.0.2'
-] 5Driver info: org.openqa.selenium.chrome.ChromeDriver
-] §Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:35805}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true}
-] -Session ID: 38af3d172021c50928c171c1282f5258
-] 3*** Element info: {Using=name, value=customerName}
-] ]	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-] t	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-] |	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-] N	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
-] S	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-] Y	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-] j	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-] h	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-] h	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-] Y	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-] d	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-] Q	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-] U	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-] [	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
-] ;	at org.openqa.selenium.By$ByName.findElement(By.java:284)
-] U	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-] t	at com.cps3230.assignment.webapp.PageObjects.PaymentWebappPageObject.enterDetails(PaymentWebappPageObject.java:23)
-] n	at com.cps3230.assignment.webapp.stepdefs.WebAppDefs.iSubmitAFormWithAllDataButIsInvalid(WebAppDefs.java:68)
-] u	at ‚úΩ.I submit a form with all data but "10/17" is invalid(src/test/resources/features/webapp_features.feature:45)
-] 
-] Éorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"name","selector":"customerName"}
-] '  (Session info: chrome=70.0.3538.110)
-] æ  (Driver info: chromedriver=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706),platform=Linux 4.15.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-] ,Command duration or timeout: 0 milliseconds
-] eFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-] UBuild info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-] äSystem info: host: 'pop-os', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-42-generic', java.version: '10.0.2'
-] 5Driver info: org.openqa.selenium.chrome.ChromeDriver
-] §Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:35805}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true}
-] -Session ID: 38af3d172021c50928c171c1282f5258
-] 3*** Element info: {Using=name, value=customerName}
-] ]	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-] t	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-] |	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-] N	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
-] S	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-] Y	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-] j	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-] h	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-] h	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-] Y	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-] d	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-] Q	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-] U	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-] [	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
-] ;	at org.openqa.selenium.By$ByName.findElement(By.java:284)
-] U	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-] t	at com.cps3230.assignment.webapp.PageObjects.PaymentWebappPageObject.enterDetails(PaymentWebappPageObject.java:23)
-] n	at com.cps3230.assignment.webapp.stepdefs.WebAppDefs.iSubmitAFormWithAllDataButIsInvalid(WebAppDefs.java:68)
-] w	at ‚úΩ.I submit a form with all data but "14/2o20" is invalid(src/test/resources/features/webapp_features.feature:45)
-] 
-] Éorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"name","selector":"customerName"}
-] '  (Session info: chrome=70.0.3538.110)
-] æ  (Driver info: chromedriver=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706),platform=Linux 4.15.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-] ,Command duration or timeout: 0 milliseconds
-] eFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-] UBuild info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-] äSystem info: host: 'pop-os', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-42-generic', java.version: '10.0.2'
-] 5Driver info: org.openqa.selenium.chrome.ChromeDriver
-] §Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:35805}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true}
-] -Session ID: 38af3d172021c50928c171c1282f5258
-] 3*** Element info: {Using=name, value=customerName}
-] ]	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-] t	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-] |	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-] N	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
-] S	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-] Y	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-] j	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-] h	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-] h	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-] Y	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-] d	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-] Q	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-] U	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-] [	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
-] ;	at org.openqa.selenium.By$ByName.findElement(By.java:284)
-] U	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-] t	at com.cps3230.assignment.webapp.PageObjects.PaymentWebappPageObject.enterDetails(PaymentWebappPageObject.java:23)
-] i	at com.cps3230.assignment.webapp.stepdefs.WebAppDefs.iSubmitAFormWithAllDataWithAnd(WebAppDefs.java:80)
-] å	at ‚úΩ.I submit a form with all data with "371449635398431" and "AMERICAN_EXPRESS"(src/test/resources/features/webapp_features.feature:54)
-] 
-] Éorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"name","selector":"customerName"}
-] '  (Session info: chrome=70.0.3538.110)
-] æ  (Driver info: chromedriver=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706),platform=Linux 4.15.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-] ,Command duration or timeout: 0 milliseconds
-] eFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-] UBuild info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-] äSystem info: host: 'pop-os', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-42-generic', java.version: '10.0.2'
-] 5Driver info: org.openqa.selenium.chrome.ChromeDriver
-] §Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:35805}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true}
-] -Session ID: 38af3d172021c50928c171c1282f5258
-] 3*** Element info: {Using=name, value=customerName}
-] T	at jdk.internal.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
-] |	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-] N	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
-] S	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-] Y	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-] j	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-] h	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-] h	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-] Y	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-] d	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-] Q	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-] U	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-] [	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
-] ;	at org.openqa.selenium.By$ByName.findElement(By.java:284)
-] U	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-] t	at com.cps3230.assignment.webapp.PageObjects.PaymentWebappPageObject.enterDetails(PaymentWebappPageObject.java:23)
-] i	at com.cps3230.assignment.webapp.stepdefs.WebAppDefs.iSubmitAFormWithAllDataWithAnd(WebAppDefs.java:80)
-] Ñ	at ‚úΩ.I submit a form with all data with "4557 3727 3979 3901" and "VISA"(src/test/resources/features/webapp_features.feature:54)
-] 
-] Éorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"name","selector":"customerName"}
-] '  (Session info: chrome=70.0.3538.110)
-] æ  (Driver info: chromedriver=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706),platform=Linux 4.15.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-] ,Command duration or timeout: 0 milliseconds
-] eFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-] UBuild info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-] äSystem info: host: 'pop-os', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-42-generic', java.version: '10.0.2'
-] 5Driver info: org.openqa.selenium.chrome.ChromeDriver
-] §Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:35805}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true}
-] -Session ID: 38af3d172021c50928c171c1282f5258
-] 3*** Element info: {Using=name, value=customerName}
-] T	at jdk.internal.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
-] |	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-] N	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
-] S	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-] Y	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-] j	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-] h	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-] h	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-] Y	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-] d	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-] Q	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-] U	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-] [	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
-] ;	at org.openqa.selenium.By$ByName.findElement(By.java:284)
-] U	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-] t	at com.cps3230.assignment.webapp.PageObjects.PaymentWebappPageObject.enterDetails(PaymentWebappPageObject.java:23)
-] i	at com.cps3230.assignment.webapp.stepdefs.WebAppDefs.iSubmitAFormWithAllDataWithAnd(WebAppDefs.java:80)
-] ã	at ‚úΩ.I submit a form with all data with "5124 0021 8814 1135" and "MASTER_CARD"(src/test/resources/features/webapp_features.feature:54)
-] 
-] Éorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"name","selector":"customerName"}
-] '  (Session info: chrome=70.0.3538.110)
-] æ  (Driver info: chromedriver=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706),platform=Linux 4.15.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-] ,Command duration or timeout: 0 milliseconds
-] eFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-] UBuild info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-] äSystem info: host: 'pop-os', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-42-generic', java.version: '10.0.2'
-] 5Driver info: org.openqa.selenium.chrome.ChromeDriver
-] §Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:35805}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true}
-] -Session ID: 38af3d172021c50928c171c1282f5258
-] 3*** Element info: {Using=name, value=customerName}
-] T	at jdk.internal.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
-] |	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-] N	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
-] S	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-] Y	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-] j	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-] h	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-] h	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-] Y	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-] d	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-] Q	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-] U	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-] [	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
-] ;	at org.openqa.selenium.By$ByName.findElement(By.java:284)
-] U	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-] t	at com.cps3230.assignment.webapp.PageObjects.PaymentWebappPageObject.enterDetails(PaymentWebappPageObject.java:23)
-] `	at com.cps3230.assignment.webapp.stepdefs.WebAppDefs.iSubmitCorrectDetails(WebAppDefs.java:24)
-] Y	at ‚úΩ.I submit correct details(src/test/resources/features/webapp_features.feature:64)
-] 
-] 
+d21:01:36.671 [pool-4-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+d21:01:36.681 [pool-5-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+d21:01:36.686 [pool-6-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+d21:01:36.692 [pool-7-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e21:01:36.699 [pool-10-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e21:01:36.706 [pool-13-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e21:01:36.709 [pool-14-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e21:01:36.716 [pool-17-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e21:01:36.718 [pool-18-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e21:01:36.726 [pool-19-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+%done (AUTHORISE, authorize, CAPTURE)
+,done (CAPTURE, sevenDayPeriodExpired, VOID)
+done Forced reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+e21:01:36.740 [pool-25-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+:done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
+done Random reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+e21:01:36.745 [pool-26-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
+done Forced reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+e21:01:36.748 [pool-27-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+:done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
+done Forced reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done Random reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+e21:01:36.754 [pool-28-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
+done Forced reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+%done (AUTHORISE, authorize, CAPTURE)
+6done (CAPTURE, transactionIdDoesNotExist, BANK_ERROR)
+done Forced reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+e21:01:36.763 [pool-31-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
+done Forced reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+done Random reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+%done (AUTHORISE, authorize, CAPTURE)
+"done (CAPTURE, capture, CAPTURED)
+ done (CAPTURED, refund, REFUND)
+done Forced reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+e21:01:36.768 [pool-34-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+:done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
+done Forced reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done Random reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+e21:01:36.771 [pool-35-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+:done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
+done Forced reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+%done (AUTHORISE, authorize, CAPTURE)
+,done (CAPTURE, isAlreadyCaptured, CAPTURED)
+ done (CAPTURED, refund, REFUND)
+done Forced reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done Random reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+e21:01:36.779 [pool-38-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
+done Forced reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+e21:01:36.781 [pool-39-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+:done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
+done Forced reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+done Random reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done Random reset(true)
+done Random reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+e21:01:36.790 [pool-40-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+:done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
+done Forced reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+%done (AUTHORISE, authorize, CAPTURE)
+8done (CAPTURE, tryToRecaptureBecauseBankError, CAPTURE)
+,done (CAPTURE, sevenDayPeriodExpired, VOID)
+done Forced reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+%done (AUTHORISE, authorize, CAPTURE)
+8done (CAPTURE, tryToRecaptureBecauseBankError, CAPTURE)
+,done (CAPTURE, sevenDayPeriodExpired, VOID)
+done Forced reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+action coverage: 15/15
+state coverage: 7/7
+transition coverage: 15/15
+e21:01:36.810 [pool-47-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e21:01:36.812 [pool-48-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e21:01:36.815 [pool-49-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e21:01:36.819 [pool-52-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e21:01:36.823 [pool-55-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e21:01:36.824 [pool-56-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e21:01:36.831 [pool-59-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e21:01:36.832 [pool-60-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e21:01:36.837 [pool-61-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e21:01:36.845 [pool-67-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e21:01:36.848 [pool-68-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e21:01:36.850 [pool-69-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e21:01:36.851 [pool-70-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e21:01:36.859 [pool-71-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e21:01:36.861 [pool-72-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e21:01:36.867 [pool-75-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e21:01:36.870 [pool-78-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e21:01:36.872 [pool-79-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e21:01:36.874 [pool-80-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e21:01:36.875 [pool-81-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e21:01:36.879 [pool-84-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e21:01:36.882 [pool-85-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e21:01:36.888 [pool-89-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+e21:01:36.889 [pool-90-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+e21:01:36.895 [pool-93-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+:done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
+done Forced reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+e21:01:36.897 [pool-94-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+:done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
+done Forced reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done Random reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+e21:01:36.901 [pool-95-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
+done Forced reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+%done (AUTHORISE, authorize, CAPTURE)
+,done (CAPTURE, sevenDayPeriodExpired, VOID)
+done Forced reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+e21:01:36.906 [pool-98-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
+done Forced reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+done Random reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+%done (AUTHORISE, authorize, CAPTURE)
+6done (CAPTURE, transactionIdDoesNotExist, BANK_ERROR)
+done Forced reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:36.910 [pool-101-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+:done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
+done Forced reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done Random reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:36.912 [pool-102-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+:done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
+done Forced reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+%done (AUTHORISE, authorize, CAPTURE)
+"done (CAPTURE, capture, CAPTURED)
+ done (CAPTURED, refund, REFUND)
+done Forced reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done Random reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:36.915 [pool-105-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
+done Forced reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:36.916 [pool-106-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+:done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
+done Forced reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+done Random reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done Random reset(true)
+done Random reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:36.920 [pool-107-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+:done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
+done Forced reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+%done (AUTHORISE, authorize, CAPTURE)
+,done (CAPTURE, sevenDayPeriodExpired, VOID)
+done Forced reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+%done (AUTHORISE, authorize, CAPTURE)
+8done (CAPTURE, tryToRecaptureBecauseBankError, CAPTURE)
+,done (CAPTURE, sevenDayPeriodExpired, VOID)
+done Forced reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:36.926 [pool-113-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
+done Forced reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+done Random reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+done Random reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:36.928 [pool-114-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
+done Forced reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:36.930 [pool-115-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+:done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
+done Forced reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:36.932 [pool-116-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+:done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
+done Forced reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+done Random reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done Random reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:36.935 [pool-117-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
+done Forced reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+done Random reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+done Random reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+done Random reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:36.939 [pool-118-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
+done Forced reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+done Random reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+%done (AUTHORISE, authorize, CAPTURE)
+,done (CAPTURE, sevenDayPeriodExpired, VOID)
+done Forced reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:36.945 [pool-121-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
+done Random reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+%done (AUTHORISE, authorize, CAPTURE)
+"done (CAPTURE, capture, CAPTURED)
+ done (CAPTURED, refund, REFUND)
+done Forced reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:36.948 [pool-124-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
+done Forced reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:36.950 [pool-125-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
+done Forced reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+done Random reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:36.952 [pool-126-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
+done Forced reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:36.955 [pool-127-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
+done Forced reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+%done (AUTHORISE, authorize, CAPTURE)
+6done (CAPTURE, transactionIdDoesNotExist, BANK_ERROR)
+done Forced reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:36.960 [pool-130-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
+done Random reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:36.962 [pool-131-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+:done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
+done Forced reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+%done (AUTHORISE, authorize, CAPTURE)
+8done (CAPTURE, tryToRecaptureBecauseBankError, CAPTURE)
+,done (CAPTURE, sevenDayPeriodExpired, VOID)
+done Forced reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:36.967 [pool-135-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+:done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
+done Forced reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:36.969 [pool-136-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
+done Forced reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+%done (AUTHORISE, authorize, CAPTURE)
+,done (CAPTURE, isAlreadyCaptured, CAPTURED)
+ done (CAPTURED, refund, REFUND)
+done Forced reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:36.973 [pool-139-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
+done Forced reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done Random reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+done Random reset(true)
+done Random reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:36.974 [pool-140-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+:done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
+done Forced reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+%done (AUTHORISE, authorize, CAPTURE)
+6done (CAPTURE, transactionIdDoesNotExist, BANK_ERROR)
+done Forced reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+done Random reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:36.977 [pool-143-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+:done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
+done Forced reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+%done (AUTHORISE, authorize, CAPTURE)
+6done (CAPTURE, transactionIdDoesNotExist, BANK_ERROR)
+done Forced reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:36.981 [pool-146-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
+done Forced reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:36.982 [pool-147-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+:done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
+done Forced reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+%done (AUTHORISE, authorize, CAPTURE)
+,done (CAPTURE, sevenDayPeriodExpired, VOID)
+done Forced reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+%done (AUTHORISE, authorize, CAPTURE)
+,done (CAPTURE, isAlreadyCaptured, CAPTURED)
+ done (CAPTURED, refund, REFUND)
+done Forced reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:36.988 [pool-152-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
+done Forced reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:36.989 [pool-153-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
+done Forced reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:36.990 [pool-154-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+:done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
+action coverage: 15/15
+state coverage: 7/7
+transition coverage: 15/15
+f21:01:36.995 [pool-157-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f21:01:36.996 [pool-158-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f21:01:36.998 [pool-159-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f21:01:36.999 [pool-160-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f21:01:37.001 [pool-161-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f21:01:37.009 [pool-168-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f21:01:37.010 [pool-169-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+f21:01:37.011 [pool-170-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+done Random reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+done Random reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+done Random reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+%done (AUTHORISE, authorize, CAPTURE)
+,done (CAPTURE, isAlreadyCaptured, CAPTURED)
+ done (CAPTURED, refund, REFUND)
+done Forced reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:37.018 [pool-175-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+done Random reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:37.020 [pool-176-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+:done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:37.022 [pool-177-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+:done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+done Random reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+done Random reset(true)
+done Random reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:37.027 [pool-178-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+:done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+%done (AUTHORISE, authorize, CAPTURE)
+"done (CAPTURE, capture, CAPTURED)
+ done (CAPTURED, refund, REFUND)
+done Forced reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+%done (AUTHORISE, authorize, CAPTURE)
+6done (CAPTURE, transactionIdDoesNotExist, BANK_ERROR)
+done Forced reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:37.039 [pool-183-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:37.041 [pool-184-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+done Random reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+done Random reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:37.042 [pool-185-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:37.044 [pool-186-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+:done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:37.048 [pool-187-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+:done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:37.050 [pool-188-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+:done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:37.051 [pool-189-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+:done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+%done (AUTHORISE, authorize, CAPTURE)
+,done (CAPTURE, sevenDayPeriodExpired, VOID)
+done Random reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+done Random reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+done Random reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:37.056 [pool-192-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:37.058 [pool-193-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+:done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:37.060 [pool-194-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+%done (AUTHORISE, authorize, CAPTURE)
+8done (CAPTURE, tryToRecaptureBecauseBankError, CAPTURE)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+done Random reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+done Random reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+done Random reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:37.067 [pool-197-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:37.070 [pool-198-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+%done (AUTHORISE, authorize, CAPTURE)
+"done (CAPTURE, capture, CAPTURED)
+ done (CAPTURED, refund, REFUND)
+done Forced reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+done Random reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:37.076 [pool-201-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:37.078 [pool-202-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+done Random reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+%done (AUTHORISE, authorize, CAPTURE)
+"done (CAPTURE, capture, CAPTURED)
+ done (CAPTURED, refund, REFUND)
+done Forced reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:37.082 [pool-205-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:37.083 [pool-206-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:37.086 [pool-207-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+done Random reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+%done (AUTHORISE, authorize, CAPTURE)
+"done (CAPTURE, capture, CAPTURED)
+ done (CAPTURED, refund, REFUND)
+done Forced reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:37.090 [pool-210-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+%done (AUTHORISE, authorize, CAPTURE)
+8done (CAPTURE, tryToRecaptureBecauseBankError, CAPTURE)
+done AllRoundTrips reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+done Random reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:37.094 [pool-213-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+%done (AUTHORISE, authorize, CAPTURE)
+8done (CAPTURE, tryToRecaptureBecauseBankError, CAPTURE)
+done AllRoundTrips reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:37.097 [pool-216-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+:done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+%done (AUTHORISE, authorize, CAPTURE)
+8done (CAPTURE, tryToRecaptureBecauseBankError, CAPTURE)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:37.102 [pool-219-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+%done (AUTHORISE, authorize, CAPTURE)
+6done (CAPTURE, transactionIdDoesNotExist, BANK_ERROR)
+done Forced reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+%done (AUTHORISE, authorize, CAPTURE)
+6done (CAPTURE, transactionIdDoesNotExist, BANK_ERROR)
+done Forced reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:37.107 [pool-224-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+done Random reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:37.108 [pool-225-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+:done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+%done (AUTHORISE, authorize, CAPTURE)
+8done (CAPTURE, tryToRecaptureBecauseBankError, CAPTURE)
+done AllRoundTrips reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:37.116 [pool-228-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+:done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:37.117 [pool-229-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:37.118 [pool-230-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+:done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:37.120 [pool-231-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:37.122 [pool-232-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+%done (AUTHORISE, authorize, CAPTURE)
+"done (CAPTURE, capture, CAPTURED)
+ done (CAPTURED, refund, REFUND)
+done Forced reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+done Random reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:37.125 [pool-235-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:37.126 [pool-236-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+;done (AUTHORISE, bankDetailsInvalid, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:37.128 [pool-237-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+:done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+done Random reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateLuhn, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Gdone (OFFLINE_VERIFICATION, invalidateCardBrand, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+done Random reset(true)
+done Random reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:37.129 [pool-238-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+:done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Ddone (OFFLINE_VERIFICATION, invalidatePrefix, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:37.132 [pool-239-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+:done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+>done (OFFLINE_VERIFICATION, invalidate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+done Random reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+f21:01:37.133 [pool-240-thread-1] INFO  - Bank error - bank returned status code -3 - payment rejected
+:done (AUTHORISE, authFailBankError, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+Bdone (OFFLINE_VERIFICATION, invalidateDate, OFFLINE_VERIFICATION)
+done AllRoundTrips reset(true)
+1done (OFFLINE_VERIFICATION, validate, AUTHORISE)
+%done (AUTHORISE, authorize, CAPTURE)
+,done (CAPTURE, sevenDayPeriodExpired, VOID)
+done Forced reset(true)
+action coverage: 15/15
+state coverage: 0/7
+transition coverage: 15/15
+I21:01:37.144 [Test worker] INFO  - Could not captureCallable transaction
+I21:01:37.148 [Test worker] INFO  - Could not captureCallable transaction
+A21:01:38.194 [Test worker] INFO  - Bank error Requests timed out
+I21:01:38.201 [Test worker] INFO  - Could not captureCallable transaction
+Y21:01:38.212 [Test worker] INFO  - Tried to refund an un captured transaction with ID 11
+f21:01:38.217 [pool-250-thread-2] INFO  - Bank error - bank returned status code -4 - payment rejected
+821:01:38.217 [Test worker] ERROR  - Auth request failed
+)f21:01:38.250 [pool-254-thread-2] INFO  - Bank error - bank returned status code -3 - payment rejected
+)821:01:38.250 [Test worker] ERROR  - Auth request failed
+*e21:01:38.252 [pool-255-thread-2] INFO  - Bank error - bank returned status code 0 - payment rejected
+*821:01:38.252 [Test worker] ERROR  - Auth request failed
++f21:01:38.258 [pool-256-thread-2] INFO  - Bank error - bank returned status code -1 - payment rejected
++821:01:38.258 [Test worker] ERROR  - Auth request failed
+,f21:01:38.262 [Test worker] INFO  - The card details are invalid with status code 6 - payment rejected
+-f21:01:38.264 [Test worker] INFO  - The card details are invalid with status code 2 - payment rejected
+.f21:01:38.267 [Test worker] INFO  - The card details are invalid with status code 3 - payment rejected
+/f21:01:38.269 [Test worker] INFO  - The card details are invalid with status code 3 - payment rejected
+6f21:01:38.286 [pool-262-thread-2] INFO  - Bank error - bank returned status code -2 - payment rejected
+6821:01:38.286 [Test worker] ERROR  - Auth request failed
+BA21:01:39.303 [Test worker] INFO  - Bank error Requests timed out
+b ÿ21:01:39.348 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.cps3230.assignment.webapp.SpringBootBaseIntegrationTest]
+b à21:01:39.348 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.cps3230.assignment.webapp.SpringBootBaseIntegrationTest]
+b ÿ21:01:39.349 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.cps3230.assignment.webapp.SpringBootBaseIntegrationTest]
+b à21:01:39.349 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.cps3230.assignment.webapp.SpringBootBaseIntegrationTest]
+b ¸21:01:39.352 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@410718f7 testClass = SpringBootBaseIntegrationTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@65871561 testClass = SpringBootBaseIntegrationTest, locations = '{}', classes = '{class com.cps3230.assignment.payment.webapp.Application, class com.cps3230.assignment.webapp.TestApplicationConfiguration}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@82f971, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@42ae7825, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@42a739b1, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@380b5432], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> false]], class annotated with @DirtiesContext [false] with mode [null].
+b ÿ21:01:39.352 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.cps3230.assignment.webapp.SpringBootBaseIntegrationTest]
+b à21:01:39.352 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.cps3230.assignment.webapp.SpringBootBaseIntegrationTest]
+b è21:01:39.354 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@410718f7 testClass = SpringBootBaseIntegrationTest, testInstance = com.cps3230.assignment.webapp.SpringBootBaseIntegrationTest@f859132, testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@65871561 testClass = SpringBootBaseIntegrationTest, locations = '{}', classes = '{class com.cps3230.assignment.payment.webapp.Application, class com.cps3230.assignment.webapp.TestApplicationConfiguration}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@82f971, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@42ae7825, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@42a739b1, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@380b5432], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> false]]].
+b ˜21:01:39.369 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}
+b 
+b (  .   ____          _            __ _ _
+b ) /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+b *( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+b + \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+b *  '  |____| .__|_| |_|_| |_\__, | / / / /
+b ) =========|_|==============|___/=/_/_/_/
+b + :: Spring Boot ::        (v2.1.1.RELEASE)
+b 
+b Ê2019-01-06 21:01:39.599  INFO 13934 --- [    Test worker] c.c.a.w.SpringBootBaseIntegrationTest    : Starting SpringBootBaseIntegrationTest on pop-os with PID 13934 (started by drago in /home/drago/IdeaProjects/TestingAssignment)
+b ¶2019-01-06 21:01:39.601  INFO 13934 --- [    Test worker] c.c.a.w.SpringBootBaseIntegrationTest    : No active profile set, falling back to default profiles: default
+b í2019-01-06 21:01:40.577  INFO 13934 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+b 2019-01-06 21:01:40.605  INFO 13934 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+b ì2019-01-06 21:01:40.606  INFO 13934 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+b ˆ2019-01-06 21:01:40.616  INFO 13934 --- [    Test worker] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+b ò2019-01-06 21:01:40.718  INFO 13934 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+b •2019-01-06 21:01:40.718  INFO 13934 --- [    Test worker] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1096 ms
+b ú2019-01-06 21:01:41.054  INFO 13934 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+b °2019-01-06 21:01:41.495  INFO 13934 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+b ¥2019-01-06 21:01:41.500  INFO 13934 --- [    Test worker] c.c.a.w.SpringBootBaseIntegrationTest    : Started SpringBootBaseIntegrationTest in 2.128 seconds (JVM running for 6.001)
+ bc[Starting ChromeDriver 2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706) on port 19375
+ bc$Only local connections are allowed.
+bc{2019-01-06 21:01:42.570  INFO 13934 --- [ null to remote] o.o.selenium.remote.ProtocolHandshake    : Detected dialect: OSS
+bcü2019-01-06 21:01:42.659  INFO 13934 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+bcé2019-01-06 21:01:42.660  INFO 13934 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+bcá2019-01-06 21:01:42.681  INFO 13934 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 20 ms
+bcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbc®2019-01-06 21:01:44.839  INFO 13934 --- [nio-8080-exec-5]                                          : The card details are invalid with status code 6 - payment rejected
+bcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbc®2019-01-06 21:01:45.430  INFO 13934 --- [nio-8080-exec-7]                                          : The card details are invalid with status code 6 - payment rejected
+bcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbc®2019-01-06 21:01:46.017  INFO 13934 --- [nio-8080-exec-9]                                          : The card details are invalid with status code 6 - payment rejected
+bcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbc®2019-01-06 21:01:46.521  INFO 13934 --- [nio-8080-exec-1]                                          : The card details are invalid with status code 6 - payment rejected
+bcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbc®2019-01-06 21:01:47.002  INFO 13934 --- [nio-8080-exec-3]                                          : The card details are invalid with status code 6 - payment rejected
+bcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbc®2019-01-06 21:01:47.452  INFO 13934 --- [nio-8080-exec-5]                                          : The card details are invalid with status code 1 - payment rejected
+bcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbc®2019-01-06 21:01:47.932  INFO 13934 --- [nio-8080-exec-7]                                          : The card details are invalid with status code 1 - payment rejected
+bcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbc®2019-01-06 21:01:48.413  INFO 13934 --- [nio-8080-exec-9]                                          : The card details are invalid with status code 3 - payment rejected
+bcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbc®2019-01-06 21:01:48.864  INFO 13934 --- [nio-8080-exec-1]                                          : The card details are invalid with status code 3 - payment rejected
+bcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbc®2019-01-06 21:01:49.345  INFO 13934 --- [nio-8080-exec-3]                                          : The card details are invalid with status code 3 - payment rejected
+bcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbc®2019-01-06 21:01:49.864  INFO 13934 --- [nio-8080-exec-5]                                          : The card details are invalid with status code 3 - payment rejected
+bcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbc®2019-01-06 21:01:50.325  INFO 13934 --- [nio-8080-exec-7]                                          : The card details are invalid with status code 3 - payment rejected
+bcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbc®2019-01-06 21:01:50.771  INFO 13934 --- [nio-8080-exec-9]                                          : The card details are invalid with status code 5 - payment rejected
+bcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbc®2019-01-06 21:01:51.231  INFO 13934 --- [nio-8080-exec-1]                                          : The card details are invalid with status code 5 - payment rejected
+bcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbcbc[bc32mbc.bcbc[bc0mbc
+bc"19 Scenarios ([32m19 passed[0m)
+bc58 Steps ([32m58 passed[0m)
+bc
+0m11.973s
+bc
+bc
+bcù2019-01-06 21:01:53.574  INFO 13934 --- [       Thread-6] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+bcy2019-01-06 21:01:53.644  INFO 13934 --- [       Thread-8]                                          : Closing the browser

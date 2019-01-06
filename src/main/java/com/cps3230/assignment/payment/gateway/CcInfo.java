@@ -197,17 +197,13 @@ public class CcInfo {
         .isNullOrEmpty(getCardExpiryDate()) && !StringUtils.isNullOrEmpty(getCardType()));
   }
 
-  protected CardValidationStatuses validateCardIsNotExpired(Date date) {
+  protected CardValidationStatuses validateCardIsNotExpired(Date date) throws ParseException {
     CardValidationStatuses validity = CardValidationStatuses.CARD_EXPIRED;
     SimpleDateFormat simpleDateFormat = new SimpleDateFormat("mm/YY");
     simpleDateFormat.setLenient(false);
-    try {
-      Date expiry = simpleDateFormat.parse(getCardExpiryDate());
-      if (expiry.after(date)) {
-        validity = CardValidationStatuses.VALID;
-      }
-    } catch (ParseException e) {
-      validity = CardValidationStatuses.DATE_PARSE_FAILURE;
+    Date expiry = simpleDateFormat.parse(getCardExpiryDate());
+    if (expiry.after(date)) {
+      validity = CardValidationStatuses.VALID;
     }
     return validity;
   }

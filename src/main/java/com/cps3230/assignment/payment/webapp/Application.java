@@ -8,11 +8,6 @@ import org.springframework.context.annotation.Bean;
 @SpringBootApplication
 public class Application {
 
-  @Bean
-  public PaymentProcessor getPaymentProcessor() {
-    return new PaymentProcessor();
-  }
-
   public static void main(String[] args) {
     SpringApplication.run(Application.class, args);
   }

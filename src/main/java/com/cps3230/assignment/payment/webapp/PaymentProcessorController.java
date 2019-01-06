@@ -5,6 +5,7 @@ import com.cps3230.assignment.payment.gateway.PaymentProcessor;
 import com.cps3230.assignment.payment.gateway.enums.CardBrands;
 import com.cps3230.assignment.payment.gateway.enums.CardValidationStatuses;
 import java.text.ParseException;
+import java.util.Date;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
 import java.util.stream.Collectors;
@@ -21,12 +22,17 @@ import org.springframework.ui.Model;
 public class PaymentProcessorController {
 
   private static Logger LOGGER = LogManager.getRootLogger();
-    @Autowired
-    PaymentProcessor processor;
+
+  PaymentProcessor processor = new PaymentProcessor();
+
   List<String> cardBrands = Stream.of(CardBrands.values())
       .map(CardBrands::name)
         .filter(brand -> !brand.equals(String.valueOf(CardBrands.INVALID)))
       .collect(Collectors.toList());
+
+  public void setPaymentProcessor(PaymentProcessor processor) {
+    this.processor = processor;
+  }
 
   @GetMapping("/")
   public String paymentForm(Model model) {
@@ -40,7 +46,7 @@ public class PaymentProcessorController {
     CcInfo info = new CcInfo(payment.getCustomerName(), payment.getCustomerAddress(), payment.getCardType(), payment.getCardNumber(), String.valueOf(payment.getCardExpiryDate()), payment.getCardCvv());
     try {
       long amount;
-      int paymentResult = processor.processPayment(info, Long.parseLong(payment.getAmount()));
+      int paymentResult = processor.processPayment(info, Long.parseLong(payment.getAmount()), new Date());
       if (paymentResult == 0) {
         payment = new PaymentModel();
         payment.setErrorMsg("Payment successful");

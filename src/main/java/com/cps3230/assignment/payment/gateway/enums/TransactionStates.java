@@ -1,8 +1,7 @@
 package com.cps3230.assignment.payment.gateway.enums;
 
 public enum TransactionStates {
-  AUTHORISE,
-  CAPTURE,
+  AUTHORIZED,
   CAPTURED,
   VOID,
   REFUNDED,
