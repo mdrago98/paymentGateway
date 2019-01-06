@@ -7,7 +7,6 @@ import static org.mockito.Mockito.when;
 
 import com.cps3230.assignment.payment.gateway.interfaces.BankProxy;
 import com.cps3230.assignment.payment.gateway.interfaces.DatabaseConnection;
-import com.cps3230.assignment.payment.gateway.models.TransactionModel;
 import com.cps3230.assignment.payment.gateway.spies.DatabaseSpy;
 import com.cps3230.assignment.payment.gateway.stubs.DateIn2018Stub;
 import java.text.SimpleDateFormat;
@@ -17,13 +16,6 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Stream;
-import nz.ac.waikato.modeljunit.GreedyTester;
-import nz.ac.waikato.modeljunit.StopOnFailureListener;
-import nz.ac.waikato.modeljunit.Tester;
-import nz.ac.waikato.modeljunit.VerboseListener;
-import nz.ac.waikato.modeljunit.coverage.ActionCoverage;
-import nz.ac.waikato.modeljunit.coverage.StateCoverage;
-import nz.ac.waikato.modeljunit.coverage.TransitionCoverage;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -38,6 +30,54 @@ import org.mockito.stubbing.Answer;
 class PaymentProcessorTests {
 
   private PaymentProcessor processor = null;
+
+  private static Stream<Arguments> generateCreditCardInfoWithEmptyFields() {
+    return Stream.of(Arguments
+            .of(new CcInfo("", "Test address", "AMERICAN_EXPRESS", "371449635398431", "10/20", "111")),
+        Arguments
+            .of(new CcInfo("  ", "Test address", "AMERICAN_EXPRESS", "371449635398431", "10/20",
+                "111")), Arguments
+            .of(new CcInfo("Test Name", "", "AMERICAN_EXPRESS", "371449635398431", "10/20", "111")),
+        Arguments
+            .of(new CcInfo("Test Name", "Test Address", " ", "", "10/20", "111")),
+        Arguments.of(new CcInfo("", "", "VISA", "", "10/20", "")),
+        Arguments.of(new CcInfo("Test Name", "Test Address", "VISA", "", "", "")),
+        Arguments.of(new CcInfo("Test Name", "", "VISA", "371449635398431", "", "")),
+        Arguments.of(new CcInfo("Test Name", "", "VISA", "371449635398431", "", "")),
+        Arguments.of(new CcInfo("Test Name", "", "", "", "", "")),
+        Arguments
+            .of(new CcInfo("Test Name", "Test address", "AMERICAN_EXPRESS", "371449635398431", "",
+                "111")),
+        Arguments
+            .of(new CcInfo("Test Name", "Test Address", "AMERICAN_EXPRESS", "371449635398431",
+                "10/20", "")),
+        Arguments
+            .of(new CcInfo("Test Name", "Test Address", "", "371449635398431", "10/20", "111")));
+  }
+
+  private static Stream<Arguments> generateValidCreditCardInfo() {
+    return Stream.of(
+        Arguments.of(new CcInfo("Test User", "Test address", "AMERICAN_EXPRESS", "371449635398431",
+            "10/20", "111")),
+        Arguments.of(new CcInfo("Test User", "Test address", "VISA", "4557 3727 3979 3901", "10/20",
+            "111")),
+        Arguments.of(new CcInfo("Test User", "Test address", "MASTER_CARD", "5124 0021 8814 1135",
+            "10/20", "111"))
+    );
+  }
+
+  private static Stream<Arguments> generateCreditCardDetailsWithInvalidCardTypesAndPrefixes() {
+    return Stream.of(
+        Arguments.of(new CcInfo("Test User", "", "AMERICAN_EXPRESS", "371449635398431",
+            "10/20", "111")),
+        Arguments.of(new CcInfo("Test User", "Test address", "amer", "371449635398431",
+            "10/20", "111")),
+        Arguments.of(new CcInfo("Test User", "Test address", "VISA", "371449635398431",
+            "10/20", "111")),
+        Arguments.of(new CcInfo("Test User", "Test address", "VISA", "5286529599000892",
+            "10/20", "111"))
+    );
+  }
 
   @BeforeEach
   void setup() {
@@ -139,44 +179,11 @@ class PaymentProcessorTests {
     Assertions.assertEquals(6, processor.verifyOffline(creditCardDetails, date.getTime()));
   }
 
-  private static Stream<Arguments> generateCreditCardInfoWithEmptyFields() {
-    return Stream.of(Arguments
-            .of(new CcInfo("", "Test address", "AMERICAN_EXPRESS", "371449635398431", "10/20", "111")),
-        Arguments
-            .of(new CcInfo("  ", "Test address", "AMERICAN_EXPRESS", "371449635398431", "10/20",
-                "111")), Arguments
-            .of(new CcInfo("Test Name", "", "AMERICAN_EXPRESS", "371449635398431", "10/20", "111")),
-        Arguments
-            .of(new CcInfo("Test Name", "Test Address", " ", "", "10/20", "111")),
-        Arguments.of(new CcInfo("", "", "VISA", "", "10/20", "")),
-        Arguments.of(new CcInfo("Test Name", "Test Address", "VISA", "", "", "")),
-        Arguments.of(new CcInfo("Test Name", "", "VISA", "371449635398431", "", "")),
-        Arguments.of(new CcInfo("Test Name", "", "VISA", "371449635398431", "", "")),
-        Arguments.of(new CcInfo("Test Name", "", "", "", "", "")),
-        Arguments
-            .of(new CcInfo("Test Name", "Test address", "AMERICAN_EXPRESS", "371449635398431", "", "111")),
-        Arguments
-            .of(new CcInfo("Test Name", "Test Address", "AMERICAN_EXPRESS", "371449635398431", "10/20", "")),
-        Arguments
-            .of(new CcInfo("Test Name", "Test Address", "", "371449635398431", "10/20", "111")));
-  }
-
   @ParameterizedTest
   @MethodSource("generateValidCreditCardInfo")
   void checkOfflineValidationWithValidCreditCardDetails(CcInfo creditCardDetails) {
     DateIn2018Stub date = new DateIn2018Stub();
     Assertions.assertEquals(0, processor.verifyOffline(creditCardDetails, date.getTime()));
-  }
-
-  private static Stream<Arguments> generateValidCreditCardInfo() {
-    return Stream.of(
-        Arguments.of(new CcInfo("Test User", "Test address", "AMERICAN_EXPRESS", "371449635398431",
-            "10/20", "111")),
-        Arguments.of(new CcInfo("Test User", "Test address", "VISA", "4557 3727 3979 3901", "10/20",
-            "111")),
-        Arguments.of(new CcInfo("Test User", "Test address", "MASTER_CARD", "5124 0021 8814 1135",
-            "10/20", "111"))
-    );
   }
 
   @ParameterizedTest
@@ -187,19 +194,6 @@ class PaymentProcessorTests {
     Assertions.assertEquals(1, processor.processPayment(card, 10, date.getTime()));
   }
 
-  private static Stream<Arguments> generateCreditCardDetailsWithInvalidCardTypesAndPrefixes() {
-    return Stream.of(
-        Arguments.of(new CcInfo("Test User", "", "AMERICAN_EXPRESS", "371449635398431",
-            "10/20", "111")),
-        Arguments.of(new CcInfo("Test User", "Test address", "amer", "371449635398431",
-            "10/20", "111")),
-        Arguments.of(new CcInfo("Test User", "Test address", "VISA", "371449635398431",
-            "10/20", "111")),
-        Arguments.of(new CcInfo("Test User", "Test address", "VISA", "5286529599000892",
-            "10/20", "111"))
-    );
-  }
-
   @Test
   void checkProcessPaymentFailsWhenAuthorisationFailsBecauseBankDetailsInvalid()
       throws ExecutionException, InterruptedException {
@@ -207,7 +201,7 @@ class PaymentProcessorTests {
     BankProxy proxy = mock(BankProxy.class);
     CcInfo testCard = new CcInfo("Test User", "test address", "AMERICAN_EXPRESS", "371449635398431",
         "10/20", "111");
-    when(proxy.auth(testCard, 10)).thenReturn((long)-1);
+    when(proxy.auth(testCard, 10)).thenReturn((long) -1);
     processor.setBankProxy(proxy);
     Assertions.assertEquals(2, processor.processPayment(testCard, 10, date.getTime()));
   }
@@ -219,7 +213,7 @@ class PaymentProcessorTests {
     BankProxy proxy = mock(BankProxy.class);
     CcInfo testCard = new CcInfo("Test User", "test address", "AMERICAN_EXPRESS", "371449635398431",
         "10/20", "111");
-    when(proxy.auth(testCard, 10)).thenReturn((long)-2);
+    when(proxy.auth(testCard, 10)).thenReturn((long) -2);
     processor.setBankProxy(proxy);
     Assertions.assertEquals(2, processor.processPayment(testCard, 10, date.getTime()));
   }
@@ -232,7 +226,7 @@ class PaymentProcessorTests {
     BankProxy proxy = mock(BankProxy.class);
     CcInfo testCard = new CcInfo("Test User", "test address", "AMERICAN_EXPRESS", "371449635398431",
         "10/20", "111");
-    when(proxy.auth(testCard, 10)).thenReturn((long)-3);
+    when(proxy.auth(testCard, 10)).thenReturn((long) -3);
     processor.setBankProxy(proxy);
     Assertions.assertEquals(2, processor.processPayment(testCard, 10, date.getTime()));
   }
@@ -244,7 +238,7 @@ class PaymentProcessorTests {
     BankProxy proxy = mock(BankProxy.class);
     CcInfo testCard = new CcInfo("Test User", "test address", "AMERICAN_EXPRESS", "371449635398431",
         "10/20", "111");
-    when(proxy.auth(testCard, 10)).thenReturn((long)-4);
+    when(proxy.auth(testCard, 10)).thenReturn((long) -4);
     processor.setBankProxy(proxy);
     Assertions.assertEquals(2, processor.processPayment(testCard, 10, date.getTime()));
   }
@@ -256,21 +250,21 @@ class PaymentProcessorTests {
     BankProxy proxy = mock(BankProxy.class);
     CcInfo testCard = new CcInfo("Test User", "test address", "AMERICAN_EXPRESS", "371449635398431",
         "10/20", "111");
-    when(proxy.auth(testCard, 10)).thenReturn((long)111);
+    when(proxy.auth(testCard, 10)).thenReturn((long) 111);
     when(proxy.capture(111)).thenReturn(-1);
     processor.setBankProxy(proxy);
     Assertions.assertEquals(2, processor.processPayment(testCard, 10, date.getTime()));
   }
 
   @Test
-  // Already captured transactions should not fail the process payment
+    // Already captured transactions should not fail the process payment
   void checkProcessPaymentWithValidTransactionAndCaptureFailureTransactionExistsButAlreadyCaptured()
       throws ExecutionException, InterruptedException {
     DateIn2018Stub date = new DateIn2018Stub();
     BankProxy proxy = mock(BankProxy.class);
     CcInfo testCard = new CcInfo("Test User", "test address", "AMERICAN_EXPRESS", "371449635398431",
         "10/20", "111");
-    when(proxy.auth(testCard, 10)).thenReturn((long)111);
+    when(proxy.auth(testCard, 10)).thenReturn((long) 111);
     when(proxy.capture(111)).thenReturn(-2);
     processor.setBankProxy(proxy);
     Assertions.assertEquals(0, processor.processPayment(testCard, 10, date.getTime()));
@@ -283,7 +277,7 @@ class PaymentProcessorTests {
     BankProxy proxy = mock(BankProxy.class);
     CcInfo testCard = new CcInfo("Test User", "test address", "AMERICAN_EXPRESS", "371449635398431",
         "10/20", "111");
-    when(proxy.auth(testCard, 10)).thenReturn((long)111);
+    when(proxy.auth(testCard, 10)).thenReturn((long) 111);
     when(proxy.capture(111)).thenReturn(-3);
     processor.setBankProxy(proxy);
     Assertions.assertEquals(2, processor.processPayment(testCard, 10, date.getTime()));
@@ -296,7 +290,7 @@ class PaymentProcessorTests {
     BankProxy proxy = mock(BankProxy.class);
     CcInfo testCard = new CcInfo("Test User", "test address", "AMERICAN_EXPRESS", "371449635398431",
         "10/20", "111");
-    when(proxy.auth(testCard, 10)).thenReturn((long)111);
+    when(proxy.auth(testCard, 10)).thenReturn((long) 111);
     when(proxy.capture(111)).thenReturn(-4);
     processor.setBankProxy(proxy);
     Assertions.assertEquals(2, processor.processPayment(testCard, 10, date.getTime()));
@@ -329,7 +323,8 @@ class PaymentProcessorTests {
       }
     });
     processor.setBankProxy(proxy);
-    Assertions.assertEquals(2, processor.processPayment(testCard, 10, date.getTime(), Executors.newFixedThreadPool(2), 1));
+    Assertions.assertEquals(2,
+        processor.processPayment(testCard, 10, date.getTime(), Executors.newFixedThreadPool(2), 1));
   }
 
   @Test
@@ -339,8 +334,8 @@ class PaymentProcessorTests {
     BankProxy proxy = spy(BankProxy.class);
     CcInfo testCard = new CcInfo("Test User", "test address", "AMERICAN_EXPRESS", "371449635398431",
         "10/20", "111");
-    when(proxy.auth(testCard, 10)).thenReturn((long)111);
-    when(proxy.capture( 111)).thenAnswer(new Answer<Long>() {
+    when(proxy.auth(testCard, 10)).thenReturn((long) 111);
+    when(proxy.capture(111)).thenAnswer(new Answer<Long>() {
       @Override
       public Long answer(InvocationOnMock invocation) throws InterruptedException {
         Thread.sleep(2000);
@@ -348,7 +343,8 @@ class PaymentProcessorTests {
       }
     });
     processor.setBankProxy(proxy);
-    Assertions.assertEquals(2, processor.processPayment(testCard, 10, date.getTime(), Executors.newFixedThreadPool(2), 1));
+    Assertions.assertEquals(2,
+        processor.processPayment(testCard, 10, date.getTime(), Executors.newFixedThreadPool(2), 1));
   }
 
   @Test
@@ -358,7 +354,7 @@ class PaymentProcessorTests {
     BankProxy proxy = spy(BankProxy.class);
     CcInfo testCard = new CcInfo("Test User", "test address", "AMERICAN_EXPRESS", "371449635398431",
         "10/20", "111");
-    when(proxy.auth(testCard, 10)).thenReturn((long)111);
+    when(proxy.auth(testCard, 10)).thenReturn((long) 111);
     when(proxy.capture(111)).thenReturn(0);
     processor.setBankProxy(proxy);
     Assertions.assertEquals(0, processor.processPayment(testCard, 10, date.getTime()));
@@ -372,7 +368,7 @@ class PaymentProcessorTests {
     BankProxy proxy = spy(BankProxy.class);
     CcInfo testCard = new CcInfo("Test User", "test address", "AMERICAN_EXPRESS", "371449635398431",
         "10/20", "111");
-    when(proxy.auth(testCard, 10)).thenReturn((long)111);
+    when(proxy.auth(testCard, 10)).thenReturn((long) 111);
     processor.setBankProxy(proxy);
     processor.setConnection(databaseSpy);
     processor.processPayment(testCard, 10, date.getTime());
@@ -387,7 +383,7 @@ class PaymentProcessorTests {
     BankProxy proxy = spy(BankProxy.class);
     CcInfo testCard = new CcInfo("Test User", "test address", "AMERICAN_EXPRESS", "371449635398431",
         "10/20", "111");
-    when(proxy.auth(testCard, 10)).thenReturn((long)111);
+    when(proxy.auth(testCard, 10)).thenReturn((long) 111);
     when(proxy.capture(111)).thenReturn(0);
     processor.setBankProxy(proxy);
     processor.setConnection(databaseSpy);
@@ -396,12 +392,12 @@ class PaymentProcessorTests {
   }
 
 
-
   @Test
   void assertGetConnectionReturnsADatabaseConnection() {
     DatabaseConnection connection = new TransactionDatabase();
     processor.setConnection(connection);
-    Assertions.assertEquals(connection, processor.getConnection(), "Get connection should return Database connection");
+    Assertions.assertEquals(connection, processor.getConnection(),
+        "Get connection should return Database connection");
   }
 
   @Test
@@ -411,7 +407,7 @@ class PaymentProcessorTests {
     CcInfo testCreditCardDetails =
         new CcInfo("Test User", "Test address", "AMERICAN_EXPRESS", "371449635398431", "10/20",
             "111");
-    mockDb.put((long)11, new Transaction(11, testCreditCardDetails, 10, "AUTHORIZED"));
+    mockDb.put((long) 11, new Transaction(11, testCreditCardDetails, 10, "AUTHORIZED"));
     TransactionDatabase testConnection = new TransactionDatabase();
     testConnection.database = mockDb;
     when(proxy.capture(11)).thenReturn(0);
@@ -420,7 +416,7 @@ class PaymentProcessorTests {
     processor.setBankProxy(proxy);
     processor.updateDatabaseTransactions(1, TimeUnit.NANOSECONDS);
 
-    Assertions.assertEquals("CAPTURED", mockDb.get((long)11).getState());
+    Assertions.assertEquals("CAPTURED", mockDb.get((long) 11).getState());
   }
 
   @Test
@@ -430,7 +426,7 @@ class PaymentProcessorTests {
     CcInfo testCreditCardDetails =
         new CcInfo("Test User", "Test address", "AMERICAN_EXPRESS", "371449635398431", "10/20",
             "111");
-    fakeDatabase.put((long)11, new Transaction(11, testCreditCardDetails, 10, "AUTHORIZED"));
+    fakeDatabase.put((long) 11, new Transaction(11, testCreditCardDetails, 10, "AUTHORIZED"));
     TransactionDatabase testConnection = new TransactionDatabase();
     testConnection.database = fakeDatabase;
     when(proxy.capture(11)).thenReturn(-3);
@@ -439,7 +435,7 @@ class PaymentProcessorTests {
     processor.setBankProxy(proxy);
     processor.updateDatabaseTransactions(1, TimeUnit.NANOSECONDS);
 
-    Assertions.assertEquals("VOID", fakeDatabase.get((long)11).getState());
+    Assertions.assertEquals("VOID", fakeDatabase.get((long) 11).getState());
   }
 
   @Test
@@ -449,7 +445,7 @@ class PaymentProcessorTests {
     CcInfo testCreditCardDetails =
         new CcInfo("Test User", "Test address", "AMERICAN_EXPRESS", "371449635398431", "10/20",
             "111");
-    fakeDatabase.put((long)11, new Transaction(11, testCreditCardDetails, 10, "CAPTURED"));
+    fakeDatabase.put((long) 11, new Transaction(11, testCreditCardDetails, 10, "CAPTURED"));
     TransactionDatabase testConnection = new TransactionDatabase();
     testConnection.database = fakeDatabase;
     when(proxy.capture(11)).thenReturn(-2);
@@ -458,7 +454,7 @@ class PaymentProcessorTests {
     processor.setBankProxy(proxy);
     processor.updateDatabaseTransactions(1, TimeUnit.NANOSECONDS);
 
-    Assertions.assertEquals("CAPTURED", fakeDatabase.get((long)11).getState());
+    Assertions.assertEquals("CAPTURED", fakeDatabase.get((long) 11).getState());
   }
 
   @Test
@@ -468,7 +464,7 @@ class PaymentProcessorTests {
     CcInfo testCreditCardDetails =
         new CcInfo("Test User", "Test address", "AMERICAN_EXPRESS", "371449635398431", "10/20",
             "111");
-    fakeDatabase.put((long)11, new Transaction(11, testCreditCardDetails, 10, "AUTHORISE"));
+    fakeDatabase.put((long) 11, new Transaction(11, testCreditCardDetails, 10, "AUTHORISE"));
     TransactionDatabase testConnection = new TransactionDatabase();
     testConnection.database = fakeDatabase;
     when(proxy.capture(11)).thenReturn(-4);
@@ -477,7 +473,7 @@ class PaymentProcessorTests {
     processor.setBankProxy(proxy);
     processor.updateDatabaseTransactions(1, TimeUnit.NANOSECONDS);
 
-    Assertions.assertEquals("AUTHORISE", fakeDatabase.get((long)11).getState());
+    Assertions.assertEquals("AUTHORISE", fakeDatabase.get((long) 11).getState());
   }
 
   @Test
@@ -487,18 +483,19 @@ class PaymentProcessorTests {
             "111");
     Transaction transaction = new Transaction(11, testCreditCardDetails, 10, "AUTHORIZED");
     BankProxy proxy = mock(BankProxy.class);
-    when(proxy.refund((long)11, 10)).thenReturn(0);
+    when(proxy.refund((long) 11, 10)).thenReturn(0);
     processor.setBankProxy(proxy);
     Assertions.assertEquals("AUTHORIZED", processor.refund(transaction).getState());
   }
 
-  @Test void assertRefundWorksWithCapturedTransaction() {
+  @Test
+  void assertRefundWorksWithCapturedTransaction() {
     CcInfo testCreditCardDetails =
         new CcInfo("Test User", "Test address", "AMERICAN_EXPRESS", "371449635398431", "10/20",
             "111");
     Transaction transaction = new Transaction(11, testCreditCardDetails, 10, "CAPTURED");
     BankProxy proxy = mock(BankProxy.class);
-    when(proxy.refund((long)11, 10)).thenReturn(0);
+    when(proxy.refund((long) 11, 10)).thenReturn(0);
     processor.setBankProxy(proxy);
     Assertions.assertEquals("REFUNDED", processor.refund(transaction).getState());
   }

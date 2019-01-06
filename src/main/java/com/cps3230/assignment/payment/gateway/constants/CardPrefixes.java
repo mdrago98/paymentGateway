@@ -10,7 +10,7 @@ import java.util.Map;
 public class CardPrefixes {
 
   /**
-   * A 2D array containting a prefix and an enum showing what brand of card that prefix belongs to.
+   * A 2D array containing a prefix and an enum showing what brand of card that prefix belongs to.
    *
    * @return a collection of valid prefixes
    */

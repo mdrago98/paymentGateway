@@ -1,5 +1,8 @@
 package com.cps3230.assignment.payment.gateway.enums;
 
+/**
+ * An enumeration representing validation statuses.
+ */
 public enum CardValidationStatuses {
   VALID,
   LUHN_FAILURE,

@@ -22,7 +22,7 @@ public class TestApplicationConfiguration {
     CcInfo testCard = new CcInfo("Test User", "Test Address", "AMERICAN_EXPRESS", "371449635398431",
         "10/20", "111");
     BankProxy proxy = mock(BankProxy.class);
-    when(proxy.auth(any(), eq((long) 10))).thenReturn((long)111);
+    when(proxy.auth(any(), eq((long) 10))).thenReturn((long) 111);
     when(proxy.capture(111)).thenReturn(0);
     processor.setBankProxy(proxy);
     return processor;

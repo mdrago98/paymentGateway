@@ -7,6 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.UnreachableBrowserException;
 
 public class BrowserDriver {
+
   private static Logger LOGGER = LogManager.getRootLogger();
 
   private static WebDriver mDriver;
@@ -24,12 +25,6 @@ public class BrowserDriver {
     return mDriver;
   }
 
-  private static class BrowserCleanup implements Runnable {
-    public void run() {
-      close();
-    }
-  }
-
   public static void close() {
     try {
       getCurrentDriver().quit();
@@ -37,6 +32,13 @@ public class BrowserDriver {
       LOGGER.info("Closing the browser");
     } catch (UnreachableBrowserException e) {
       LOGGER.info("Browser is unreachable");
+    }
+  }
+
+  private static class BrowserCleanup implements Runnable {
+
+    public void run() {
+      close();
     }
   }
 }

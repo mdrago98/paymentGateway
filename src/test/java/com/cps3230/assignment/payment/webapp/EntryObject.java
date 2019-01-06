@@ -1,6 +1,7 @@
 package com.cps3230.assignment.payment.webapp;
 
 public class EntryObject {
+
   String customerName;
   String customerAddress;
   String cardType;

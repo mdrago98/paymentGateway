@@ -6,7 +6,6 @@ import static org.mockito.Mockito.when;
 import com.cps3230.assignment.payment.gateway.CcInfo;
 import com.cps3230.assignment.payment.gateway.PaymentProcessor;
 import com.cps3230.assignment.payment.gateway.Transaction;
-import com.cps3230.assignment.payment.gateway.enums.TransactionStates;
 import com.cps3230.assignment.payment.gateway.interfaces.BankProxy;
 import com.cps3230.assignment.payment.gateway.stubs.DateIn2018Stub;
 import com.cps3230.assignment.payment.gateway.stubs.DateIn2021Stub;
@@ -14,6 +13,7 @@ import java.util.concurrent.ExecutionException;
 
 
 public class PaymentProcessorAdaptor {
+
   private PaymentProcessor processor = new PaymentProcessor();
 
   public boolean validate() {
@@ -32,7 +32,8 @@ public class PaymentProcessorAdaptor {
 
   public Transaction authorize() throws ExecutionException, InterruptedException {
     // mock
-    CcInfo testCreditCardDetails = new CcInfo("Test User", "Test address", "AMERICAN_EXPRESS", "371449635398431", "10/20",
+    CcInfo testCreditCardDetails = new CcInfo("Test User", "Test address", "AMERICAN_EXPRESS",
+        "371449635398431", "10/20",
         "111");
     BankProxy mockProxy = mock(BankProxy.class);
     when(mockProxy.auth(testCreditCardDetails, 10)).thenReturn((long) 1111);
@@ -41,7 +42,8 @@ public class PaymentProcessorAdaptor {
   }
 
   public Transaction authFailBankError() throws ExecutionException, InterruptedException {
-    CcInfo testCreditCardDetails = new CcInfo("Test User", "Test address", "AMERICAN_EXPRESS", "371449635398431", "10/20",
+    CcInfo testCreditCardDetails = new CcInfo("Test User", "Test address", "AMERICAN_EXPRESS",
+        "371449635398431", "10/20",
         "111");
     BankProxy mockProxy = mock(BankProxy.class);
     when(mockProxy.auth(testCreditCardDetails, 10)).thenReturn((long) -3);
@@ -51,7 +53,8 @@ public class PaymentProcessorAdaptor {
 
   public Transaction tryToRecaptureBecauseBankError()
       throws ExecutionException, InterruptedException {
-    CcInfo testCreditCardDetails = new CcInfo("Test User", "Test address", "AMERICAN_EXPRESS", "371449635398431", "10/20",
+    CcInfo testCreditCardDetails = new CcInfo("Test User", "Test address", "AMERICAN_EXPRESS",
+        "371449635398431", "10/20",
         "111");
     BankProxy mockProxy = mock(BankProxy.class);
     when(mockProxy.capture((long) 111)).thenReturn(-4);
@@ -61,7 +64,8 @@ public class PaymentProcessorAdaptor {
   }
 
   public Transaction transactionIdDoesNotExist() throws ExecutionException, InterruptedException {
-    CcInfo testCreditCardDetails = new CcInfo("Test User", "Test address", "AMERICAN_EXPRESS", "371449635398431", "10/20",
+    CcInfo testCreditCardDetails = new CcInfo("Test User", "Test address", "AMERICAN_EXPRESS",
+        "371449635398431", "10/20",
         "111");
     BankProxy mockProxy = mock(BankProxy.class);
     when(mockProxy.capture((long) 111)).thenReturn(-1);
@@ -71,7 +75,8 @@ public class PaymentProcessorAdaptor {
   }
 
   public Transaction sevenDayPeriodExpired() throws ExecutionException, InterruptedException {
-    CcInfo testCreditCardDetails = new CcInfo("Test User", "Test address", "AMERICAN_EXPRESS", "371449635398431", "10/20",
+    CcInfo testCreditCardDetails = new CcInfo("Test User", "Test address", "AMERICAN_EXPRESS",
+        "371449635398431", "10/20",
         "111");
     BankProxy mockProxy = mock(BankProxy.class);
     when(mockProxy.capture((long) 111)).thenReturn(-3);
@@ -81,7 +86,8 @@ public class PaymentProcessorAdaptor {
   }
 
   public Transaction capture() throws ExecutionException, InterruptedException {
-    CcInfo testCreditCardDetails = new CcInfo("Test User", "Test address", "AMERICAN_EXPRESS", "371449635398431", "10/20",
+    CcInfo testCreditCardDetails = new CcInfo("Test User", "Test address", "AMERICAN_EXPRESS",
+        "371449635398431", "10/20",
         "111");
     BankProxy mockProxy = mock(BankProxy.class);
     when(mockProxy.capture((long) 111)).thenReturn(0);
@@ -91,7 +97,8 @@ public class PaymentProcessorAdaptor {
   }
 
   public Transaction refund() {
-    CcInfo testCreditCardDetails = new CcInfo("Test User", "Test address", "AMERICAN_EXPRESS", "371449635398431", "10/20",
+    CcInfo testCreditCardDetails = new CcInfo("Test User", "Test address", "AMERICAN_EXPRESS",
+        "371449635398431", "10/20",
         "111");
     BankProxy mockProxy = mock(BankProxy.class);
     when(mockProxy.refund((long) 111, (long) 10)).thenReturn(0);
@@ -101,7 +108,8 @@ public class PaymentProcessorAdaptor {
   }
 
   public Transaction isAlreadyCaptured() throws ExecutionException, InterruptedException {
-    CcInfo testCreditCardDetails = new CcInfo("Test User", "Test address", "AMERICAN_EXPRESS", "371449635398431", "10/20",
+    CcInfo testCreditCardDetails = new CcInfo("Test User", "Test address", "AMERICAN_EXPRESS",
+        "371449635398431", "10/20",
         "111");
     BankProxy mockProxy = mock(BankProxy.class);
     when(mockProxy.capture((long) 111)).thenReturn(-2);

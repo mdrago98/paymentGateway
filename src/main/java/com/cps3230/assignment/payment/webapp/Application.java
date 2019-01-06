@@ -8,6 +8,10 @@ import org.springframework.context.annotation.Bean;
 @SpringBootApplication
 public class Application {
 
+  /**
+   * The main entry point for the webapp.
+   * @param args an array of arguments
+   */
   public static void main(String[] args) {
     SpringApplication.run(Application.class, args);
   }

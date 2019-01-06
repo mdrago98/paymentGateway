@@ -77,6 +77,10 @@ public class PaymentModel {
     return amount;
   }
 
+  /**
+   * A setter that sets the amount.
+   * @param amount A string representation of the amount
+   */
   public void setAmount(String amount) {
     if (!amount.trim().isEmpty()) {
       this.amount = amount;
@@ -85,6 +89,11 @@ public class PaymentModel {
     }
   }
 
+  /**
+   * A helper method that gets empty fields by reflection.
+   * @return
+   * @throws IllegalAccessException
+   */
   public List<String> getEmptyFields() throws IllegalAccessException {
     List<String> emptyStrings = new ArrayList<>();
     Field[] fields = this.getClass().getDeclaredFields();
