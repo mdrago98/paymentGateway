@@ -1,12 +1,12 @@
 plugins {
     id 'java'
-    id 'pmd'
-    id 'maven'
-    id 'checkstyle'
     id 'org.springframework.boot' version '2.1.1.RELEASE'
 }
 
 apply plugin: 'io.spring.dependency-management'
+apply plugin: 'pmd'
+apply plugin: 'maven'
+apply plugin: 'checkstyle'
 
 configurations {
     cucumberRuntime {
