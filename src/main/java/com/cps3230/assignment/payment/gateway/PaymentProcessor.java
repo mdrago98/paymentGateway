@@ -219,13 +219,22 @@ public class PaymentProcessor {
     return processPayment(cardInfo, amount, new Date());
   }
 
+  /**
+   * A method that processes card payments.
+   * @param cardInfo
+   * @param amount
+   * @param date
+   * @return
+   * @throws ExecutionException
+   * @throws InterruptedException
+   */
   public int processPayment(CcInfo cardInfo, long amount, Date date)
       throws ExecutionException, InterruptedException {
     return processPayment(cardInfo, amount, date, Executors.newFixedThreadPool(2), 7200);
   }
 
   /**
-   * A method that process payment.
+   * A method that processes card payments.
    *
    * @param cardInfo an object representation of the card details
    * @param amount a long representation of the card details
@@ -285,6 +294,11 @@ public class PaymentProcessor {
     return transaction;
   }
 
+  /**
+   * A method that verifies card details.
+   * @param cardInfo an object representation of the card details.
+   * @return An integer representation of the status code.
+   */
   public int verifyOffline(CcInfo cardInfo) {
     return verifyOfflineEnum(cardInfo, new Date()).ordinal();
   }
@@ -337,7 +351,7 @@ public class PaymentProcessor {
    * A method that implements Luhn's checksum algorithm.
    *
    * @param card a string representation of the card number
-   * @return true IFF card is valid by luhn's algorithm
+   * @return true IFF card is valid by Luhn's algorithm
    */
   boolean verifyLuhn(String card) {
     boolean validity = false;
