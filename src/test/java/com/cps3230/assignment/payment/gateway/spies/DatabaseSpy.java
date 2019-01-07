@@ -7,7 +7,7 @@ import java.util.Map;
 
 public class DatabaseSpy implements DatabaseConnection {
 
-  private Map<Long, Transaction> database;
+  private final Map<Long, Transaction> database;
 
   private int requestCount;
 

@@ -10,6 +10,16 @@ public class EntryObject {
   String cardCvv;
   String amount;
 
+  /**
+   * A constructor that initializes a form entry object.
+   * @param customerName String representation ofo the customer name.
+   * @param customerAddress String representation of the customer address
+   * @param cardType String representation of the card type
+   * @param cardNumber String representation of the card number
+   * @param cardExpiryDate String representation of the card expiry
+   * @param cardCvv String representation card cvv
+   * @param amount String representation of the amount
+   */
   public EntryObject(String customerName, String customerAddress, String cardType,
       String cardNumber, String cardExpiryDate, String cardCvv, String amount) {
     this.customerName = customerName;

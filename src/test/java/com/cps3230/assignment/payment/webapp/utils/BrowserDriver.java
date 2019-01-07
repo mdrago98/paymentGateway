@@ -8,11 +8,15 @@ import org.openqa.selenium.remote.UnreachableBrowserException;
 
 public class BrowserDriver {
 
-  private static Logger LOGGER = LogManager.getRootLogger();
+  private static final Logger LOGGER = LogManager.getRootLogger();
 
   private static WebDriver mDriver;
 
-  public synchronized static WebDriver getCurrentDriver() {
+  /**
+   * A method that returns a WebDriver instance.
+   * @return a WebDriver instance.
+   */
+  public static synchronized WebDriver getCurrentDriver() {
     if (mDriver == null) {
       try {
         System.setProperty("webdriver.chrome.driver", "/home/drago/chromedriver");
@@ -25,6 +29,9 @@ public class BrowserDriver {
     return mDriver;
   }
 
+  /**
+   * A method that facilitates closing the WebDriver instance.
+   */
   public static void close() {
     try {
       getCurrentDriver().quit();

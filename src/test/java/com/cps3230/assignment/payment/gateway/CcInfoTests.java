@@ -75,7 +75,7 @@ public class CcInfoTests {
   }
 
   @Test
-  void verifyCardCVVIsNotStoredWithWhitSpace() {
+  void verifyCardCvvIsNotStoredWithWhitSpace() {
     testCreditCard.setCardCvv("123");
     Assertions.assertFalse(!testCreditCard.getCardCvv().matches("\\S+"),
         "Card CVV should not be stored with whitespace");

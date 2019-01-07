@@ -12,18 +12,18 @@ import java.util.stream.Stream;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.ui.Model;
 
 @Controller
 public class PaymentProcessorController {
 
-  private static Logger LOGGER = LogManager.getRootLogger();
+  private static final Logger LOGGER = LogManager.getRootLogger();
 
   private PaymentProcessor processor = new PaymentProcessor();
 
-  private List<String> cardBrands = Stream.of(CardBrands.values())
+  private final List<String> cardBrands = Stream.of(CardBrands.values())
       .map(CardBrands::name)
         .filter(brand -> !brand.equals(String.valueOf(CardBrands.INVALID)))
       .collect(Collectors.toList());
@@ -49,17 +49,19 @@ public class PaymentProcessorController {
   }
 
   /**
-   * A post endpoint that processes card details received from a form
+   * A post endpoint that processes card details received from a form.
    * @param payment A payment model
    * @param model A generic Spring model
    * @return A payment webpage
    */
   @PostMapping("/")
   public String paymentSubmit(PaymentModel payment, Model model) {
-    CcInfo info = new CcInfo(payment.getCustomerName(), payment.getCustomerAddress(), payment.getCardType(), payment.getCardNumber(), String.valueOf(payment.getCardExpiryDate()), payment.getCardCvv());
+    CcInfo info = new CcInfo(payment.getCustomerName(), payment.getCustomerAddress(),
+        payment.getCardType(), payment.getCardNumber(),
+        String.valueOf(payment.getCardExpiryDate()), payment.getCardCvv());
     try {
-      long amount;
-      int paymentResult = processor.processPayment(info, Long.parseLong(payment.getAmount()), new Date());
+      int paymentResult = processor.processPayment(info, Long.parseLong(payment.getAmount()),
+          new Date());
       if (paymentResult == 0) {
         payment = new PaymentModel();
         payment.setErrorMsg("Payment successful");

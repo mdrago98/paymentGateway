@@ -9,6 +9,14 @@ public class Transaction {
   private long amount;
   private String state;
 
+  /**
+   * A constructor that initializes a transaction.
+   *
+   * @param id the transaction id
+   * @param ccInfo an object representing the card info
+   * @param amount a long representation tof the amount
+   * @param state a enum representing the transaction state
+   */
   public Transaction(long id, CcInfo ccInfo, long amount, TransactionStates state) {
     setId(id);
     setCcInfo(ccInfo);
@@ -16,6 +24,14 @@ public class Transaction {
     setState(state.toString());
   }
 
+  /**
+   * A constructor that initializes a transaction.
+   *
+   * @param id the transaction id
+   * @param ccInfo an object representing the card info
+   * @param amount a long representation tof the amount
+   * @param state a string representation of the transaction state
+   */
   public Transaction(long id, CcInfo ccInfo, long amount, String state) {
     setId(id);
     setCcInfo(ccInfo);

@@ -25,7 +25,7 @@ import org.apache.logging.log4j.Logger;
 
 public class PaymentProcessor {
 
-  private static Logger LOGGER = LogManager.getRootLogger();
+  private static final Logger LOGGER = LogManager.getRootLogger();
   private BankProxy bankProxy;
   private DatabaseConnection connection;
 
@@ -88,9 +88,11 @@ public class PaymentProcessor {
       Transaction transaction = null;
       long transactionId = getBankProxy().auth(cardInfo, amount);
       if (transactionId > 0) {
-        transaction = new Transaction(transactionId, cardInfo, amount, TransactionStates.AUTHORIZED);
+        transaction = new Transaction(transactionId, cardInfo, amount,
+            TransactionStates.AUTHORIZED);
       } else {
-        LOGGER.info("Bank error - bank returned status code {} - payment rejected", transactionId);
+        LOGGER.info("Bank error - bank returned status code {} - payment rejected",
+            transactionId);
       }
       return transaction;
     };
@@ -214,23 +216,34 @@ public class PaymentProcessor {
     latch.await();
   }
 
+  /**
+   * A method that processes card payments.
+   *
+   * @param cardInfo An object representation of the card details
+   * @param amount A long representation of the amount
+   * @return An integer representation of the status code.
+   * @throws ExecutionException An execution exception.
+   * @throws InterruptedException When the method is interrupted.
+   */
   public int processPayment(CcInfo cardInfo, long amount)
       throws ExecutionException, InterruptedException {
     return processPayment(cardInfo, amount, new Date());
   }
 
   /**
-   * A method that processes card payments.
-   * @param cardInfo
-   * @param amount
-   * @param date
-   * @return
-   * @throws ExecutionException
-   * @throws InterruptedException
+   * A method that processes card payments
+   * .
+   * @param cardInfo An object representation of the card details
+   * @param amount A long representation of the amount
+   * @param date An object representation of the current date
+   * @return An integer representation of the status code.
+   * @throws ExecutionException An execution exception.
+   * @throws InterruptedException When the method is interrupted.
    */
   public int processPayment(CcInfo cardInfo, long amount, Date date)
       throws ExecutionException, InterruptedException {
-    return processPayment(cardInfo, amount, date, Executors.newFixedThreadPool(2), 7200);
+    return processPayment(cardInfo, amount, date, Executors.newFixedThreadPool(2),
+        7200);
   }
 
   /**
@@ -241,13 +254,14 @@ public class PaymentProcessor {
    * @param date a data object to check the expiry of the card
    * @return an integer representation of the transaction status code
    */
-  int processPayment(CcInfo cardInfo, long amount, Date date, ExecutorService  executor, int timeout)
-      throws ExecutionException, InterruptedException {
+  int processPayment(CcInfo cardInfo, long amount, Date date, ExecutorService  executor,
+      int timeout) throws ExecutionException, InterruptedException {
     int status = 0;
     executor.submit(updateTransactions(executor));
     int offlineVerificationStatus = verifyOffline(cardInfo, date);
     if (offlineVerificationStatus == 0) {
-      Future<Transaction> authorizationFuture = executor.submit(authoriseCallable(cardInfo, amount));
+      Future<Transaction> authorizationFuture = executor.submit(authoriseCallable(cardInfo,
+          amount));
       Transaction transaction;
       try {
         transaction = authorizationFuture.get(timeout, TimeUnit.SECONDS);
@@ -289,7 +303,8 @@ public class PaymentProcessor {
       transaction.setState(TransactionStates.REFUNDED.toString());
       getConnection().saveTransaction(transaction);
     } else {
-      LOGGER.info("Tried to refund an un captured transaction with ID {}", transaction.getId());
+      LOGGER.info("Tried to refund an un captured transaction with ID {}",
+          transaction.getId());
     }
     return transaction;
   }

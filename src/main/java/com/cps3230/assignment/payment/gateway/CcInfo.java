@@ -125,6 +125,10 @@ public class CcInfo {
     this.cardNumber = cardNumber.replaceAll("\\s+", "");
   }
 
+  /**
+   * A getter method that returns the card number.
+   * @return a String representation of the card number.
+   */
   public String getCardNumberPrefix() {
     String prefix = "";
     if (getCardTypeEnum() == CardBrands.VISA) {

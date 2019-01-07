@@ -15,6 +15,11 @@ import org.springframework.context.annotation.Primary;
 @Configuration
 public class TestApplicationConfiguration {
 
+  /**
+   * A bean that mocks the bank proxy and injects it in the processor.
+   *
+   * @return a Payment Processor
+   */
   @Bean
   @Primary
   public PaymentProcessor getPaymentProcessor() {

@@ -91,15 +91,17 @@ public class PaymentModel {
 
   /**
    * A helper method that gets empty fields by reflection.
-   * @return
-   * @throws IllegalAccessException
+   * @return list of empty fields
+   * @throws IllegalAccessException an Illegal access exception
    */
   public List<String> getEmptyFields() throws IllegalAccessException {
     List<String> emptyStrings = new ArrayList<>();
     Field[] fields = this.getClass().getDeclaredFields();
     for (Field f : fields) {
       String value = String.valueOf(f.get(this));
-      if ((StringUtils.isNullOrEmpty(value) || value.trim().equalsIgnoreCase("null") || value.trim().equalsIgnoreCase("0")) && !f.getName().equalsIgnoreCase("errorMsg")) {
+      if ((StringUtils.isNullOrEmpty(value) || value.trim().equalsIgnoreCase("null")
+          || value.trim().equalsIgnoreCase("0"))
+          && !f.getName().equalsIgnoreCase("errorMsg")) {
         emptyStrings.add(f.getName());
       }
     }

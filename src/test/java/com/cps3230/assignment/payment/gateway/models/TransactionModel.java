@@ -9,10 +9,12 @@ import org.junit.jupiter.api.Assertions;
 
 public class TransactionModel implements FsmModel {
 
-  PaymentProcessorAdaptor adaptor = new PaymentProcessorAdaptor();
+  private PaymentProcessorAdaptor adaptor = new PaymentProcessorAdaptor();
   private States state;
 
-  private boolean isValidated, isAuthorized, isCaptured;
+  private boolean isValidated;
+  private boolean isAuthorized;
+  private boolean isCaptured;
 
   @Override
   public Object getState() {
@@ -238,7 +240,15 @@ public class TransactionModel implements FsmModel {
     Assertions.assertEquals("REFUNDED", transaction.getState());
   }
 
-  private enum States {OFFLINE_VERIFICATION, AUTHORISE, VOID, CAPTURE, CAPTURED, REFUND, BANK_ERROR}
+  private enum States {
+    OFFLINE_VERIFICATION,
+    AUTHORISE,
+    VOID,
+    CAPTURE,
+    CAPTURED,
+    REFUND,
+    BANK_ERROR
+  }
 
 
 }

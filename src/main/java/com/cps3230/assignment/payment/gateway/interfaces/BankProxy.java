@@ -18,8 +18,8 @@ public interface BankProxy {
    *
    * @param transactionId a long representation of th transaction id
    * @return an int representation of the capture status code; 0 is successful; -1 if the
-   * transaction does not exist; -2 transaction exists but already captured; -3 exists but capture
-   * period expired; -4 unknown error
+   *         transaction does not exist; -2 transaction exists but already captured; -3 exists but
+   *         capture period expired; -4 unknown error
    */
   int capture(long transactionId);
 
